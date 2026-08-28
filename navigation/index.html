@@ -115,16 +115,17 @@
         <b>Online-Einführung</b>
         <span>bitte vor Semesterstart ansehen</span>
       </a>
-      <!-- Rike, 24.08.2026: «Semesterstart führt direkt zu Kapitel 1.» -->
-      <a class="zettel" href="https://mathe-phlu.github.io/form_und_raum/kapitel-1/"
-         target="_blank" rel="noopener">
-        <b>Semesterstart</b>
-        <span>Woche 1 – Kapitel 1: Grundlegende Begriffe</span>
-      </a>
+      <!-- **Was diese Woche ansteht** (Rike, 28.08.2026). Gefüllt von
+           `gemeinsam/diese-woche.js` aus `wochenplan.json` — im
+           Browser, nicht beim Bauen: Sonst müsste jede Woche jemand neu
+           bauen, und einmal vergessen hiesse, dass wochenlang das
+           falsche Kapitel dasteht. -->
+      <a class="zettel" data-diese-woche></a>
     </aside>
 
   </div>
 </div>
 
+<script src="gemeinsam/diese-woche.js"></script>
 </body>
 </html>
