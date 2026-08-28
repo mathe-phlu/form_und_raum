@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 6.9 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="zugang">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">6.9</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 6.9</span></h2><div class="aufgabenblatt"><p>Unter allen Rechtecken gleichen Umfangs, welches hat den grössten
+Inhalt?</p>
+<p>Stellen Sie eine Hypothese auf und begründen Sie diese auf
+mindestens zwei verschiedene Arten.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Beginnen Sie mit konkreten Beispielen</li><li>Nutzen Sie algebraische, geometrische oder analytische Methoden</li><li>Die dritte binomische Formel kann hilfreich sein</li><li>Denken Sie an Mittelungleichungen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p>Das Quadrat hat unter allen umfangsgleichen Rechtecken den grössten
+Flächeninhalt. Diese Tatsache lässt sich auf vielfältige Weise begründen.</p>
+<h4>Algebraische Lösung</h4>
+<p>Wir gehen von einem Quadrat mit Seitenlänge $a=10$ cm aus und Umfang
+$U=40$ cm. Für den Flächeninhalt gilt dann $A=a^2=100$ cm$^2$. Wenn wir nun an einer
+Seite des Rechtecks «wackeln», bspw. die Seite verkürzen um eine
+Strecke $d=0.5$ cm, muss die
+andere Seite um die gleiche Strecke verlängert werden, damit der
+Umfang erhalten bleibt. Wir erhalten ein Rechteck mit Seitenlänge
+$10-0.5=9.5$ cm und $10+0.5=10.5$ cm. Für den Flächeninhalt gilt 
+\begin{equation*}
+  9.5\cdot 10.5= 99.75 &lt; 100 \text{ cm}^2
+\end{equation*}</p>
+<p>Das Rechteck hat einen kleineren Flächeninhalt als das umfangsgleiche
+Quadrat. Andere Werte von $d$ führen (stets aufgrund der dritten
+binomischen Formel) zur gleichen Schlussfolgerung:</p>
+<p>\begin{equation*}
+  (10-d)\cdot (10+d)= 100 - d^2&lt; 100 \text{ cm}^2
+\end{equation*}</p>
+<p>Auch ist die Argumentation nicht von der Wahl des Umfangs abhängig.
+Wir haben damit mit Hilfe eines präformalen Beweises die Hypothese
+bestätigt.<span class="fussnote">Formal: Wir betrachten ein Quadrat mit
+  Seitenlänge $a$ und Umfang $4a$ und ein beliebiges dazu
+  umfangsgleiches Rechteck mit den Seitenlängen $a-d$ und
+  $a+d$. Diese hat notwendig einen kleineren Flächeninhalt da  $(a-d)\cdot (a+d)= a^2- d^2&lt; a^2$.</span></p>
+<h4>Geometrische Lösung.</h4>
+<p>Die algebraische Variante lässt sich auch gut geometrisch interpretieren:</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-4995b1fc43dc.svg" alt=""></figure>
+<p><strong>Interpretation:</strong></p>
+<p>Das rot gefüllte Rechteck mit den Seitenlängen $(a+d)$ und $(a-d)$ hat die Fläche:
+$(a+d)(a-d) = a^2 - d^2$</p>
+<p>Das Quadrat (in fach-Farbe umrandet) mit Seitenlänge $a$ hat die Fläche $a^2$.</p>
+<p>Die rot schraffierten Bereiche zeigen, was vom Rechteck ausserhalb des Quadrats liegt, bzw. was vom Quadrat nicht vom Rechteck abgedeckt wird.</p>
+<p>Das weisse Quadrat oben rechts mit Fläche $d^2$ zeigt genau die Differenz:
+$a^2 - (a+d)(a-d) = a^2 - (a^2 - d^2) = d^2$</p>
+<p>Das Quadrat hat also stets eine um $d^2$ grössere Fläche als das umfangsgleiche Rechteck.</p>
+<p>Diese beiden Lösungen sind mit den Mitteln der Sekundarstufe I gut
+lösbar. Es gibt allerdings noch weitere Lösungen die mit
+schulmathematischen Hilfsmitteln zu bewerkstelligen sind:</p>
+<h4>Funktionale Lösung</h4>
+<p>Wir betrachten ein beliebiges Rechteck mit Umfang $40$ cm. Die eine
+Seite des Rechtecks sei $x$, die andere Seite des Rechtecks muss
+dementsprechend $20-x$ sein. Der Flächeninhalt ist damit
+\begin{equation*}
+ A(x)=x(20-x)=-x^2+20x
+\end{equation*}</p>
+<p>Bei dieser Funktion handelt es sich um eine nach unten geöffnete
+Parabel mit den Nullstellen $x=0$ und $x=20$. Diese Parabel besitzt
+einen Hochpunkt, der aufgrund der Symmetrieeigenschaften der Parabel
+genau zwischen den beiden Nullstellen liegen muss. Damit erhalten wir
+$x=10$. Die andere Seitenlänge ist dementsprechend
+$20-x=20-10=10$. Den maximalen Wert erhalten wir damit genau dann,
+wenn das Rechteck ein Quadrat ist.</p>
+<p>Auch diese Argumentation liesse sich formal für beliebige Umfänge
+zeigen. In diesem Fall ist die Funktion
+$A(x)=x(\frac{U}{2}-x)=-x^2+\frac{U}{2}x$ zu betrachten und führt zu
+der gleichen Schlussfolgerung.</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-54322ec29240.svg" alt=""></figure>
+<h4>Analytische Lösung</h4>
+<p>In der Sekundarstufe II werden solcherlei Probleme häufig mit
+analytischen Mitteln zur Extremwertbestimmung gelöst. Hierzu wird der
+Hochpunkt bestimmt, indem die Nullstelle der ersten Ableitung
+ermittelt wird. (Mehr dazu im Modul zu Funktionen und Funktionales
+Denken)</p>
+<h4>Beweis über die Mittelungleichung</h4>
+<p>Eine weitere etwas unbekanntere Lösungsvariante nutzt die
+Mittelungleichung: Das arithmetische Mittel ist stets grösser oder
+gleich dem geometrischen Mittel:
+\begin{equation*}
+  \sqrt{ab}\leq\frac{a+b}{2}
+\end{equation*}</p>
+<p>Gleichheit gilt genau dann, wenn $a=b$. (Der Beweis dieser Aussage
+lässt sich algebraisch oder geometrisch leicht nachweisen)</p>
+<p>Wir gehen von einem Rechteck mit Seitenlänge $a$ und $b$ aus und einem
+konstanten Umfang $U=2(a+b)$. Damit gilt
+\begin{equation*}
+  A=ab\leq\left(\frac{a+b}{2}\right)^2=\frac{(a+b)^2}{4}=\frac{U^2}{16}
+\end{equation*}</p>
+<p>Der Flächeninhalt kann damit maximal einen Flächeninhalt von
+$\frac{U^2}{16}$ einnehmen und nimmt diesen genau dann ein, wenn $a=b$,
+also im Falle des Quadrates.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/optimierungsprobleme/index.html">Etappe 8 · Optimierungsprobleme</a> <span class="zeit">bei 3:23</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

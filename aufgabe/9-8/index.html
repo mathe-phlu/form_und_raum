@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 9.8 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">9.8</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 9.8</span></h2><div class="aufgabenblatt"><p>Man zeige, dass in jedem Dreieck, das nicht
+  gleichschenklig ist, die Halbierende des Aussenwinkels die
+  gegenüberliegende (Verlängerung der) Dreiecksseite im Verhältnis der
+  anliegenden Seiten teilt.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Nutzen Sie ähnliche Dreiecke wie beim Innenwinkelsatz</li><li>Achten Sie auf die Orientierung der Strecken</li><li>Die Aussenwinkelhalbierende schneidet die Verlängerung der Gegenseite</li><li>Verwenden Sie harmonische Teilung oder Ähnlichkeitsargumente</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Satz:</strong> In jedem nicht-gleichschenkligen Dreieck teilt die Halbierende des Aussenwinkels die Verlängerung der gegenüberliegenden Seite im Verhältnis der anliegenden Seiten.</p>
+<p><strong>Gegeben:</strong> Dreieck $ABC$ mit $b \neq c$, Aussenwinkelhalbierende $w_{\alpha'}$ bei $A$ schneidet die Verlängerung von $BC$ in $T'$.</p>
+<p><strong>Zu zeigen:</strong> $\frac{|BT'|}{|CT'|} = \frac{c}{b}$</p>
+<p><strong>Beweis über den Sinussatz:</strong></p>
+<ol><li>Die Aussenwinkelhalbierende $w_{\alpha'}$ schliesst mit den beiden Seiten $AB$ und $AC$ gleiche Winkel ein  insbesondere ist $\angle BAT' = \angle CAT'$.</li><li>Sinussatz im Dreieck $\triangle ABT'$:
+   $$\frac{|BT'|}{\sin\angle BAT'} = \frac{c}{\sin\angle AT'B}$$</li><li>Sinussatz im Dreieck $\triangle ACT'$:
+   $$\frac{|CT'|}{\sin\angle CAT'} = \frac{b}{\sin\angle AT'C}$$</li><li>Da $B$, $C$ und $T'$ auf einer Geraden liegen (mit $T'$ ausserhalb von $\overline{BC}$), fallen die Strahlen $T'B$ und $T'C$ zusammen, also $\angle AT'B = \angle AT'C$. Zusammen mit $\angle BAT' = \angle CAT'$ liefert die Division beider Gleichungen:
+   $$\frac{|BT'|}{|CT'|} = \frac{c}{b}. \qquad\square$$</li></ol>
+<p><strong>Bemerkung:</strong> Der innere Teilungspunkt $T$ (mit $\frac{|BT|}{|TC|}=\frac{c}{b}$ nach dem Innenwinkelhalbierendensatz) und der äussere Punkt $T'$ teilen $\overline{BC}$ im <em>selben</em> Verhältnis $c:b$ – einmal innen, einmal aussen. Das Punktepaar liegt daher harmonisch.</p>
+<p><strong>Wichtige Bemerkungen:</strong>
+<ul><li>Der Satz gilt nur für nicht-gleichschenklige Dreiecke ($b \neq c$)</li><li>Bei $b = c$ ist die Aussenwinkelhalbierende parallel zu $BC$</li><li>Die Innen- und Aussenwinkelhalbierende stehen senkrecht aufeinander</li><li>Der Zusammenhang zwischen Innen- und Aussenwinkelhalbierendensatz wird durch die harmonische Teilung elegant beschrieben</li></ul></p></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

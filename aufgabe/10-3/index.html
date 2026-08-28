@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 10.3 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">10.3</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 10.3</span></h2><div class="aufgabenblatt"><p>Gegeben ist ein Dreieck $ABC$. Ihm soll ein
+  Quadrat $PQRS$ einbeschrieben werden, und zwar so, dass die
+  Seite $PQ$
+  auf der Grundlinie $AB$
+  liegt und die Ecken $R$ und $S$ auf den Seiten
+ $BC$ bzw. $AC$.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Videos</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Beginnen Sie mit einem beliebigen Quadrat auf AB</li><li>Wie können Sie es so transformieren, dass R und S auf den Seiten liegen?</li><li>Denken Sie an zentrische Streckung</li><li>Welcher Punkt bleibt bei der Transformation fest?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><h4>Orientierungsphase</h4>
+<p><strong>Schritt 1: Festhalten der Bedingungen</strong></p>
+<p>Gegeben ist ein Dreieck $ABC$. Gesucht ist das Quadrat $PQRS$, das folgende Bedingungen erfüllt:</p>
+<ol><li>$P \in c$</li><li>$S \in b$</li><li>$R \in a$</li></ol>
+<h4>Erkundungsphase</h4>
+<p><strong>Schritt 2: Bedingung fallen lassen</strong></p>
+<p>Wir lassen die 3. Bedingung fallen und konstruieren ein Quadrat, das die ersten zwei Bedingungen erfüllt:</p>
+<p>$P \in c$ beliebig, $d \perp c$ durch $P$, $\{S\} = d \cap b$, $k(P,r)$ $(r = \overline{SP})$, $\{Q\} = k \cap c$, $e \perp c$ durch $Q$, $f \parallel c$ durch $S$, $\{R\} = e \cap f$</p>
+<p><strong>Schritt 3: Variation von P</strong></p>
+<p>Bewege $P$ auf $c$. Die Ortslinie $l_R$ von $R$ ist ebenfalls eine Gerade, wie sich empirisch feststellen lässt.</p>
+<p><em>Hinweis: Die Erkundungsphase kann interaktiv im GeoGebra-Applet nachvollzogen werden (siehe digitales Material).</em></p>
+<h4>Begründungsphase</h4>
+<p><strong>Schritt 4: Mathematische Begründung</strong></p>
+<p>Alle in Schritt 2 konstruierten Quadrate gehen durch eine <em>zentrische Streckung mit Zentrum $A$</em> auseinander hervor: Ihre Seite $PQ$ liegt auf $AB$, die Ecke $S$ auf $AC$, und die Seiten sind paarweise parallel. Streckt man ein solches Quadrat von $A$ aus, bleiben all diese Eigenschaften erhalten.</p>
+<p>Rechnerisch (mit $A$ im Ursprung, $AB$ auf der $x$-Achse und $\alpha = \angle BAC$): Es ist $P = (p \mid 0)$, und $S \in AC$ erzwingt die Seitenlänge $s = p\tan\alpha$. Damit wird
+$$R = \big(\,p(1+\tan\alpha)\ \big|\ p\tan\alpha\,\big),$$
+d. h. beide Koordinaten von $R$ sind proportional zu $p$.</p>
+<p><strong>Interpretation:</strong></p>
+<p>Bei einer zentrischen Streckung mit Zentrum $A$ wandert jeder mitbewegte Punkt – insbesondere $R$ – auf einer <strong>Geraden durch $A$</strong>. Die Ortslinie $l_R$ ist also eine Gerade durch $A$ (mit konstanter Steigung $\frac{\tan\alpha}{1+\tan\alpha}$). Sie ist im Allgemeinen <em>nicht</em> parallel zu $\overline{AC}$, sondern geht wie diese durch die Ecke $A$.</p>
+<h4>Konstruktionsphase</h4>
+<p><strong>Schritt 5: Konstruktion</strong></p>
+<p>Schnittpunkt von der Ortslinie $l_R$ mit $a$ liefert das gesuchte $R$. Von dort aus lässt sich das entsprechende Quadrat konstruieren.</p>
+<p><strong>Praktische Konstruktion:</strong>
+<ol><li>Konstruiere zwei beliebige Quadrate $P_1Q_1R_1S_1$ und $P_2Q_2R_2S_2$ wie oben beschrieben</li><li>Die Punkte $R_1$ und $R_2$ spannen die Ortslinie $l_R$ auf (als Gerade durch diese beiden Punkte)</li><li>Der Schnittpunkt $\{R\} = l_R \cap a$ ist die gesuchte Ecke</li><li>Konstruiere von $R$ aus das vollständige Quadrat $PQRS$</li></ol></p></div><div class="faltung applet" data-stufe="geogebra" data-applet="k3waysyz" style="--gg-b:1023;--gg-h:431" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/k3waysyz" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_e4wmn1gr/format/url/protocol/https/video.mp4"></video></div><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_fiqn51r6/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

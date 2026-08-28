@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 8.7 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="beweis">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">8.7</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 8.7</span></h2><div class="aufgabenblatt"><p>Zeigen Sie, dass die markierte Fläche genau so gross ist wie die des
+eingezeichneten Kreises.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Videos</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Identifizieren Sie die relevanten Radien</li><li>Nutzen Sie die Beziehung zwischen den Halbkreisen</li><li>Der Satz des Pythagoras spielt eine zentrale Rolle</li><li>Denken Sie an die Höhe im rechtwinkligen Dreieck</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Das Schustermesser (Arbelos) - Ein eleganter Flächensatz</strong></p>
+<p><strong>Satz:</strong> Die markierte Fläche zwischen den Halbkreisen ist genau so gross wie die Fläche des eingezeichneten Kreises.</p>
+<p><strong>Bezeichnungen:</strong>
+<ul><li>Grosser Halbkreis mit Durchmesser $c = a + b$</li><li>Zwei kleine Halbkreise mit Durchmessern $a$ und $b$</li><li>Eingezeichneter Kreis mit Radius $r$</li></ul></p>
+<p><strong>Beweis:</strong></p>
+<p><strong>Schritt 1: Fläche der Sichel (Arbelos)</strong>
+\begin{align}
+A_{\text{Sichel}} &amp;= A_{\text{grosser Halbkreis}} - A_{\text{Halbkreis}_a} - A_{\text{Halbkreis}_b}\\
+&amp;= \frac{\pi}{2} \left(\frac{c}{2}\right)^2 - \frac{\pi}{2} \left(\frac{a}{2}\right)^2 - \frac{\pi}{2} \left(\frac{b}{2}\right)^2\\
+&amp;= \frac{\pi}{8}(c^2 - a^2 - b^2)
+\end{align}
+Da die Durchmesser aneinandergrenzen, gilt $c = a + b$ und somit
+$$c^2 - a^2 - b^2 = (a+b)^2 - a^2 - b^2 = 2ab, \qquad\text{also}\qquad A_{\text{Sichel}} = \frac{\pi}{8}\cdot 2ab = \frac{\pi ab}{4}.$$</p>
+<p><strong>Schritt 2: Die Höhe über dem Teilungspunkt</strong>
+Errichtet man im Teilungspunkt $C$ (zwischen den beiden kleinen Halbkreisen) die Senkrechte zur Grundlinie, so trifft sie den grossen Halbkreis in $D$. Weil $D$ auf dem Thaleskreis über der Grundlinie liegt, ist der Winkel bei $D$ ein rechter, und nach dem <strong>Höhensatz</strong> gilt:
+$$\overline{CD}^2 = a \cdot b \qquad\Rightarrow\qquad \overline{CD} = \sqrt{ab}.$$</p>
+<p><strong>Schritt 3: Radius des eingezeichneten Kreises</strong>
+Der eingezeichnete Kreis hat die Strecke $\overline{CD}$ als Durchmesser, also
+$$r = \frac{\overline{CD}}{2} = \frac{\sqrt{ab}}{2}.$$</p>
+<p><strong>Schritt 4: Gleichheit der Flächen</strong>
+$$A_{\text{Kreis}} = \pi r^2 = \pi \left(\frac{\sqrt{ab}}{2}\right)^2 = \frac{\pi ab}{4} = A_{\text{Sichel}}. \qquad\square$$</p>
+<p><strong>Bemerkung:</strong>
+Diese überraschende Gleichheit wurde bereits von Archimedes entdeckt und gehört zu den schönsten Sätzen der Kreisgeometrie.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="adhb6nb6" style="--gg-b:1097;--gg-h:731" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/adhb6nb6" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_ggv1rsat/format/url/protocol/https/video.mp4"></video></div><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_a8qn04nq/format/url/protocol/https/video.mp4"></video></div><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_sk4e7zqb/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-8/die-moendchen-des-hippokrates/index.html">Hilfe 5 · Die Möndchen des Hippokrates</a> <span class="zeit">bei 5:59</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

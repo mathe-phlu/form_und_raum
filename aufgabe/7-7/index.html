@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 7.7 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="didaktik">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">7.7</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 7.7</span></h2><div class="aufgabenblatt"><div class="neben">
+    4 Pflöcke, zum
+    Quadrat ausgesteckt ($a=0{,}4$ m) Ein wildgewordener Rasenmäher $R$,
+    der sich um die Pflöcke in einer spiralförmigen Bahn wickelt (weil
+    er an einem 42 m langen Seil hängt). Berechnen Sie einigermassen
+    geschickt, welche Weglänge der Rasenmäher nach 25 Runden
+    durchlaufen hat.
+  </div>
+<div class="neben">
+<figure style="--bildbreite:0.70"><img src="../../bilder/532535f1201b81a5.png" alt=""></figure>
+</div><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Bei jeder Vierteldrehung verkürzt sich das Seil um die Quadratseite</li><li>Die Bogenlängen bilden eine arithmetische Folge</li><li>Nutzen Sie die Formel für die Summe einer arithmetischen Reihe</li><li>Beachten Sie: Nach 25 Runden sind es 100 Viertelkreise</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Problemstellung verstehen:</strong></p>
+<p><strong>Gegeben:</strong>
+<ul><li>Quadrat mit Seitenlänge $a = 0{,}4$ m</li><li>Anfängliche Seillänge $r_0 = 42$ m</li><li>Gesucht: Weglänge nach 25 Runden (= 100 Viertelkreisen)</li></ul></p>
+<p><strong>Visualisierung der Bewegung:</strong></p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-01d2a5646ccd.svg" alt=""></figure>
+<p><strong>Die Modellierung - Schritt für Schritt:</strong></p>
+<p><strong>Schritt 1: Was passiert bei jeder Vierteldrehung?</strong></p>
+<p>Bei jeder Vierteldrehung (90°) wickelt sich das Seil um einen Pflock:
+<ul><li>Das Seil verkürzt sich um die Quadratseite: $a = 0{,}4$ m</li><li>Der Rasenmäher läuft einen Viertelkreisbogen</li></ul></p>
+<p><strong>Schritt 2: Länge der Viertelkreisbögen</strong></p>
+<p>Nach $k$ Vierteldrehungen:
+<ul><li>Seillänge (= Radius): $r_k = r_0 - k \cdot a = 42 - 0{,}4k$</li><li>Länge des Viertelkreisbogens: $b_k = \frac{\pi}{2} r_k = \frac{\pi}{2}(42 - 0{,}4k)$</li></ul></p>
+<p><strong>Beispiel - die ersten 4 Viertelkreise (1 Runde):</strong></p>
+<div class="tabelle"><table><tr><td class="c sl so">$k$</td><td class="c sl so">Radius $r_k$ (m)</td><td class="c sl so">Bogenlänge $b_k$ (m)</td><td class="c sl sr so">Berechnung</td></tr><tr><td class="c sl so">0</td><td class="c sl so">42{,}0</td><td class="c sl so">$\frac{\pi}{2} \cdot 42{,}0 = 21\pi$</td><td class="c sl sr so">1. Viertelkreis</td></tr><tr><td class="c sl">1</td><td class="c sl">41{,}6</td><td class="c sl">$\frac{\pi}{2} \cdot 41{,}6 = 20{,}8\pi$</td><td class="c sl sr">2. Viertelkreis</td></tr><tr><td class="c sl">2</td><td class="c sl">41{,}2</td><td class="c sl">$\frac{\pi}{2} \cdot 41{,}2 = 20{,}6\pi$</td><td class="c sl sr">3. Viertelkreis</td></tr><tr><td class="su c sl">3</td><td class="su c sl">40{,}8</td><td class="su c sl">$\frac{\pi}{2} \cdot 40{,}8 = 20{,}4\pi$</td><td class="su c sl sr">4. Viertelkreis</td></tr></table></div>
+<p><strong>Beobachtung:</strong> Die Bogenlängen bilden eine <strong>arithmetische Folge</strong> mit Differenz $-0{,}2\pi$ m!</p>
+<p><strong>Schritt 3: Gesamtweg nach 25 Runden berechnen</strong></p>
+<p><strong>Das Summenzeichen - Eine wichtige Notation:</strong></p>
+<p>Wir müssen 100 Bogenlängen addieren:
+$$s_{100} = b_0 + b_1 + b_2 + ... + b_{99}$$</p>
+<p>Dies schreibt man kompakt mit dem <strong>Summenzeichen</strong> $\sum$ (grosses griechisches Sigma):</p>
+<p>$$s_{100} = \sum_{k=0}^{99} b_k$$</p>
+<p><strong>Was bedeutet das Summenzeichen?</strong></p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-4dd4ada8cd5c.svg" alt=""></figure>
+<p><strong>Ausgeschrieben bedeutet das:</strong>
+$$\sum_{k=0}^{99} b_k = b_0 + b_1 + b_2 + b_3 + ... + b_{98} + b_{99}$$</p>
+<p>Man setzt $k$ nacheinander die Werte von 0 bis 99 ein und addiert alle Ergebnisse!</p>
+<p><strong>Schritt 4: Die Berechnung mit dem Summenzeichen</strong></p>
+<p>Setzen wir $b_k = \frac{\pi}{2}(42 - 0{,}4k)$ ein:</p>
+<p>\begin{align*}
+s_{100} &amp;= \sum_{k=0}^{99} b_k \\
+&amp;= \sum_{k=0}^{99} \frac{\pi}{2}(42 - 0{,}4k)
+\end{align*}</p>
+<p><strong>Rechenregel:</strong> Konstanten können vor das Summenzeichen gezogen werden:
+$$= \frac{\pi}{2} \sum_{k=0}^{99} (42 - 0{,}4k)$$</p>
+<p><strong>Rechenregel:</strong> Die Summe lässt sich aufteilen:
+$$= \frac{\pi}{2} \left[\sum_{k=0}^{99} 42 - \sum_{k=0}^{99} 0{,}4k\right]$$</p>
+<p><strong>Erste Summe:</strong> $\sum_{k=0}^{99} 42$ bedeutet: Addiere 100-mal die Zahl 42
+$$\sum_{k=0}^{99} 42 = \underbrace{42 + 42 + ... + 42}_{100\text{-mal}} = 100 \cdot 42 = 4200$$</p>
+<p><strong>Zweite Summe:</strong> Hier hilft die berühmte <strong>Gauss-Formel</strong>:
+$$\sum_{k=0}^{99} k = 0 + 1 + 2 + ... + 99 = \frac{99 \cdot 100}{2} = 4950$$</p>
+<aside class="kasten">
+<div class="neben">
+<strong>Gauss-Formel:</strong> Die Summe der ersten $n$ natürlichen Zahlen (von 0 bis $n-1$):
+$$\sum_{k=0}^{n-1} k = \frac{(n-1) \cdot n}{2}$$
+<p><strong>Merkhilfe:</strong> «Erste Zahl mal letzte Zahl, geteilt durch 2, mal Anzahl»
+</p></div>
+</aside>
+<p>Also:
+$$\sum_{k=0}^{99} 0{,}4k = 0{,}4 \sum_{k=0}^{99} k = 0{,}4 \cdot 4950 = 1980$$</p>
+<p><strong>Schritt 5: Endergebnis</strong></p>
+<p>\begin{align*}
+s_{100} &amp;= \frac{\pi}{2} [4200 - 1980]\\
+&amp;= \frac{\pi}{2} \cdot 2220\\
+&amp;= 1110\pi\\
+&amp;\approx 1110 \cdot 3{,}14159...\\
+&amp;\approx \boxed{3487 \text{ m} \approx 3{,}5 \text{ km}}
+\end{align*}</p>
+<p><strong>Interpretation:</strong></p>
+<p>Der Rasenmäher legt nach 25 Runden etwa <strong>3,5 Kilometer</strong> zurück!</p>
+<p>Das entspricht:
+<ul><li>Ca. 44 Fussballfelder</li><li>Einem gemütlichen Spaziergang von etwa 45 Minuten</li><li>Deutlich mehr als die anfängliche Seillänge von 42 m!</li></ul></p>
+<p><strong>Zusammenfassung - Das Wichtigste:</strong></p>
+<aside class="kasten">
+<div class="neben">
+<strong>Das Summenzeichen $\sum$ im Überblick:</strong>
+<p>$$\sum_{k=\text{Start}}^{\text{Ende}} \text{Ausdruck mit } k$$</p>
+<p><strong>Bedeutung:</strong> Addiere alle Werte des Ausdrucks, wobei $k$ von Start bis Ende läuft.</p>
+<p><strong>Wichtige Formeln:</strong>
+<ul><li>$\sum_{k=1}^{n} c = n \cdot c$ (konstanter Wert)</li><li>$\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$ (Gauss-Formel)</li><li>$\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$ (Quadratsumme)</li></ul>
+</p></div>
+</aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/vom-umfang-zum-flaecheninhalt/index.html">Etappe 5 · Vom Umfang zum Flächeninhalt</a> <span class="zeit">bei 5:27</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

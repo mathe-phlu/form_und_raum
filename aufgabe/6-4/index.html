@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 6.4 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="zugang">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">6.4</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 6.4</span></h2><div class="aufgabenblatt"><p>In der Aufgabe aus dem <span class="kapitaelchen">Mathbuch</span> soll mit Hilfe der Teilflächen eine Flächenformel für das Trapez entwickelt werden  die markierten Punkte sind Seitenmittelpunkte.</p>
+<p>Lösen Sie die oben gestellte Aufgabe selbst. Welche didaktischen Prinzipien werden hier insbesondere angesprochen?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Wie kann man ein Trapez in bekannte Figuren zerlegen?</li><li>Welche Hilfskonstruktionen sind sinnvoll?</li><li>Wie nutzt man die Symmetrie des Trapezes?</li><li>Können Sie die algebraischen Umformungen geometrisch deuten?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong><u>Vier verschiedene Herleitungen der Trapezformel:</u></strong></p>
+<p><strong>Variante 1: Zerlegungsprinzip</strong></p>
+<p>Das Trapez wird auf halber Höhe in zwei Trapeze zerlegt. Das obere wird so umgelegt, dass ein Parallelogramm mit der Grundseite $g_1+g_2$ und der Höhe $h$ entsteht.</p>
+<p>\[(g_1+g_2) \cdot \frac{h}{2}\]</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-b78f8bd50d83.svg" alt=""></figure>
+<p><strong>Variante 2: Additionsprinzip</strong></p>
+<p>Das Trapez wird in drei Dreiecke zerlegt, indem man den Mittelpunkt der Strecke $g_1$ mit den oberen beiden Ecken verbindet. Dadurch entstehen zwei Dreiecke mit Grundseite $\frac{g_1}{2}$ und eines mit Grundseite $g_2$. Alle haben die gleiche Höhe wie das Trapez.</p>
+<p>\[2 \cdot \frac{1}{2} \cdot \frac{g_1}{2} \cdot h + \frac{1}{2} \cdot g_2 \cdot h\]</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-a666a619b773.svg" alt=""></figure>
+<p><strong>Variante 3: Additionsprinzip</strong></p>
+<p>Das Trapez wird in ein Parallelogramm und ein Dreieck zerlegt in dem man durch die obere rechte Ecke eine Strecke parallel zur linken Seite zieht. Das so entstandene Parallelogramm hat die Grundseite $g_2$ und das Dreieck hat die Grundseite $g_1-g_2$. Beide Figuren haben die Höhe $h$.</p>
+<p>\[ \frac{(g_1-g_2)}{2} \cdot h + g_2 \cdot h \]</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-100c755f5c1c.svg" alt=""></figure>
+<p><strong>Variante 4: Seitenmittelpunkte</strong></p>
+<p>Das Trapez wird in ein Fünfeck und zwei Dreiecke zerlegt, indem man jeweils Schneidekanten zwischen den Mittelpunkten der Seiten links, rechts und oben zeichnet. Die entstandenen Dreiecke werden so umgelegt, dass ein grosses Dreieck entsteht mit Höhe $h$ und Grundseite $g_1+g_2$.</p>
+<p>\[\frac{(g_1+g_2)\cdot h}{2} \]</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-98c86562dcca.svg" alt=""></figure>
+<p><strong><u>Gleichwertigkeit der Formeln:</u></strong></p>
+<p>Wir zeigen algebraisch, dass alle vier Varianten zur gleichen Trapezformel führen:</p>
+<div class="neben">
+<strong>Variante 1:</strong>
+\begin{align*}
+A &amp;= (g_1+g_2) \cdot \frac{h}{2} \\
+&amp;= \frac{(g_1+g_2) \cdot h}{2}
+\end{align*}
+</div>
+<div class="neben">
+<strong>Variante 4:</strong>
+\begin{align*}
+A &amp;= \frac{(g_1+g_2) \cdot h}{2}
+\end{align*}
+</div>
+<div class="neben">
+<strong>Variante 2:</strong>
+\begin{align*}
+A &amp;= 2 \cdot \frac{1}{2} \cdot \frac{g_1}{2} \cdot h + \frac{1}{2} \cdot g_2 \cdot h \\
+&amp;= \frac{g_1}{2} \cdot h + \frac{g_2}{2} \cdot h \\
+&amp;= \left(\frac{g_1}{2} + \frac{g_2}{2} \right) \cdot h \\
+&amp;= \frac{(g_1+g_2) \cdot h}{2}
+\end{align*}
+</div>
+<div class="neben">
+<strong>Variante 3:</strong>
+\begin{align*}
+A &amp;= \frac{(g_1-g_2)}{2} \cdot h + g_2 \cdot h \\
+&amp;= \frac{(g_1-g_2) \cdot h}{2} + \frac{2\cdot g_2 \cdot h}{2} \\
+&amp;= \frac{g_1 \cdot h - g_2 \cdot h + 2\cdot g_2 \cdot h}{2} \\
+&amp;= \frac{g_1 \cdot h + g_2 \cdot h}{2}= \frac{(g_1+g_2) \cdot h}{2}
+\end{align*}
+</div>
+<p>Alle vier Herleitungen führen zur klassischen Trapezformel:
+\[A = \frac{(g_1+g_2) \cdot h}{2} = (g_1+g_2)\cdot \frac{h}{2} =\frac{g_1+g_2}{2} \cdot h\]</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/das-ergaenzungsprinzip/index.html">Etappe 6 · Das Ergänzungsprinzip</a> <span class="zeit">bei 3:46</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

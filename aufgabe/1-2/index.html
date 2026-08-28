@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 1.2 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">1.2</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 1.2</span></h2><div class="aufgabenblatt"><div class="neben">
+    Einem Quadrat wird das Viereck $PQRS$ einbeschrieben. Miss den
+    Umfang des Vierecks, vergleiche ihn mit dem des Quadrates. Kann
+    man das Ergebnis des Vergleichs auch ohne Messen erhalten?
+  </div>
+<div class="neben">
+<figure><img src="../../bilder/276ea8d44573fd08.png" class="gerichtet" style="aspect-ratio:1.0209" alt=""></figure>
+</div><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Bezeichnen Sie die Eckpunkte und Seitenlängen systematisch</li><li>Welche geometrische Eigenschaft können Sie auf die einzelnen Dreiecke anwenden?</li><li>Betrachten Sie jede Seite des inneren Vierecks als Diagonale eines kleineren Vierecks</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p>Die Seitenlänge des Quadrates sei $q$. Wir bezeichnen die Teilabschnitte auf den Quadratseiten und die Seitenlängen des einbeschriebenen Vierecks systematisch:</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-56b09924eef1.svg" alt=""></figure>
+<p><strong>Behauptung:</strong> Der Umfang des einbeschriebenen Vierecks $PQRS$ ist stets kleiner als der Umfang des Quadrats.</p>
+<p><strong>Beweis:</strong> Jede Seite des Vierecks $PQRS$ ist die Hypotenuse eines rechtwinkligen Dreiecks, dessen Katheten auf den Quadratseiten liegen. Nach der Dreiecksungleichung gilt für jedes dieser Dreiecke:</p>
+<ul><li>Für Seite $\overline{PQ}$ (Seite $a$): rechter Winkel bei $B$, Katheten $\overline{PB}=q-x$ und $\overline{BQ}=y$, also $a &lt; (q-x) + y$</li><li>Für Seite $\overline{QR}$ (Seite $b$): rechter Winkel bei $C$, Katheten $\overline{QC}=q-y$ und $\overline{CR}=z$, also $b &lt; (q-y) + z$</li><li>Für Seite $\overline{RS}$ (Seite $c$): rechter Winkel bei $D$, Katheten $\overline{RD}=q-z$ und $\overline{DS}=w$, also $c &lt; (q-z) + w$</li><li>Für Seite $\overline{SP}$ (Seite $d$): rechter Winkel bei $A$, Katheten $\overline{SA}=q-w$ und $\overline{AP}=x$, also $d &lt; (q-w) + x$</li></ul>
+<p>Addieren wir alle vier Ungleichungen:
+\begin{align*}
+a + b + c + d &amp;&lt; \bigl((q-x) + y\bigr) + \bigl((q-y) + z\bigr) + \bigl((q-z) + w\bigr) + \bigl((q-w) + x\bigr)\\
+&amp;= 4q + (-x + x) + (y - y) + (z - z) + (w - w)\\
+&amp;= 4q
+\end{align*}</p>
+<p>Somit gilt: Umfang des Vierecks $PQRS &lt; 4q =$ Umfang des Quadrats.</p>
+<p><strong>Anmerkung:</strong> Gleichheit würde nur dann gelten, wenn das Viereck mit dem Quadrat zusammenfällt, was bedeuten würde, dass die Punkte $P$, $Q$, $R$ und $S$ mit den Ecken des Quadrats zusammenfallen.</p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_v1nxkxmw/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-1/epistemologische-hindernisse/index.html">Etappe 4 · Epistemologische Hindernisse</a> <span class="zeit">bei 5:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

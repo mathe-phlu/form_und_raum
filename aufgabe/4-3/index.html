@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 4.3 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="beweis">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">4.3</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 4.3</span></h2><div class="aufgabenblatt"><p>Welche Kongruenzabbildung wird durch eine Dreifachspiegelung an
+  Achsen mit keinem oder einem Schnittpunkt erzeugt?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Untersuchen Sie getrennt: parallele Achsen und Achsen mit gemeinsamem Schnittpunkt</li><li>Nutzen Sie, was Sie über Doppelspiegelungen wissen</li><li>Zerlegen Sie die Dreifachspiegelung in eine Doppelspiegelung plus eine Einzelspiegelung</li><li>Beachten Sie die Reihenfolge der Spiegelungen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Dreifachspiegelung an Achsen ohne oder mit einem Schnittpunkt:</strong></p>
+<p><strong>Fall 1: Drei parallele Achsen</strong> ($a \parallel b \parallel c$)</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-6b79160b2367.svg" alt=""></figure>
+<p><strong>Warum ergibt sich eine reine Spiegelung?</strong></p>
+<p>Die Doppelspiegelung $\sigma_b \circ \sigma_a$ ergibt eine Verschiebung um $2d_1$. Diese Verschiebung kann selbst als Doppelspiegelung an zwei parallelen Achsen dargestellt werden, wobei eine mit $c$ zusammenfällt. Die beiden Spiegelungen an $c$ heben sich auf, es bleibt eine Spiegelung an der zu $a, b, c$ parallelen Achse $a'$.</p>
+<p><strong>Fall 2: Drei Achsen durch einen gemeinsamen Punkt $S$</strong></p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-cf5b79e0fe8f.svg" alt=""></figure>
+<p>Analog ergibt sich auch im Falle von einem Schnittpunkt  eine reine Spiegelung. Die Geraden $a$ und $b$ erzeugen eine Drehung. Wir ersetzen das Geradenpaar $(a,b)$ durch ein anderes Geradenpaar $(a',b')$, das den gleichen Schnittwinkel und Schnittpunkt hat so, bei dem aber gilt $b'=c$, dadurch heben sich die beiden Spiegelungen an $b'$ und $c$ und es bleibt eine Spiegelung an $a'$, welche aus einer Drehung von $a$ um den Schnittwinkel von $b$ und $c$ entsteht.</p>
+<p>(Machen Sie sich das mit einer Skizze nochmals selbst klar!)</p>
+<p><strong>Zusammenfassung:</strong></p>
+<p>Eine Dreifachspiegelung an drei Achsen, die entweder alle parallel sind oder sich in einem Punkt schneiden, ergibt immer eine <strong>einfache Geradenspiegelung</strong>:
+<ul><li>Bei parallelen Achsen: Spiegelachse $a'$ ist parallel zu den gegebenen Achsen</li><li>Bei gemeinsamem Schnittpunkt: Spiegelachse $a'$ geht durch diesen Punkt</li></ul></p>
+<p>Dies gilt, weil bei <em>parallelen</em> oder <em>kopunktalen</em> Achsen die enthaltene Doppelspiegelung (Verschiebung bzw.\ Drehung) so umgeformt werden kann, dass sich zwei Spiegelungen aufheben. <em>Nur</em> in diesen beiden Sonderfällen reduziert sich die Dreifachspiegelung auf eine einzige Geradenspiegelung. Liegen dagegen drei echte Schnittpunkte vor (allgemeine Lage), so entsteht eine <strong>Schubspiegelung</strong> (siehe folgende Aufgabe).</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/drei-spiegelungen-0-1-schnittpunkte/index.html">Etappe 5 · Drei Spiegelungen, 0 &amp; 1 Schnittpunkte</a> <span class="zeit">bei 2:06</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

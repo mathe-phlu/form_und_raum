@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 11.3 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="aktion">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">11.3</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 11.3</span></h2><div class="aufgabenblatt"><p>Weisen Sie nach, dass auf diese Weise ein Punkt $P'$
+  konstruiert wird, der alle Bedingungen der Kreisspiegelung erfüllt.</p>
+<p><span class="fussnote">Der <em>Höhensatz</em> gewährleistet die Korrektheit der
+    Konstruktion.</span></p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Die Konstruktion nutzt rechtwinklige Dreiecke</li><li>Der Höhensatz liefert die entscheidende Beziehung</li><li>Überprüfen Sie, ob $|MP| \cdot |MP'| = r^2$ erfüllt ist</li><li>Die Tangente vom Punkt an den Kreis spielt eine Rolle</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Konstruktion und Beweis der Korrektheit</strong></p>
+<p><strong>Gegeben:</strong> Kreis $k$ mit Mittelpunkt $M$ und Radius $r$, Punkt $P$</p>
+<p><strong>Gesucht:</strong> Bildpunkt $P'$ mit $|MP| \cdot |MP'| = r^2$ und $P'$ liegt auf der Geraden durch $M$ und $P$</p>
+<h4>Konstruktionsschritte</h4>
+<p><strong>Fall 1: $P$ ausserhalb des Kreises</strong></p>
+<ol><li>Zeichne die Gerade $g$ durch $M$ und $P$</li><li>Konstruiere die Tangenten von $P$ an den Kreis $k$</li><li>Sei $T$ einer der Berührpunkte der Tangenten mit dem Kreis</li><li>Fälle das Lot von $T$ auf die Gerade $g$ (durch $M$ und $P$)</li><li>Der Lotfusspunkt auf $g$ ist der gesuchte Bildpunkt $P'$</li></ol>
+<p><strong>Fall 2: $P$ innerhalb des Kreises</strong></p>
+<ol><li>Zeichne die Gerade $g$ durch $M$ und $P$</li><li>Errichte in $P$ die Senkrechte zu $g$</li><li>Diese Senkrechte schneidet den Kreis in einem Punkt $S$</li><li>Konstruiere in $S$ die Tangente an den Kreis</li><li>Der Schnittpunkt dieser Tangente mit $g$ ist der gesuchte Bildpunkt $P'$</li></ol>
+<h4>Beweis der Korrektheit</h4>
+<p><strong>Fall 1: Punkt $P$ ausserhalb des Kreises</strong></p>
+<p>Betrachten wir das entstehende rechtwinklige Dreieck $\triangle MTP$:</p>
+<p><strong>Schritt 1:</strong> Eigenschaften des Dreiecks identifizieren
+<ul><li>$T$ liegt auf dem Kreis, also: $|MT| = r$ (Radius)</li><li>Die Tangente steht senkrecht auf dem Radius im Berührpunkt $T$, also: $\angle MTP = 90°$</li><li>$MP$ ist die Hypotenuse dieses rechtwinkligen Dreiecks</li></ul></p>
+<p><strong>Schritt 2:</strong> Die Höhe auf die Hypotenuse betrachten</p>
+<p>Das Lot von $T$ auf die Hypotenuse $MP$ teilt diese in zwei Abschnitte. Der Lotfusspunkt ist genau unser konstruierter Punkt $P'$.</p>
+<p>Bezeichnen wir:
+<ul><li>$|MP'| = p$ (Abschnitt von $M$ bis $P'$)</li><li>$|P'P| = q$ (Abschnitt von $P'$ bis $P$)</li><li>$|TP'| = h$ (Höhe auf die Hypotenuse)</li></ul></p>
+<p><strong>Schritt 3:</strong> Den Höhensatz anwenden</p>
+<p>Der Höhensatz besagt: In einem rechtwinkligen Dreieck ist die Höhe $h$ auf die Hypotenuse das geometrische Mittel der beiden Hypotenusenabschnitte $p$ und $q$:
+$$h^2 = p \cdot q$$</p>
+<p>Weiterhin gilt nach dem Kathetensatz für die Kathete $MT$:
+$$|MT|^2 = |MP'| \cdot |MP|$$
+$$r^2 = p \cdot (p + q)$$</p>
+<p>Da $|MP| = p + q = |MP'| + |P'P|$, können wir schreiben:
+$$r^2 = |MP'| \cdot |MP|$$</p>
+<p><strong>Umstellen ergibt:</strong>
+$$|MP| \cdot |MP'| = r^2 \quad \checkmark$$</p>
+<p>Dies ist genau die Bedingung für die Kreisspiegelung!</p>
+<p><strong>Zusätzlich:</strong> $P'$ liegt nach Konstruktion auf der Geraden durch $M$ und $P$. ✓</p>
+<p><strong>Fazit:</strong> Der konstruierte Punkt $P'$ erfüllt beide Bedingungen der Kreisspiegelung.</p>
+<h4>Fall 2: Punkt $P$ innerhalb des Kreises</h4>
+<p>Die Konstruktion ist die Umkehrung von Fall 1. Der Beweis verläuft analog:</p>
+<p><strong>Schritt 1:</strong> Eigenschaften identifizieren
+<ul><li>$S$ liegt auf dem Kreis: $|MS| = r$</li><li>Die Tangente in $S$ steht senkrecht auf $MS$: $\angle MST = 90°$ (wobei $T$ ein Punkt auf der Tangente ist)</li><li>$P'$ liegt auf der Geraden $MP$ und auf der Tangente</li></ul></p>
+<p><strong>Schritt 2:</strong> Rechtwinkliges Dreieck $\triangle MSP'$ betrachten</p>
+<p>Wir haben wieder ein rechtwinkliges Dreieck:
+<ul><li>$MS$ ist eine Kathete mit Länge $r$</li><li>$SP'$ ist die andere Kathete</li><li>$MP'$ ist die Hypotenuse</li></ul></p>
+<p><strong>Schritt 3:</strong> Höhensatz anwenden</p>
+<p>Die Senkrechte von $P$ auf $MS$ ist die Höhe auf die Kathete $MS$. Nach dem Kathetensatz gilt wieder:
+$$|MS|^2 = |MP| \cdot |MP'|$$
+$$r^2 = |MP| \cdot |MP'|$$</p>
+<p>Also:
+$$|MP| \cdot |MP'| = r^2 \quad \checkmark$$</p>
+<h4>Geometrische Interpretation</h4>
+<p>Die Konstruktion nutzt eine fundamentale Eigenschaft rechtwinkliger Dreiecke:</p>
+<p><strong>Der Höhensatz</strong> stellt eine Beziehung zwischen den Teilstrecken der Hypotenuse her. In unserem Fall sorgt die besondere Konstruktion dafür, dass diese Beziehung genau der Abstandsgleichung der Kreisspiegelung entspricht.</p>
+<p><strong>Die Tangente</strong> spielt die Schlüsselrolle: Sie ist das geometrische «Werkzeug», das die Inversion realisiert, da sie immer senkrecht auf dem Radius steht (Symbol: $\perp$).</p>
+<p><strong>Die Eleganz</strong> dieser Konstruktion liegt darin, dass sie nur mit Zirkel und Lineal ausführbar ist - sie ist eine klassische euklidische Konstruktion.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-11/konstruktion/index.html">Etappe 2 · Konstruktion</a> <span class="zeit">bei 2:38</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

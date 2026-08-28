@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 1.5 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">1.5</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 1.5</span></h2><div class="aufgabenblatt"><div class="neben">
+    Die Seiten eines gleichseitigen Dreiecks $ABC$ werden jeweils um
+    $1$ cm verlängert. Das neue Dreieck $PQR$ scheint auch wieder
+    gleichseitig zu sein. Begründen Sie!
+  </div>
+<div class="neben">
+<figure style="--bildbreite:0.70"><img src="../../bilder/2c82bcfdf9555791.png" alt=""></figure>
+</div><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Welche Dreiecke entstehen durch die Verlängerung der Seiten?</li><li>Was wissen Sie über die Winkel im gleichseitigen Dreieck?</li><li>Können Sie Kongruenzen zwischen den entstehenden Dreiecken nachweisen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Behauptung:</strong> Das Dreieck $PQR$ ist gleichseitig.</p>
+<p><strong>Beweis:</strong>
+Durch das Verlängern jeder Seite um 1 cm entstehen drei «Eckdreiecke»: <span class="ton-zugang">$\triangle APQ$</span>, <span class="ton-aktion">$\triangle BQR$</span> und <span class="ton-beweis">$\triangle CRP$</span>.</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-0343f42e6b6e.svg" alt=""></figure>
+<p><strong>Schritt 1: Kongruenz der drei Eckdreiecke</strong></p>
+<p>Die Seitenlänge des ursprünglichen gleichseitigen Dreiecks sei $s$. Bei jedem Eckdreieck wird nur <em>eine</em> Seite über die betreffende Ecke hinaus verlängert (um $1$ cm)  die andere anliegende Strecke ist eine <em>ganze</em> Dreiecksseite plus die Verlängerung an ihrem Ende, also $(s+1)$ cm lang:
+<ul><li>In $\triangle APQ$: $\overline{AP} = 1$ cm (Verlängerung über $A$ hinaus), $\overline{AQ} = \overline{AB} + 1 = (s+1)$ cm, $\angle PAQ = 180° - 60° = 120°$ (Aussenwinkel bei $A$)</li><li>In $\triangle BQR$: $\overline{BQ} = 1$ cm (Verlängerung über $B$ hinaus), $\overline{BR} = \overline{BC} + 1 = (s+1)$ cm, $\angle QBR = 180° - 60° = 120°$ (Aussenwinkel bei $B$)</li><li>In $\triangle CRP$: $\overline{CR} = 1$ cm (Verlängerung über $C$ hinaus), $\overline{CP} = \overline{CA} + 1 = (s+1)$ cm, $\angle RCP = 180° - 60° = 120°$ (Aussenwinkel bei $C$)</li></ul></p>
+<p>Nach dem Kongruenzsatz <strong>SWS</strong> sind alle drei Dreiecke kongruent, da sie in zwei Seiten ($1$ cm und $(s+1)$ cm) und dem eingeschlossenen Winkel ($120°$) übereinstimmen.</p>
+<p><strong>Schritt 2: Gleichseitigkeit von $\triangle PQR$</strong></p>
+<p>Da die drei Eckdreiecke kongruent sind, gilt:
+$$\overline{PQ} = \overline{QR} = \overline{RP}$$ 
+(entsprechende Seiten kongruenter Dreiecke)</p>
+<p>Somit ist das Dreieck $PQR$ gleichseitig. ∎</p>
+<p><strong>Zusätzliche Beobachtung:</strong> Die Konstruktion funktioniert für jede Verlängerungslänge, nicht nur für 1 cm. Die drei Eckdreiecke sind stets kongruent zueinander.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="ruhhcumd" style="--gg-b:703;--gg-h:455" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/ruhhcumd" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-1/winkelsumme-im-dreieck/index.html">Etappe 6 · Winkelsumme im Dreieck</a> <span class="zeit">bei 5:34</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

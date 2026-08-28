@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 3.6 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="aktion">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">3.6</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 3.6</span></h2><div class="aufgabenblatt"><p>Die Orte Adorf und Belingen liegen auf derselben
+  Seite eines geradlinig verlaufenden Flusses. Über den Fluss soll
+  eine Brücke gebaut werden und jeder Ort soll eine direkte
+  Zufahrtsstrasse erhalten. An welcher Stelle des Flusses (Breite
+  vernachlässigt) soll die Brücke gebaut werden, damit die Gesamtlänge
+  der Zufahrtsstrassen so klein wie möglich ist?</p>
+<p>Erkunden Sie die Situation zunächst mit GeoGebra, und begründen Sie
+  ihre Hypothese dann mathematisch</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Spiegeln Sie einen der Orte am Fluss</li><li>Nutzen Sie, dass die kürzeste Verbindung zweier Punkte die Gerade ist</li><li>Die Dreiecksungleichung liefert die Begründung</li><li>Erkunden Sie zunächst mit GeoGebra verschiedene Brückenpositionen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Lösung des Brückenproblems:</strong></p>
+<p><strong>Konstruktion:</strong>
+<ol><li>Spiegle Ort $A$ am Flussufer zu $A'$</li><li>Verbinde $A'$ mit $B$ durch eine Gerade</li><li>Der Schnittpunkt $P$ dieser Geraden mit dem Fluss ist die optimale Position für die Brücke</li></ol></p>
+<p><strong>Mathematische Begründung:</strong></p>
+<p>Sei $P$ ein beliebiger Punkt auf dem Fluss. Die Gesamtweglänge beträgt:
+\[L = |AP| + |PB|\]</p>
+<p>Wegen der Spiegelung gilt: $|AP| = |A'P|$</p>
+<p>Daher: $L = |A'P| + |PB|$</p>
+<p><strong>Optimalitätsbeweis:</strong>
+<ul><li>Für jeden Punkt $Q \neq P$ auf dem Fluss gilt nach der Dreiecksungleichung:
+  \[|A'Q| + |QB| &gt; |A'B|\]</li><li>Nur wenn $Q$ auf der Geraden $A'B$ liegt, gilt Gleichheit</li><li>Da $P$ der einzige Punkt auf dem Fluss und auf $A'B$ ist, ist $P$ optimal</li></ul></p>
+<p><strong>Praktische Interpretation:</strong>
+Die Lösung nutzt das Reflexionsgesetz: Der Weg verhält sich wie ein Lichtstrahl, der am Fluss reflektiert wird. Der Einfallswinkel gleicht dem Ausfallswinkel.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="yhzvvdyp" style="--gg-b:691;--gg-h:455" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/yhzvvdyp" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/winter-sche-grunderfahrungen/index.html">Etappe 7 · Winter‘sche Grunderfahrungen</a> <span class="zeit">bei 3:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

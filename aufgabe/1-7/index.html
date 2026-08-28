@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 1.7 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">1.7</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 1.7</span></h2><div class="aufgabenblatt"><div class="neben">
+    Gegeben ist das Rechteck $ABCD$.  Spiegle $B$ und $D$ an der
+    Diagonalen $AC$.  Es entsteht das Rechteck $AD'CB'$. Begründen Sie
+    sorgfältig, warum sich als Überlappungsfigur ein Rhombus ergibt.
+  </div>
+<div class="neben">
+<figure style="--bildbreite:0.50"><img src="../../bilder/1a34805ab571239b.png" alt=""></figure>
+</div><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Identifizieren Sie die vier Dreiecke in der Überlappungsfigur</li><li>Welche Eigenschaften bleiben bei Spiegelungen erhalten?</li><li>Nutzen Sie Scheitelwinkel und die rechten Winkel des Rechtecks</li><li>Zeigen Sie schrittweise die Kongruenz aller vier Dreiecke</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Strukturierte Beweisführung:</strong></p>
+<p>Die Argumentation führt über die Kongruenz der vier Dreiecke in der Überlappungsfigur.</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-b774cfb61222.svg" alt=""></figure>
+<p><em>Der farbig hinterlegte Rhombus $AFCE$ ist die Überlappung des Rechtecks $ABCD$ mit seinem an der Diagonalen $AC$ gespiegelten Bild $AD'CB'$. Die Schnittpunkte der Rechteckseiten sind $E$ (auf $\overline{DC}$) und $F$ (auf $\overline{AB}$)  $M$ ist der Diagonalenschnittpunkt.</em></p>
+<p><strong>Vorüberlegungen</strong>
+<ul><li>Durch die Spiegelung an $AC$ bleiben Streckenlängen und Winkelgrössen erhalten</li><li>Das Bild eines Rechtecks bei Geradenspiegelung ist wieder ein Rechteck</li><li>Die Punkte $A$ und $C$ liegen auf der Spiegelachse und sind daher Fixpunkte</li><li>Die Punkte $E$ und $F$ sind die Schnittpunkte der Seiten beider Rechtecke</li></ul></p>
+<p>Um zu zeigen, dass die schraffierte Figur ein Rhombus ist, müssen wir nun zeigen, dass die entstehenden Dreiecke $\triangle AED$, $\triangle ECB'$, $\triangle BCF$ und $\triangle AFD'$ kongruent sind.</p>
+<h4>1. Behauptung:</h4>
+<p>Die Dreiecke $\triangle AED$ und $\triangle ECB'$ sind kongruent.</p>
+<p><strong>Beweis mit WSW:</strong>
+<ul><li>$\angle AED = \angle CEB'$ (Scheitelwinkel)</li><li>$\angle ADE = \angle CB'E = 90°$ (Rechteckseigenschaft)</li><li>$\overline{AD} = \overline{CB'}$ (gegenüberliegende Seiten im Rechteck $AD'CB'$)</li></ul>
+Nach dem Kongruenzsatz WSW folgt: $\triangle AED \cong \triangle ECB'$</p>
+<h4>2. Behauptung:</h4>
+<p>Die Dreiecke $\triangle AED$ und $\triangle AFD'$ sind kongruent.</p>
+<p><strong>Beweis mit WSW:</strong>
+<ul><li>$\angle ADE = \angle AD'F = 90°$ (Rechteckseigenschaft)</li><li>$\overline{AD} = \overline{AD'}$ (gegenüberliegende Seiten im Rechteck $AD'CB'$)</li><li>$\angle DAE = \angle D'AF$ (beide ergänzen den Winkel $\angle EAF$ zu $90°$)</li></ul>
+Nach WSW folgt: $\triangle AED \cong \triangle AFD'$</p>
+<h4>3. Behauptung:</h4>
+<p>Analog ist auch $\triangle FCB$ kongruent zu den anderen Dreiecken.</p>
+<p><strong>Schlussfolgerung:</strong>
+Da alle vier Dreiecke kongruent sind, gilt für die entsprechenden Seiten:
+$$\overline{AE} = \overline{EC} = \overline{CF} = \overline{FA}$$</p>
+<p>Somit ist $AFCE$ ein Rhombus.  $\square$</p>
+<p><strong>Zusatzbemerkung:</strong> Die Diagonalen $AC$ und $EF$ des Rhombus stehen senkrecht aufeinander und halbieren sich gegenseitig im Punkt $M$.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-1/winkelsumme-im-dreieck/index.html">Etappe 6 · Winkelsumme im Dreieck</a> <span class="zeit">bei 5:34</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

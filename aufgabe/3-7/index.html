@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 3.7 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="aktion">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">3.7</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 3.7</span></h2><div class="aufgabenblatt"><p>Hier ist eine Erweiterung des Brückenproblems. Nun soll der kürzeste Weg von $A$ nach
+  $B$ über eine Brücke $\overline{TU}=3$
+  führen, die senkrecht zum Flussufer liegt. Wo genau ist die Brücke
+  anzusetzen?</p>
+<figure style="--bildbreite:0.30"><img src="../../bilder/8242a29e47bd9fa3.png" alt=""></figure><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Die Brücke hat eine feste Länge und muss senkrecht zum Ufer stehen</li><li>Verschieben Sie einen Punkt um die Brückenlänge</li><li>Reduzieren Sie das Problem auf den einfachen Fall aus Aufgabe 3.6</li><li>Nutzen Sie Parallelverschiebung</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Lösung des erweiterten Brückenproblems:</strong></p>
+<p><strong>Gegeben:</strong>
+<ul><li>Orte $A$ und $B$ auf gegenüberliegenden Seiten des Flusses</li><li>Brückenlänge $\overline{TU} = 3$ (senkrecht zum Ufer, gleich der Flussbreite)</li></ul></p>
+<p><strong>Idee:</strong> Die Brücke hat feste Länge und feste Richtung. Verschiebt man einen Punkt um genau den Brückenvektor, so «verschwindet» die Brücke aus der Rechnung und es bleibt das einfache Problem «kürzeste Verbindung zweier Punkte».</p>
+<p><strong>Konstruktion:</strong>
+<ol><li>Verschiebe $A$ senkrecht zum Fluss um die Brückenlänge $3$ auf die andere Uferseite nach $A^\star$ (also um den Vektor $\overrightarrow{TU}$).</li><li>Verbinde $A^\star$ mit $B$ durch eine Gerade.</li><li>Der Schnittpunkt dieser Geraden mit dem Ufer auf der Seite von $B$ ist der Brückenendpunkt $U$.</li><li>Errichte in $U$ die Senkrechte zum Ufer der Länge $3$ zurück zum Ufer von $A$  ihr Fusspunkt ist $T$.</li><li>Die Brücke $\overline{TU}$ ist optimal positioniert  der Weg lautet $A \to T \to U \to B$.</li></ol></p>
+<p><strong>Begründung:</strong>
+Der Gesamtweg besteht aus drei Teilen:
+\[L = |AT| + |TU| + |UB| = |AT| + 3 + |UB|.\]
+Da $|TU| = 3$ konstant ist, muss nur $|AT| + |UB|$ minimiert werden.</p>
+<p>Durch die Verschiebung um den Brückenvektor ist $ATUA^\star$ ein Parallelogramm, also $|AT| = |A^\star U|$. Damit gilt
+\[|AT| + |UB| = |A^\star U| + |UB| \geq |A^\star B|,\]
+mit Gleichheit genau dann, wenn $A^\star$, $U$ und $B$ auf einer Geraden liegen. Genau das leistet die Konstruktion: $U$ ist der Schnittpunkt der Geraden $A^\star B$ mit dem gegenüberliegenden Ufer.</p>
+<p><strong>Bemerkung:</strong> Im Unterschied zu Aufgabe 3.6 (Punktbrücke, gleiche Uferseite, <em>Spiegelung</em>) wird hier eine <em>Parallelverschiebung</em> verwendet, weil die Brücke eine feste Länge und Richtung besitzt.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="egbnbbvj" style="--gg-b:1308;--gg-h:611" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/egbnbbvj" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/winter-sche-grunderfahrungen/index.html">Etappe 7 · Winter‘sche Grunderfahrungen</a> <span class="zeit">bei 4:59</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

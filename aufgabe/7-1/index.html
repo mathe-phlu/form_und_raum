@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 7.1 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="didaktik">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">7.1</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 7.1</span></h2><div class="aufgabenblatt"><p>Wie viele Stellen von $\pi$ nutzen uns rechenpraktisch? Wie gross
+  ($r=?$) darf beispielsweise ein Kreis sein, damit man seinen Umfang
+  mit den ersten 30 Nachkommastellen von $\pi$ auf 1 mm genau
+  berechnen kann?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Überlegen Sie, wie der Fehler bei der Umfangsberechnung von der Genauigkeit von π abhängt</li><li>Nutzen Sie die Formel $U = 2\pi r$</li><li>Der absolute Fehler ist proportional zum Radius</li><li>Arbeiten Sie mit Zehnerpotenzen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Fragestellung:</strong> Wie gross darf ein Kreis sein, damit man seinen Umfang mit 30 Nachkommastellen von π auf 1 mm genau berechnen kann?</p>
+<p><strong>Anschauliche Erklärung:</strong></p>
+<p>Stellen Sie sich vor, Sie messen einen Kreis. Je ungenauer Ihr Wert für π ist, desto ungenauer wird auch die Umfangsberechnung - und zwar umso ungenauer, je grösser der Kreis ist!</p>
+<p><strong>Konkrete Berechnung - Schritt für Schritt:</strong></p>
+<p><strong>Schritt 1: Was bedeuten 30 Nachkommastellen?</strong></p>
+<p>Wenn wir π mit 30 Nachkommastellen verwenden:
+$$\pi \approx 3{,}141592653589793238462643383279...$$</p>
+<p>Der Fehler in π ist etwa:
+$$\Delta\pi \approx 10^{-30}$$</p>
+<p>Das ist eine 1 mit 30 Nullen im Nenner - winzig klein!</p>
+<p><strong>Schritt 2: Wie wirkt sich dieser Fehler auf den Umfang aus?</strong></p>
+<p>Die Umfangsformel lautet: $U = 2\pi r$</p>
+<p>Wenn π einen kleinen Fehler $\Delta\pi$ hat, dann hat der Umfang den Fehler:
+$$\Delta U = 2r \cdot \Delta\pi$$</p>
+<p><strong>Wichtig:</strong> Der Fehler wächst mit dem Radius! Je grösser der Kreis, desto grösser der Fehler.</p>
+<p><strong>Schritt 3: Welcher Radius führt zu 1 mm Fehler?</strong></p>
+<p>Wir wollen, dass der Fehler höchstens 1 mm = $10^{-3}$ m beträgt:
+$$\Delta U \leq 10^{-3} \text{ m}$$</p>
+<p>Einsetzen:
+$$2r \cdot 10^{-30} \leq 10^{-3}$$</p>
+<p>Auflösen nach $r$:
+$$r \leq \frac{10^{-3}}{2 \cdot 10^{-30}} = \frac{1}{2} \cdot 10^{27} \text{ m}$$</p>
+<p><strong>Ergebnis:</strong> $r \approx 5 \cdot 10^{26}$ m</p>
+<p><strong>Einordnung - Was bedeutet diese Zahl?</strong></p>
+<p>Lassen Sie uns diese gigantische Zahl in Perspektive setzen:</p>
+<div class="tabelle"><table><tr><td class="l sl so"><strong>Objekt</strong></td><td class="r sl sr so"><strong>Grössenordnung</strong></td></tr><tr><td class="l sl so">Erddurchmesser</td><td class="r sl sr so">$\approx 10^7$ m</td></tr><tr><td class="l sl">Erde-Sonne-Abstand</td><td class="r sl sr">$\approx 10^{11}$ m</td></tr><tr><td class="l sl">Durchmesser unseres Sonnensystems</td><td class="r sl sr">$\approx 10^{13}$ m</td></tr><tr><td class="l sl">Abstand zum nächsten Stern</td><td class="r sl sr">$\approx 10^{16}$ m</td></tr><tr><td class="l sl">Durchmesser der Milchstrasse</td><td class="r sl sr">$\approx 10^{21}$ m</td></tr><tr><td class="su l sl"><span class="ton-red"><strong>Durchmesser des Universums</strong></span></td><td class="su r sl sr">$\approx \textcolor{red}{10^{26}}$ <strong>m</strong></td></tr></table></div>
+<p><strong>Unglaublich aber wahr:</strong>
+Mit 30 Nachkommastellen von π könnten Sie den <strong>Umfang des gesamten beobachtbaren Universums auf einen Millimeter genau</strong> berechnen!</p>
+<p><strong>Praktische Konsequenz:</strong></p>
+<aside class="kasten">
+<div class="neben">
+<strong>Für alle irdischen Anwendungen reichen bereits 10-15 Nachkommastellen von π vollkommen aus!</strong>
+<ul><li>Für GPS-Berechnungen: 10-15 Stellen genügen</li><li>Für Maschinenbau: 5-10 Stellen reichen</li><li>Für den Alltag: 3-4 Stellen sind ausreichend ($\pi \approx 3{,}14$)</li></ul>
+</div>
+</aside>
+<p><strong>Warum berechnet man dann Billionen von Stellen?</strong></p>
+<p>Die Jagd nach immer mehr Stellen hat primär:
+<ul><li>Mathematisches Interesse (Ist π wirklich zufällig verteilt?)</li><li>Bedeutung für Computeralgorithmen und Zahlentheorie</li><li>Sportwettkampf-Charakter</li><li><strong>KEINE</strong> praktische Anwendung!</li></ul></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/die-kreiszahl/index.html">Etappe 1 · Die Kreiszahl π</a> <span class="zeit">bei 3:32</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

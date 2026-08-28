@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 3.8 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="aktion">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">3.8</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 3.8</span></h2><div class="aufgabenblatt"><p>Drei Geraden $w_\alpha$, $w_\beta$ und $w_\gamma$
+  schneiden sich in $M$. Der Punkt $A$ liegt auf $w_\alpha$.</p>
+<p>Man konstruiere das Dreieck $ABC$, bei dem $w_\alpha$, $w_\beta$ und
+  $w_\gamma$ die Winkelhalbierenden sind.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Der Schnittpunkt der Winkelhalbierenden ist der Inkreismittelpunkt</li><li>Nutzen Sie Spiegelungen an den Winkelhalbierenden</li><li>Wenn $A$ auf $w_\alpha$ liegt, wo liegen dann $B$ und $C$?</li><li>Arbeiten Sie mit den Eigenschaften des Inkreises</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Grundidee:</strong>
+Die drei Winkelhalbierenden schneiden sich im Inkreismittelpunkt $M$. Der Schlüssel ist: Spiegelung an einer Winkelhalbierenden vertauscht die Schenkel des Winkels.</p>
+<p><strong>Warum funktioniert's?</strong>
+Spiegelt man den Eckpunkt $A$ an einer der <em>anderen</em> beiden Winkelhalbierenden, so landet sein Bild auf der gegenüberliegenden Seite $BC$. Aus zwei solchen Bildpunkten erhält man die Gerade $BC$ und damit das ganze Dreieck – ein Inkreisradius muss dafür nicht konstruiert werden.</p>
+<p><strong>Konstruktion (Prinzip des Symmetrisierens):</strong></p>
+<ol><li>Spiegle den gegebenen Punkt $A$ an der Winkelhalbierenden $w_\beta$  das Bild sei $A_\beta$.</li><li>Spiegle $A$ ebenso an $w_\gamma$  das Bild sei $A_\gamma$.</li><li>Die Gerade durch $A_\beta$ und $A_\gamma$ ist die Seite $BC$.</li><li>$B$ ist der Schnittpunkt von $w_\beta$ mit $BC$, \  $C$ der Schnittpunkt von $w_\gamma$ mit $BC$.</li><li>Verbinde $A$ mit $B$ und mit $C$ – fertig ist das Dreieck $ABC$.</li></ol>
+<p><strong>Begründung:</strong>
+Die Winkelhalbierende $w_\beta$ ist die Symmetrieachse des Winkels bei $B$  die Spiegelung an $w_\beta$ vertauscht die Schenkel $BA$ und $BC$. Weil $A$ auf dem Schenkel $BA$ liegt, liegt sein Bild $A_\beta$ auf dem Schenkel $BC$. Ebenso liegt $A_\gamma$ auf $BC$. Damit ist $BC = A_\beta A_\gamma$ festgelegt  $B$ und $C$ ergeben sich als Schnitt der zugehörigen Winkelhalbierenden mit dieser Geraden.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/symmetrie-als-problemloesestrategie/index.html">Etappe 8 · Symmetrie als Problemlösestrategie</a> <span class="zeit">bei 0:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

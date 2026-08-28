@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 7.9 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">7.9</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 7.9</span></h2><div class="aufgabenblatt"><p>Führen Sie den Beweis zu Ende, indem Sie zeigen das die beiden
+ Querschnitte auf einer beliebigen Höhe $h$ identisch sind.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Berechnen Sie die Querschnittsfläche der Halbkugel in Höhe h</li><li>Berechnen Sie die Querschnittsfläche von Zylinder minus Kegel</li><li>Zeigen Sie, dass beide Flächen gleich sind</li><li>Nutzen Sie den Satz des Pythagoras</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Beweis der Volumengleichheit durch das Cavalieri-Prinzip:</strong></p>
+<p>Zu zeigen: Die Querschnittsflächen von Halbkugel und (Zylinder - Kegel) sind in jeder Höhe $h$ gleich.</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-e6577610e781.svg" alt=""></figure>
+<p>$$\boxed{A_{\text{Kreisfläche}} = A_{\text{Doughnut}} = \pi(r^2 - \ell^2)}$$</p>
+<p><strong>Detaillierter mathematischer Beweis:</strong></p>
+<p><strong>Schritt 1: Querschnitt der Halbkugel in Höhe $\ell$</strong></p>
+<p>Wir betrachten einen horizontalen Schnitt durch die Halbkugel in Höhe $\ell$ über dem Äquator.</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-80759616ce28.svg" alt=""></figure>
+<p>Der Querschnitt ist ein Kreis mit Radius $r_k$ (der «Kreisradius in Höhe $\ell$»).</p>
+<p>Nach dem <strong>Satz des Pythagoras</strong> im rechtwinkligen Dreieck:
+$$r^2 = \ell^2 + r_k^2$$</p>
+<p>Auflösen nach $r_k^2$:
+$$r_k^2 = r^2 - \ell^2$$</p>
+<p>Die Querschnittsfläche der Halbkugel ist:
+$$A_{\text{Halbkugel}}(\ell) = \pi r_k^2 = \pi(r^2 - \ell^2)$$</p>
+<p><strong>Schritt 2: Querschnitt von (Zylinder - Kegel) in Höhe $\ell$</strong></p>
+<p>Wir betrachten einen Zylinder mit Radius $r$ und einen darin einbeschriebenen Kegel mit Spitze unten und Radius $r$ oben.</p>
+<p><strong>a) Querschnitt des Zylinders:</strong></p>
+<p>Der Zylinder hat in jeder Höhe einen Kreis mit Radius $r$:
+$$A_{\text{Zylinder}}(\ell) = \pi r^2$$</p>
+<p><strong>b) Querschnitt des Kegels:</strong></p>
+<p>Der Kegel hat seine Spitze bei $\ell = 0$ und wächst linear bis zum Radius $r$ bei Höhe $\ell = r$.</p>
+<p>In Höhe $\ell$ hat der Kegel den Radius $\ell$ (durch ähnliche Dreiecke oder lineare Beziehung):
+$$r_{\text{Kegel}}(\ell) = \ell$$</p>
+<p>Die Querschnittsfläche des Kegels ist:
+$$A_{\text{Kegel}}(\ell) = \pi \ell^2$$</p>
+<p><strong>c) Differenz (der «Doughnut»):</strong></p>
+<p>$$A_{\text{Diff}}(\ell) = A_{\text{Zylinder}}(\ell) - A_{\text{Kegel}}(\ell) = \pi r^2 - \pi \ell^2 = \pi(r^2 - \ell^2)$$</p>
+<p><strong>Schritt 3: Vergleich der Querschnittsflächen</strong></p>
+<p>$$A_{\text{Halbkugel}}(\ell) = \pi(r^2 - \ell^2) = A_{\text{Diff}}(\ell)$$</p>
+<p><strong>Die Querschnittsflächen stimmen in jeder Höhe $\ell$ überein!</strong></p>
+<p><strong>Schlussfolgerung durch Cavalieri-Prinzip:</strong></p>
+<p>Da die Querschnittsflächen in <strong>jeder</strong> Höhe $\ell$ (für $0 \leq \ell \leq r$) gleich sind, haben nach dem <strong>Cavalieri-Prinzip</strong> beide Körper dasselbe Volumen:</p>
+<p>$$V_{\text{Halbkugel}} = V_{\text{Zylinder}} - V_{\text{Kegel}}$$</p>
+<p>Mit $V_{\text{Zylinder}} = \pi r^2 \cdot r = \pi r^3$ und $V_{\text{Kegel}} = \frac{1}{3}\pi r^2 \cdot r = \frac{1}{3}\pi r^3$:</p>
+<p>$$V_{\text{Halbkugel}} = \pi r^3 - \frac{1}{3}\pi r^3 = \frac{2}{3}\pi r^3$$</p>
+<p>Für die ganze Kugel:
+$$\boxed{V_{\text{Kugel}} = 2 \cdot V_{\text{Halbkugel}} = \frac{4}{3}\pi r^3}$$</p>
+<p><strong>Wichtige Erkenntnis:</strong></p>
+<p>Das Cavalieri-Prinzip ist ein mächtiges Werkzeug:</p>
+<aside class="kasten">
+<div class="neben">
+<strong>Cavalieri-Prinzip:</strong>
+<p>Zwei Körper mit gleicher Höhe haben gleiches Volumen, wenn sie in jeder Höhe Querschnitte mit gleicher Fläche haben.</p>
+<p><em>«Wenn die Scheiben in jeder Höhe gleich gross sind, dann ist auch der ganze Stapel gleich gross!»</em>
+</p></div>
+</aside></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

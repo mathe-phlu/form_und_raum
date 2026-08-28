@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 11.2 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="aktion">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">11.2</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 11.2</span></h2><div class="aufgabenblatt"><p>Weisen Sie nach, dass sich die zuvor gemachten Entdeckungen alle
+  aus der Abbildungsvorschrift herleiten lassen.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Nutzen Sie die Gleichung $|MP| \cdot |MP'| = r^2$</li><li>Was folgt daraus für Punkte auf dem Kreis?</li><li>Untersuchen Sie die Reziprozität der Abstände</li><li>Leiten Sie die Involutionseigenschaft her</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Mathematische Herleitung der Eigenschaften der Kreisspiegelung</strong></p>
+<p>Die Kreisspiegelung am Kreis $k$ mit Mittelpunkt $M$ und Radius $r$ ist definiert durch die fundamentale Beziehung:
+$$|MP| \cdot |MP'| = r^2$$
+wobei die Punkte $P$, $M$ und $P'$ kollinear sind (d.h. auf einer Geraden liegen).</p>
+<p>Aus dieser einfachen Gleichung lassen sich alle beobachteten Eigenschaften herleiten:</p>
+<p><strong>Eigenschaft 1: Fixpunkte</strong></p>
+<p>Ein Fixpunkt ist ein Punkt, der auf sich selbst abgebildet wird, also $P = P'$.</p>
+<p>Setzen wir dies in die Abbildungsvorschrift ein:
+$$|MP| \cdot |MP| = r^2$$
+$$|MP|^2 = r^2$$
+$$|MP| = r$$</p>
+<p><em>Interpretation:</em> Ein Punkt ist genau dann ein Fixpunkt, wenn sein Abstand zum Mittelpunkt $M$ gleich dem Radius $r$ ist. Das bedeutet: Genau die Punkte auf dem Spiegelkreis sind Fixpunkte. Es gibt keine anderen Fixpunkte.</p>
+<p><strong>Eigenschaft 2: Involutionseigenschaft (Selbstinvers)</strong></p>
+<p>Wir zeigen, dass die zweimalige Anwendung der Kreisspiegelung die Identität ergibt: $P'' = \sigma_k(\sigma_k(P)) = P$</p>
+<p>Sei $P' = \sigma_k(P)$. Dann gilt nach Definition:
+$$|MP| \cdot |MP'| = r^2 \qquad \text{(Gleichung 1)}$$</p>
+<p>Nun bilden wir $P'$ ab und erhalten $P'' = \sigma_k(P')$. Wieder nach Definition:
+$$|MP'| \cdot |MP''| = r^2 \qquad \text{(Gleichung 2)}$$</p>
+<p>Dividieren wir Gleichung 1 durch Gleichung 2:
+$$\frac{|MP| \cdot |MP'|}{|MP'| \cdot |MP''|} = \frac{r^2}{r^2} = 1$$</p>
+<p>Kürzen von $|MP'|$:
+$$\frac{|MP|}{|MP''|} = 1$$</p>
+<p>Also: $|MP| = |MP''|$</p>
+<p>Da zusätzlich $P$, $M$, $P'$ und $P''$ alle auf derselben Geraden durch $M$ liegen (Kollinearität), und $P$ und $P''$ denselben Abstand zu $M$ haben, folgt: $P = P''$</p>
+<p><em>Interpretation:</em> Die Kreisspiegelung ist involutorisch - zweimaliges Spiegeln bringt jeden Punkt in seine Ausgangslage zurück. Dies rechtfertigt den Namen «Spiegelung»!</p>
+<p><strong>Eigenschaft 3: Innen-Aussen-Vertauschung</strong></p>
+<p>Wir untersuchen, was mit Punkten innerhalb und ausserhalb des Spiegelkreises geschieht.</p>
+<p>Aus der Abbildungsvorschrift $|MP| \cdot |MP'| = r^2$ folgt:
+$$|MP'| = \frac{r^2}{|MP|}$$</p>
+<p><strong>Fall a:</strong> Punkt $P$ liegt innerhalb des Kreises, d.h. $|MP| &lt; r$</p>
+<p>Dann gilt:
+$$|MP'| = \frac{r^2}{|MP|} &gt; \frac{r^2}{r} = r$$</p>
+<p>Also liegt $P'$ ausserhalb des Kreises.</p>
+<p><strong>Fall b:</strong> Punkt $P$ liegt ausserhalb des Kreises, d.h. $|MP| &gt; r$</p>
+<p>Dann gilt:
+$$|MP'| = \frac{r^2}{|MP|} &lt; \frac{r^2}{r} = r$$</p>
+<p>Also liegt $P'$ innerhalb des Kreises.</p>
+<p><em>Interpretation:</em> Die Kreisspiegelung vertauscht systematisch Innen- und Aussenbereich. Dies motiviert auch den alternativen Namen «Inversion am Kreis».</p>
+<p><strong>Eigenschaft 4: Verhalten bei extremen Punkten</strong></p>
+<p><strong>Fall a:</strong> $P$ nähert sich dem Mittelpunkt $M$</p>
+<p>Wenn $|MP| \to 0$, dann:
+$$|MP'| = \frac{r^2}{|MP|} \to \infty$$</p>
+<p>Der Bildpunkt entfernt sich ins Unendliche.</p>
+<p><strong>Fall b:</strong> $P$ entfernt sich ins Unendliche</p>
+<p>Wenn $|MP| \to \infty$, dann:
+$$|MP'| = \frac{r^2}{|MP|} \to 0$$</p>
+<p>Der Bildpunkt nähert sich dem Mittelpunkt $M$.</p>
+<p><em>Interpretation:</em> Der Mittelpunkt $M$ selbst hat kein endliches Bild - man sagt, er wird auf den «unendlich fernen Punkt» abgebildet. Die Kreisspiegelung bildet also eine Brücke zwischen dem Endlichen und dem Unendlichen.</p>
+<p><strong>Zusammenfassung:</strong></p>
+<p>Alle beobachteten Eigenschaften der Kreisspiegelung folgen konsequent aus der einfachen Abbildungsvorschrift $|MP| \cdot |MP'| = r^2$ und der Bedingung der Kollinearität. Diese elegante mathematische Struktur macht die Kreisspiegelung zu einem faszinierenden Objekt der Geometrie.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-11/kreisspiegelung/index.html">Etappe 1 · Kreisspiegelung</a> <span class="zeit">bei 7:44</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

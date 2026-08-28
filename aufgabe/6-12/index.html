@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 6.12 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="zugang">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">6.12</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 6.12</span></h2><div class="aufgabenblatt"><p>Wie müsste man das Viereck in das Quadrat
+einbeschreiben, so dass es minimalen Umfang hätte?</p>
+<p>Experimentieren Sie mit <em>GeoGebra</em>, indem Sie verschiedene
+Einstellungen für das Viereck vornehmen und seinen Umfang
+dynamisch messen. Versuchen Sie auch, Ihre Vermutung(en) zu
+begründen.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Experimentieren Sie systematisch mit verschiedenen Positionen</li><li>Achten Sie auf Symmetrien</li><li>Denken Sie an das Spiegelungsprinzip</li><li>Was passiert in Extremfällen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Problem:</strong></p>
+<p>Ein Viereck mit Ecken auf den Quadratseiten soll minimalen Umfang haben.</p>
+<p><strong>Vermutung durch Experimentieren:</strong></p>
+<p>Das Viereck sollte symmetrisch sein, mit Ecken in den Seitenmittelpunkten.</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-2824d858b09b.svg" alt=""></figure>
+<p><strong>Beweis durch Spiegelungsprinzip:</strong></p>
+<h4>Idee der Lösung</h4>
+<p>Wir transformieren das Problem durch dreifache Spiegelung des Quadrats an seinen Seiten. Dadurch erzeugen wir eine «aufgeklappte Strecke», die genauso lang ist wie der Umfang des einbeschriebenen Vierecks.</p>
+<p><strong>Schritt 1: Auffaltung durch Spiegelung (beliebige Position)</strong></p>
+<p>Wir spiegeln das Quadrat ABCD sukzessive an seinen Seiten auf:</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-4877780ee1c6.svg" alt=""></figure>
+<p>Der Streckenzug von einem Punkt zu seinem mehrfach gespiegelten Bild ist NICHT optimal (keine gerade Linie).</p>
+<p><strong>Schritt 2: Optimale Position (Seitenmittelpunkte)</strong></p>
+<p>Wenn die Ecken des Vierecks die Seitenmittelpunkte sind:</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-26a5563f633e.svg" alt=""></figure>
+<p>Der Streckenzug bildet jetzt eine perfekte gerade Linie - dies ist der kürzeste Weg!</p>
+<p><strong>Ergebnis:</strong> Das Viereck minimalen Umfangs hat seine Ecken in den Seitenmittelpunkten.</p>
+<p><strong>Umfang:</strong></p>
+<p>Ist die Quadratseite $a$, so hat das optimale Viereck den Umfang $U = 2\sqrt{2} \cdot a$.</p>
+<p><strong>Verallgemeinerung:</strong></p>
+<p>Das Prinzip lässt sich auf andere regelmässige Polygone übertragen.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="d6vtgq3q" style="--gg-b:944;--gg-h:631" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/d6vtgq3q" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div><aside class="merksatz"><p>Experimentieren Sie mit den Punkten P, Q, R und S</p></aside></div><p class="fundort">Im Video: <a href="../../lernweg-6/minimierungsprobleme/index.html">Bonus · Minimierungsprobleme</a> <span class="zeit">bei 1:15</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 7.3 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="didaktik">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">7.3</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 7.3</span></h2><div class="aufgabenblatt"><p>Betrachten Sie  für $r=0.5$.  Welche Abschätzung für den Kreisumfang $U$ (und damit auch $\pi$)
+  ergibt sich für die erste Näherung? Welche Näherung für $\pi$ ergibt
+  sich bei der zweiten Näherung?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Das einbeschriebene Quadrat liefert eine untere Schranke</li><li>Das umbeschriebene Quadrat liefert eine obere Schranke</li><li>Nutzen Sie den Satz des Pythagoras für die Seitenlängen</li><li>Bei $r = 0{,}5$ ist $U = \pi$</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Gegeben:</strong> Kreis mit Radius $r = 0{,}5$
+Daraus folgt: $U = 2\pi r = \pi$</p>
+<p><strong>Erste Näherung (Quadrat):</strong></p>
+<p><strong>Untere Schranke (einbeschriebenes Quadrat):</strong>
+<ul><li>Seitenlänge: $s_{ein} = r\sqrt{2} = 0{,}5\sqrt{2}$</li><li>Umfang: $U_{ein} = 4 \cdot 0{,}5\sqrt{2} = 2\sqrt{2} \approx 2{,}83$</li></ul></p>
+<p><strong>Obere Schranke (umbeschriebenes Quadrat):</strong>
+<ul><li>Seitenlänge: $s_{um} = 2r = 1$</li><li>Umfang: $U_{um} = 4 \cdot 1 = 4$</li></ul></p>
+<p>Erste Abschätzung: $2{,}83 &lt; \pi &lt; 4$</p>
+<p><strong>Zweite Näherung (Achteck):</strong></p>
+<p>Für das einbeschriebene Achteck nutzen wir schrittweise den Satz des Pythagoras:</p>
+<ul><li>Strecke $\overline{EC}$ (Abstand des Mittelpunkts von der Quadratseite, also das Apothem):
+  $$\overline{EC} = \sqrt{r^2 - \left(\frac{s_{Quadrat}}{2}\right)^2} = \sqrt{\frac{1}{4} - \frac{1}{8}} = \frac{\sqrt{2}}{4}$$</li><li>Strecke $\overline{ED}$ (Pfeilhöhe, also $r$ minus Apothem):
+  $$\overline{ED} = r - \overline{EC} = \frac{1}{2} - \frac{\sqrt{2}}{4} = \frac{2-\sqrt{2}}{4}$$</li><li>Seitenlänge des Achtecks $\overline{BD}$ (mit $\overline{EB} = \frac{s_{Quadrat}}{2} = \frac{\sqrt{2}}{4}$):
+  $$\overline{BD} = \sqrt{\overline{ED}^2 + \overline{EB}^2} = \sqrt{\frac{(2-\sqrt{2})^2}{16} + \frac{2}{16}} = \sqrt{\frac{8-4\sqrt{2}}{16}} = \frac{\sqrt{2-\sqrt{2}}}{2}$$</li></ul>
+<p>Umfang des Achtecks: $U_8 = 8 \cdot \frac{\sqrt{2-\sqrt{2}}}{2} = 4\sqrt{2-\sqrt{2}} \approx 3{,}06$</p>
+<p><strong>Verbesserte Abschätzung:</strong> $3{,}06 &lt; \pi &lt; 3{,}31$ (mit umbeschriebenem Achteck)</p>
+<p><strong>Systematik:</strong>
+Mit jedem Verdopplungsschritt nähern sich die Schranken weiter an π an. Archimedes führte dies bis zum 96-Eck durch!</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/empirische-und-qualitative-methoden/index.html">Etappe 2 · Empirische und qualitative Methoden</a> <span class="zeit">bei 5:05</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aufgabe 9.5 · Form und Raum</title>
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=c77c6724">
+<body data-farbe="fach">
+<div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">9.5</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
+<main>
+<h2 class="etappentitel"><span class="stand">Aufgabe 9.5</span></h2><div class="aufgabenblatt"><p>Zu einer gegebenen Strecke $AB$
+  und einem Winkel $0&lt;\alpha&lt;90^\circ$
+  lässt sich der zugehörige <em>Fasskreisbogen</em> folgendermassen
+  konstruieren:</p>
+<p>Die Mittelsenkrechte der Strecke $AB$
+  und der freie Schenkel des Winkels $90^\circ-\alpha$
+  schneiden sich im Mittelpunkt $M$ des Fasskreises, welcher $AB$
+  als Sehne besitzt.</p>
+<figure style="--bildbreite:0.35"><img src="../../bilder/1d8f678f264eb279.png" alt=""></figure>
+<p>Beweisen Sie nun die Ortslinienaussage zum Fasskreisbogen,
+wonach dieser nämlich der geometrische Ort aller Punkte $P$
+ist, von denen aus die Strecke $AB$
+unter dem Winkel $\alpha$
+zu sehen ist.</p>
+<h4>Ergänzung.</h4>
+<p>Wie lässt sich der Fasskreisbogen für $\alpha&gt;90^\circ$
+konstruieren?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Videos</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Nutzen Sie den Peripheriewinkelsatz</li><li>Der Mittelpunkt liegt auf der Mittelsenkrechten von AB</li><li>Wie hängt der Mittelpunktswinkel mit dem Peripheriewinkel zusammen?</li><li>Für Winkel > 90°: Denken Sie an den anderen Kreisbogen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Der Fasskreisbogen - Beweis der Ortslinienaussage</strong></p>
+<p><strong>Satz:</strong> Der Fasskreisbogen über der Strecke $\overline{AB}$ zum Winkel $\alpha$ ist der geometrische Ort aller Punkte $P$, von denen aus die Strecke $\overline{AB}$ unter dem Winkel $\alpha$ erscheint.</p>
+<p><strong>Konstruktion des Fasskreises:</strong></p>
+<p>Für $0° &lt; \alpha &lt; 90°$:
+<ol><li>Errichte die Mittelsenkrechte $m$ von $\overline{AB}$</li><li>Trage in $A$ den Winkel $90° - \alpha$ an $\overline{AB}$ an</li><li>Der Schnittpunkt des freien Schenkels mit $m$ ist der Mittelpunkt $M$</li><li>Der Kreis um $M$ durch $A$ (und $B$) ist der Fasskreis</li></ol></p>
+<p><strong>Beweis Teil 1: Jeder Punkt auf dem Bogen erfüllt die Bedingung</strong></p>
+<p>Sei $P$ ein beliebiger Punkt auf dem Fasskreisbogen.</p>
+<ol><li>Im Dreieck $\triangle AMB$ gilt:
+   <ul><li></li><li>$|MA| = |MB|$ (Radien)</li><li>$\angle MAB = 90° - \alpha$ (Konstruktion)</li><li>$\angle MBA = 90° - \alpha$ (gleichschenkliges Dreieck)</li><li>$\angle AMB = 180° - 2(90° - \alpha) = 2\alpha$</li></ul></li><li>Nach dem Peripheriewinkelsatz:
+   $$\angle APB = \frac{1}{2} \angle AMB = \frac{1}{2} \cdot 2\alpha = \alpha$$</li></ol>
+<p><strong>Beweis Teil 2: Nur Punkte auf dem Bogen erfüllen die Bedingung</strong></p>
+<p>Sei $P$ ein Punkt mit $\angle APB = \alpha$.</p>
+<ol><li>Der Umkreis des Dreiecks $\triangle APB$ hat einen Mittelpunkt $M'$</li><li>Nach dem Umkehrsatz des Peripheriewinkelsatzes: $\angle AM'B = 2\alpha$</li><li>Aus der Eindeutigkeit der Konstruktion folgt $M' = M$</li><li>Also liegt $P$ auf dem Fasskreis</li></ol>
+<p><strong>Ergänzung für $\alpha &gt; 90°$:</strong></p>
+<p>Für $\alpha &gt; 90°$:
+<ul><li>Konstruiere den Fasskreis für $180° - \alpha &lt; 90°$</li><li>Nutze den anderen Kreisbogen (der grössere Bogen)</li><li>Der Peripheriewinkel über dem grösseren Bogen ist $180° - (180° - \alpha) = \alpha$</li></ul></p>
+<p><strong>Spezialfälle:</strong>
+<ul><li>$\alpha = 90°$: Thaleskreis (Halbkreis über $\overline{AB}$)</li><li>$\alpha \to 0°$: Fasskreis wird zur Geraden $AB$</li><li>$\alpha \to 180°$: Fasskreis wird zum Punkt (Mittelpunkt von $\overline{AB}$)</li></ul></p></div><div class="faltung applet" data-stufe="geogebra" data-applet="xjy5pkak" style="--gg-b:701;--gg-h:747" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/xjy5pkak" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_m6c1oap7/format/url/protocol/https/video.mp4"></video></div><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_yfhvd67z/format/url/protocol/https/video.mp4"></video></div></div></div><aside class="merksatz"><p>[b]Hinweis:[/b] Dieser Satz liesse sich umkehren. Wie hiesse die umgekehrte Behauptung?</p></aside></div><p class="fundort">Im Video: <a href="../../lernweg-9/beweis/index.html">Hilfe 1 · Beweis</a> <span class="zeit">bei 7:20</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</main>
+<footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
+<script src="../../gemeinsam/seite.js?f=c77c6724"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
+  displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
+  macros:{cc:'\\mathbb{C}',rr:'\\mathbb{R}',nn:'\\mathbb{N}',
+          zz:'\\mathbb{Z}',qq:'\\mathbb{Q}',cis:'\\operatorname{cis}',
+          Log:'\\operatorname{Log}',dd:'\\mathrm{d}',
+          glqq:'\\text{„}',grqq:'\\text{“}',
+          // Aus dem Vorspann von MA01.03 (`Preambel/Styles.tex`):
+          // ein Gleichheitszeichen mit Dach, «entspricht».
+          equalhat:'\\mathrel{\\stackrel{\\wedge}{=}}',
+          // `\vv` kommt aus dem Paket `esvect` (Vektorpfeil) und ist
+          // MathJax unbekannt — ohne diese Zeile setzt es den Befehl
+          // rot als Fehler. Gefunden am 26.08. in Kapitel 3 von
+          // MA01.03 («schultypische Beispiele», 4 Stellen).
+          vv:['\\overrightarrow{#1}',1]}},
+  options:{skipHtmlTags:['script','noscript','style','textarea','pre']}};</script>
+<script defer src="../../gemeinsam/fremd/tex-svg.js"></script>
+</body>
+</html>
