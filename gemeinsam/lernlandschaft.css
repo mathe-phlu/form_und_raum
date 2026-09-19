@@ -239,6 +239,11 @@ section.kapitel > h2 .nr{font-family:var(--druck);font-size:14px;
 .schrittfolge.gefaltet .sf-szene.da{display:grid}
 .sf-szene{display:grid;gap:20px;align-items:center;
      grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+/* Solange noch kein Bild aufgetreten ist, gehoert dem Wort die ganze
+   Breite — eine leere Spalte daneben waere ein Versprechen, das die
+   Szene nicht einloest. Lores Modell macht es ebenso
+   (`.buehne.ohnebild`). */
+.sf-szene.ohnebild{grid-template-columns:1fr}
 /* **Im Lernweg ist weniger Platz** (Rike, 19.09.): «wobei das Setting
    im Lernweg, wo weniger Platz ist, ggf. etwas anders aussieht».
    Genau so kam es — und ein `@media` half nichts: Es misst das
