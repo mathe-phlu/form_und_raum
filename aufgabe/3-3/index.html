@@ -10,17 +10,41 @@
 <h2 class="etappentitel"><span class="stand">Aufgabe 3.3</span></h2><div class="aufgabenblatt"><p>Durch welche Drehung wurde das Rechteck $ABCD$ auf das
   Rechteck $A'B'C'D'$ abgebildet? Konstruieren Sie das Zentrum der Drehung und geben Sie
   den Drehwinkel an.</p>
-<figure style="--bildbreite:0.40"><img src="../../bilder/0fd45ee8704fcebf.png" alt=""></figure><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Das Drehzentrum hat von entsprechenden Punkten gleichen Abstand</li><li>Nutzen Sie die Mittelsenkrechten von Verbindungsstrecken</li><li>Der Schnittpunkt zweier Mittelsenkrechten ist das gesuchte Zentrum</li><li>Der Drehwinkel kann aus dem Winkel zwischen entsprechenden Strecken bestimmt werden</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Konstruktion des Drehzentrums:</strong></p>
-<p><strong>Schritt 1: Verbindungsstrecken zeichnen</strong>
-<ul><li>Zeichne die Strecken $\overline{AA'}$, $\overline{BB'}$, $\overline{CC'}$ und $\overline{DD'}$</li></ul></p>
-<p><strong>Schritt 2: Mittelsenkrechten konstruieren</strong>
-<ul><li>Konstruiere die Mittelsenkrechte von $\overline{AA'}$</li><li>Konstruiere die Mittelsenkrechte von $\overline{BB'}$</li></ul></p>
-<p><strong>Schritt 3: Drehzentrum bestimmen</strong>
-<ul><li>Der Schnittpunkt $Z$ der beiden Mittelsenkrechten ist das Drehzentrum</li><li>Begründung: $Z$ hat von $A$ und $A'$ sowie von $B$ und $B'$ gleichen Abstand</li></ul></p>
-<p><strong>Schritt 4: Drehwinkel bestimmen</strong>
-<ul><li>Zeichne die Strecken $\overline{ZA}$ und $\overline{ZA'}$</li><li>Der Winkel $\angle AZA'$ ist der gesuchte Drehwinkel</li><li>Alternative: Messe den Winkel zwischen $\overline{AB}$ und $\overline{A'B'}$</li></ul></p>
-<p><strong>Kontrolle:</strong>
-<ul><li>Prüfen Sie: Liegen $C'$ und $D'$ auf den Kreisen um $Z$ durch $C$ bzw. $D$?</li><li>Stimmt der Drehwinkel für alle Punktpaare überein?</li></ul></p></div><div class="faltung applet" data-stufe="geogebra" data-applet="wyudbs3j" style="--gg-b:1052;--gg-h:738" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/wyudbs3j" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_vvrmqx3t/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/schultypische-beispiele/index.html">Etappe 4 · Schultypische Beispiele</a> <span class="zeit">bei 6:20</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+<figure style="--bildbreite:0.40"><img src="../../bilder/0fd45ee8704fcebf.png" alt=""></figure><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Suchen Sie nicht das Zentrum, sondern eine Bedingung, die es erfüllen muss.</p>
+<ul><li>Wie weit ist das Zentrum von einem Punkt entfernt, wie weit von seinem Bildpunkt?</li><li>Welche Punkte der Ebene haben von zwei gegebenen Punkten denselben Abstand?</li><li>Wie viele solcher Bedingungen brauchen Sie, um einen Punkt festzulegen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz"><h4>Die Idee</h4>Eine Drehung schiebt jeden Punkt auf einem Kreis um das Zentrum. Das Zentrum
+ist deshalb von einem Punkt genauso weit entfernt wie von seinem Bildpunkt —
+und liegt damit auf der Mittelsenkrechten von $\overline{AA'}$, ebenso auf der
+von $\overline{BB'}$. Zwei davon genügen: Ihr Schnittpunkt ist das gesuchte
+Zentrum. Den Drehwinkel liest man danach an einem einzigen Punktpaar ab.</aside>
+<p><strong>Gegeben:</strong> das Rechteck $ABCD$ und sein Bild $A'B'C'D'$.</p>
+<h4>Schritt 1: die Verbindungsstrecken zeichnen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-7f4dad0fe611.svg" alt=""></figure>
+<p><em>Warum gerade die:</em> Ein Punkt und sein Bildpunkt liegen auf demselben
+Kreis um das Zentrum. Ihre Verbindungsstrecke ist eine Sehne dieses Kreises —
+und die Mittelsenkrechte einer Sehne geht immer durch den Mittelpunkt. Genau
+das macht diese Strecken nützlich.</p>
+<h4>Schritt 2: die Mittelsenkrechte von $\overline{AA'}$</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-a60fae22f43a.svg" alt=""></figure>
+<p><em>Was man damit weiss:</em> Jeder Punkt dieser Geraden ist von $A$ und von
+$A'$ gleich weit entfernt. Das Zentrum ist so ein Punkt, liegt also irgendwo auf
+dieser Geraden. Wo genau, sagt sie allein noch nicht.</p>
+<h4>Schritt 3: die Mittelsenkrechte von $\overline{BB'}$ schneidet sie in $Z$</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-f8bd242aee13.svg" alt=""></figure>
+<p><em>Warum das reicht:</em> Dasselbe Argument mit $B$ statt $A$. Das Zentrum
+liegt auf beiden Geraden — also in ihrem Schnittpunkt, und der ist eindeutig.
+Die Mittelsenkrechten von $\overline{CC'}$ und $\overline{DD'}$ müssen durch
+denselben Punkt laufen; sie sind die Probe, nicht die Konstruktion.</p>
+<h4>Schritt 4: den Drehwinkel abgreifen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-3804d86036ad.svg" alt=""></figure>
+<p><em>Warum an einem Paar genügt:</em> Eine Drehung dreht alle Punkte um
+denselben Winkel. Man misst ihn deshalb an einem beliebigen Paar, hier bei $A$:
+$\varphi = \angle AZA' = 90^\circ$.</p>
+<h4>Ergebnis</h4>
+<p>Das Rechteck wurde um $Z$ um $90^\circ$ im
+Gegenuhrzeigersinn gedreht.</p>
+<aside class="merksatz"><h4>Bemerkung</h4>Das Zentrum liegt hier <em>innerhalb</em> beider Rechtecke. Das überrascht oft —
+ein Drehzentrum muss weder ausserhalb der Figur noch auf ihr liegen. Zur
+Kontrolle: Liegen $C'$ und $D'$ auf den Kreisen um $Z$ durch $C$ bzw. $D$?</aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="wyudbs3j" style="--gg-b:1052;--gg-h:738" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/wyudbs3j" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_vvrmqx3t/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/schultypische-beispiele/index.html">Etappe 4 · Schultypische Beispiele</a> <span class="zeit">bei 6:20</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=60d90b59"></script>

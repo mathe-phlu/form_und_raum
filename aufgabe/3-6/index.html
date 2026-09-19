@@ -14,19 +14,46 @@
   vernachlässigt) soll die Brücke gebaut werden, damit die Gesamtlänge
   der Zufahrtsstrassen so klein wie möglich ist?</p>
 <p>Erkunden Sie die Situation zunächst mit GeoGebra, und begründen Sie
-  ihre Hypothese dann mathematisch</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Spiegeln Sie einen der Orte am Fluss</li><li>Nutzen Sie, dass die kürzeste Verbindung zweier Punkte die Gerade ist</li><li>Die Dreiecksungleichung liefert die Begründung</li><li>Erkunden Sie zunächst mit GeoGebra verschiedene Brückenpositionen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Lösung des Brückenproblems:</strong></p>
-<p><strong>Konstruktion:</strong>
-<ol><li>Spiegle Ort $A$ am Flussufer zu $A'$</li><li>Verbinde $A'$ mit $B$ durch eine Gerade</li><li>Der Schnittpunkt $P$ dieser Geraden mit dem Fluss ist die optimale Position für die Brücke</li></ol></p>
-<p><strong>Mathematische Begründung:</strong></p>
-<p>Sei $P$ ein beliebiger Punkt auf dem Fluss. Die Gesamtweglänge beträgt:
-\[L = |AP| + |PB|\]</p>
-<p>Wegen der Spiegelung gilt: $|AP| = |A'P|$</p>
-<p>Daher: $L = |A'P| + |PB|$</p>
-<p><strong>Optimalitätsbeweis:</strong>
-<ul><li>Für jeden Punkt $Q \neq P$ auf dem Fluss gilt nach der Dreiecksungleichung:
-  \[|A'Q| + |QB| &gt; |A'B|\]</li><li>Nur wenn $Q$ auf der Geraden $A'B$ liegt, gilt Gleichheit</li><li>Da $P$ der einzige Punkt auf dem Fluss und auf $A'B$ ist, ist $P$ optimal</li></ul></p>
-<p><strong>Praktische Interpretation:</strong>
-Die Lösung nutzt das Reflexionsgesetz: Der Weg verhält sich wie ein Lichtstrahl, der am Fluss reflektiert wird. Der Einfallswinkel gleicht dem Ausfallswinkel.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="yhzvvdyp" style="--gg-b:691;--gg-h:455" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/yhzvvdyp" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/winter-sche-grunderfahrungen/index.html">Etappe 7 · Winter‘sche Grunderfahrungen</a> <span class="zeit">bei 3:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  ihre Hypothese dann mathematisch</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Probieren Sie mit GeoGebra ein paar Brückenstellen aus und achten Sie darauf, wann die Gesamtlänge kleiner wird.</p>
+<ul><li>Warum fällt es schwer zu entscheiden, welcher dieser geknickten Wege der kürzeste ist?</li><li>Was ändert sich an den Weglängen, wenn Sie einen der beiden Orte am Fluss spiegeln?</li><li>Wann kann ein Weg über einen Uferpunkt überhaupt gerade sein?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz"><h4>Die Idee</h4>Spiegelt man $A$ am Fluss nach $A'$, so ist jeder Weg $A \to P \to B$ genau so
+lang wie $A' \to P \to B$ — an der Länge ändert das Spiegeln nichts. Gewonnen
+ist etwas anderes: $A'$ und $B$ liegen jetzt auf <em>verschiedenen</em> Seiten.
+Deshalb gibt es unter diesen Wegen einen geraden, und der gerade ist der
+kürzeste. Für $A \to P \to B$ gibt es diese Möglichkeit gar nicht.</aside>
+<p><strong>Gegeben:</strong> die Orte $A$ und $B$ auf derselben Seite eines geradlinigen
+Flusses.</p>
+<h4>Schritt 1: die Lage ansehen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-218672b3bed3.svg" alt=""></figure>
+<p><em>Warum man so nicht weiterkommt:</em> Jeder Weg von $A$ über einen
+Uferpunkt nach $B$ ist geknickt, und alle sehen gleich aus. Es gibt keinen
+Grund, einen davon dem anderen vorzuziehen — die Aufgabe ist in dieser Form
+nicht zu entscheiden.</p>
+<h4>Schritt 2: $A$ am Fluss spiegeln</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-9ecd8ad54867.svg" alt=""></figure>
+<p><em>Was sich dadurch ändert:</em> Für <em>jeden</em> Uferpunkt $P$ gilt
+$|AP| = |A'P|$, denn $P$ liegt auf der Spiegelachse. Die Weglängen bleiben
+also alle, wie sie waren. Verändert hat sich nur die Lage: $A'$ und $B$ liegen
+nun auf verschiedenen Uferseiten.</p>
+<h4>Schritt 3: $A'$ mit $B$ verbinden</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-1d6a5b83a3f1.svg" alt=""></figure>
+<p><em>Warum das die Antwort gibt:</em> Weil $A'$ und $B$ auf verschiedenen
+Seiten liegen, schneidet die Strecke $\overline{A'B}$ das Ufer — es gibt also
+einen geraden Weg von $A'$ nach $B$ über einen Uferpunkt. Und der gerade ist der
+kürzeste. Der Schnittpunkt ist der gesuchte Punkt $P$.</p>
+<h4>Schritt 4: der Weg, und ein Vergleich</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-a743b2e0a3af.svg" alt=""></figure>
+<p><em>Woran man es sieht:</em> Für einen anderen Uferpunkt $Q$ ist
+$A' \to Q \to B$ geknickt und damit länger als die Strecke $\overline{A'B}$.
+Genau um diesen Unterschied ist auch der Weg über $Q$ länger als der über $P$.</p>
+<h4>Warum kein anderer Punkt es tut</h4>
+<p>Für jeden Uferpunkt $Q$ gilt nach der Dreiecksungleichung
+\[|AQ| + |QB| = |A'Q| + |QB| \geq |A'B|,\]
+mit Gleichheit genau dann, wenn $Q$ auf der Strecke $\overline{A'B}$ liegt. Da
+$A'$ und $B$ auf verschiedenen Uferseiten liegen, gibt es genau einen solchen
+Uferpunkt — und das ist $P$.</p>
+<aside class="merksatz"><h4>Bemerkung</h4>Dasselbe in der Physik: Der Weg verhält sich wie ein Lichtstrahl, der am Fluss
+reflektiert wird, Einfallswinkel gleich Ausfallswinkel. Das Reflexionsgesetz und
+die Wegminimierung sind zwei Beschreibungen derselben Sache.</aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="yhzvvdyp" style="--gg-b:691;--gg-h:455" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/yhzvvdyp" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/winter-sche-grunderfahrungen/index.html">Etappe 7 · Winter‘sche Grunderfahrungen</a> <span class="zeit">bei 3:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=60d90b59"></script>

@@ -10,14 +10,49 @@
 <h2 class="etappentitel"><span class="stand">Aufgabe 3.8</span></h2><div class="aufgabenblatt"><p>Drei Geraden $w_\alpha$, $w_\beta$ und $w_\gamma$
   schneiden sich in $M$. Der Punkt $A$ liegt auf $w_\alpha$.</p>
 <p>Man konstruiere das Dreieck $ABC$, bei dem $w_\alpha$, $w_\beta$ und
-  $w_\gamma$ die Winkelhalbierenden sind.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Der Schnittpunkt der Winkelhalbierenden ist der Inkreismittelpunkt</li><li>Nutzen Sie Spiegelungen an den Winkelhalbierenden</li><li>Wenn $A$ auf $w_\alpha$ liegt, wo liegen dann $B$ und $C$?</li><li>Arbeiten Sie mit den Eigenschaften des Inkreises</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Grundidee:</strong>
-Die drei Winkelhalbierenden schneiden sich im Inkreismittelpunkt $M$. Der Schlüssel ist: Spiegelung an einer Winkelhalbierenden vertauscht die Schenkel des Winkels.</p>
-<p><strong>Warum funktioniert's?</strong>
-Spiegelt man den Eckpunkt $A$ an einer der <em>anderen</em> beiden Winkelhalbierenden, so landet sein Bild auf der gegenüberliegenden Seite $BC$. Aus zwei solchen Bildpunkten erhält man die Gerade $BC$ und damit das ganze Dreieck – ein Inkreisradius muss dafür nicht konstruiert werden.</p>
-<p><strong>Konstruktion (Prinzip des Symmetrisierens):</strong></p>
-<ol><li>Spiegle den gegebenen Punkt $A$ an der Winkelhalbierenden $w_\beta$; das Bild sei $A_\beta$.</li><li>Spiegle $A$ ebenso an $w_\gamma$; das Bild sei $A_\gamma$.</li><li>Die Gerade durch $A_\beta$ und $A_\gamma$ ist die Seite $BC$.</li><li>$B$ ist der Schnittpunkt von $w_\beta$ mit $BC$,   $C$ der Schnittpunkt von $w_\gamma$ mit $BC$.</li><li>Verbinde $A$ mit $B$ und mit $C$ – fertig ist das Dreieck $ABC$.</li></ol>
-<p><strong>Begründung:</strong>
-Die Winkelhalbierende $w_\beta$ ist die Symmetrieachse des Winkels bei $B$; die Spiegelung an $w_\beta$ vertauscht die Schenkel $BA$ und $BC$. Weil $A$ auf dem Schenkel $BA$ liegt, liegt sein Bild $A_\beta$ auf dem Schenkel $BC$. Ebenso liegt $A_\gamma$ auf $BC$. Damit ist $BC = A_\beta A_\gamma$ festgelegt; $B$ und $C$ ergeben sich als Schnitt der zugehörigen Winkelhalbierenden mit dieser Geraden.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/symmetrie-als-problemloesestrategie/index.html">Etappe 8 · Symmetrie als Problemlösestrategie</a> <span class="zeit">bei 0:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  $w_\gamma$ die Winkelhalbierenden sind.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Tun Sie so, als wäre das Dreieck schon gezeichnet, und fragen Sie, was dann gelten müsste.</p>
+<ul><li>Was macht die Spiegelung an einer Winkelhalbierenden mit den Schenkeln ihres Winkels?</li><li>Auf welchem Schenkel liegt $A$ — und wo landet sein Spiegelbild?</li><li>Wie viele Punkte brauchen Sie, um die Seite $BC$ festzulegen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz"><h4>Die Idee</h4>Konstruktionsaufgaben dieser Art löst man rückwärts: Man tut so, als stünde das
+Dreieck schon da, und fragt, was dann über seine Punkte gelten <em>müsste</em>.
+Eine Winkelhalbierende ist die Symmetrieachse ihres Winkels — die Spiegelung
+an ihr vertauscht die beiden Schenkel. Spiegelt man also $A$ an den
+<em>anderen</em> beiden Winkelhalbierenden, landen beide Bilder auf der Seite
+$BC$. Zwei Punkte legen eine Gerade fest, und damit ist die dritte Seite
+gefunden.</aside>
+<p><strong>Gegeben:</strong> die drei Geraden $w_\alpha$, $w_\beta$, $w_\gamma$ durch $M$
+und der Punkt $A$ auf $w_\alpha$.</p>
+<h4>Schritt 1: sich klarmachen, was fehlt</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-9994a9e431e5.svg" alt=""></figure>
+<p><em>Woran man ansetzt:</em> Von $B$ und $C$ weiss man zunächst nur, dass sie
+auf $w_\beta$ bzw. $w_\gamma$ liegen — das ist zu wenig. Gesucht ist also eine
+zweite Bedingung, und die liefert die Frage: Was wäre wahr, wenn das Dreieck
+schon fertig wäre?</p>
+<h4>Schritt 2: $A$ an $w_\beta$ spiegeln</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-439bf9d9e7f4.svg" alt=""></figure>
+<p><em>Warum das etwas liefert:</em> Wäre das Dreieck fertig, so wäre $w_\beta$
+die Winkelhalbierende bei $B$, also die Symmetrieachse des Winkels dort. Eine
+Spiegelung an ihr vertauscht die Schenkel $BA$ und $BC$. Der Punkt $A$ liegt auf
+$BA$ — sein Spiegelbild $A_\beta$ liegt folglich auf $BC$. Damit ist ein Punkt
+der gesuchten Seite bekannt.</p>
+<h4>Schritt 3: $A$ an $w_\gamma$ spiegeln; beide Bilder liegen auf $BC$</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-b2cfcdd9809f.svg" alt=""></figure>
+<p><em>Und warum das reicht:</em> Dasselbe Argument bei $C$ liefert $A_\gamma$,
+ebenfalls auf $BC$. Zwei Punkte legen eine Gerade fest — die Trägergerade der
+Seite $BC$ ist damit gefunden, ohne dass man $B$ oder $C$ schon kennen müsste.</p>
+<h4>Schritt 4: $B$ und $C$ abgreifen, Dreieck schliessen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-33754fdb76bd.svg" alt=""></figure>
+<p><em>Der Rest ist Ablesen:</em> $B$ liegt auf $w_\beta$ und auf $BC$, ist also
+deren Schnittpunkt; $C$ entsprechend auf $w_\gamma$. Verbindet man $A$ mit beiden,
+ist das Dreieck fertig.</p>
+<h4>Warum die Konstruktion stimmt</h4>
+<p>Die Winkelhalbierende $w_\beta$ ist die Symmetrieachse des Winkels bei $B$; die
+Spiegelung an ihr vertauscht die Schenkel $BA$ und $BC$. Weil $A$ auf $BA$ liegt,
+liegt $A_\beta$ auf $BC$; ebenso $A_\gamma$. Damit ist
+$BC = A_\beta A_\gamma$ festgelegt, und $B$, $C$ ergeben sich als Schnitt der
+zugehörigen Winkelhalbierenden mit dieser Geraden.</p>
+<aside class="merksatz"><h4>Bemerkung</h4>$M$ ist der Inkreismittelpunkt des gesuchten Dreiecks — dort schneiden sich
+die drei Winkelhalbierenden. Man könnte die Konstruktion auch darüber führen:
+Inkreisradius bestimmen, Kreis zeichnen, von $A$ aus die Tangenten legen. Der
+Weg über die beiden Spiegelungen kommt ohne den Inkreis aus.</aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/symmetrie-als-problemloesestrategie/index.html">Etappe 8 · Symmetrie als Problemlösestrategie</a> <span class="zeit">bei 0:19</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=60d90b59"></script>

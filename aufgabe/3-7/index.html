@@ -11,20 +11,47 @@
   $B$ über eine Brücke $\overline{TU}=3$
   führen, die senkrecht zum Flussufer liegt. Wo genau ist die Brücke
   anzusetzen?</p>
-<figure style="--bildbreite:0.30"><img src="../../bilder/8242a29e47bd9fa3.png" alt=""></figure><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Die Brücke hat eine feste Länge und muss senkrecht zum Ufer stehen</li><li>Verschieben Sie einen Punkt um die Brückenlänge</li><li>Reduzieren Sie das Problem auf den einfachen Fall aus Aufgabe 3.6</li><li>Nutzen Sie Parallelverschiebung</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Lösung des erweiterten Brückenproblems:</strong></p>
-<p><strong>Gegeben:</strong>
-<ul><li>Orte $A$ und $B$ auf gegenüberliegenden Seiten des Flusses</li><li>Brückenlänge $\overline{TU} = 3$ (senkrecht zum Ufer, gleich der Flussbreite)</li></ul></p>
-<p><strong>Idee:</strong> Die Brücke hat feste Länge und feste Richtung. Verschiebt man einen Punkt um genau den Brückenvektor, so «verschwindet» die Brücke aus der Rechnung und es bleibt das einfache Problem «kürzeste Verbindung zweier Punkte».</p>
-<p><strong>Konstruktion:</strong>
-<ol><li>Verschiebe $A$ senkrecht zum Fluss um die Brückenlänge $3$ auf die andere Uferseite nach $A^\star$ (also um den Vektor $\overrightarrow{TU}$).</li><li>Verbinde $A^\star$ mit $B$ durch eine Gerade.</li><li>Der Schnittpunkt dieser Geraden mit dem Ufer auf der Seite von $B$ ist der Brückenendpunkt $U$.</li><li>Errichte in $U$ die Senkrechte zum Ufer der Länge $3$ zurück zum Ufer von $A$; ihr Fusspunkt ist $T$.</li><li>Die Brücke $\overline{TU}$ ist optimal positioniert; der Weg lautet $A \to T \to U \to B$.</li></ol></p>
-<p><strong>Begründung:</strong>
-Der Gesamtweg besteht aus drei Teilen:
-\[L = |AT| + |TU| + |UB| = |AT| + 3 + |UB|.\]
-Da $|TU| = 3$ konstant ist, muss nur $|AT| + |UB|$ minimiert werden.</p>
-<p>Durch die Verschiebung um den Brückenvektor ist $ATUA^\star$ ein Parallelogramm, also $|AT| = |A^\star U|$. Damit gilt
-\[|AT| + |UB| = |A^\star U| + |UB| \geq |A^\star B|,\]
-mit Gleichheit genau dann, wenn $A^\star$, $U$ und $B$ auf einer Geraden liegen. Genau das leistet die Konstruktion: $U$ ist der Schnittpunkt der Geraden $A^\star B$ mit dem gegenüberliegenden Ufer.</p>
-<p><strong>Bemerkung:</strong> Im Unterschied zu Aufgabe 3.6 (Punktbrücke, gleiche Uferseite, <em>Spiegelung</em>) wird hier eine <em>Parallelverschiebung</em> verwendet, weil die Brücke eine feste Länge und Richtung besitzt.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="egbnbbvj" style="--gg-b:1308;--gg-h:611" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/egbnbbvj" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/winter-sche-grunderfahrungen/index.html">Etappe 7 · Winter‘sche Grunderfahrungen</a> <span class="zeit">bei 4:59</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+<figure style="--bildbreite:0.30"><img src="../../bilder/8242a29e47bd9fa3.png" alt=""></figure><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Fragen Sie zuerst, welcher Teil des Weges sich überhaupt ändern kann.</p>
+<ul><li>Hängt die Länge der Brücke davon ab, wo sie steht?</li><li>In Aufgabe 3.6 half eine Spiegelung. Was könnte hier an ihre Stelle treten?</li><li>Um welchen Vektor müssten Sie einen der beiden Orte verschieben?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz"><h4>Die Idee</h4>Der Gedanke ist derselbe wie in
+Aufgabe 3.6: Man ersetzt einen Teil des Weges durch einen gleich
+langen, bis Anfang und Ende so liegen, dass der kürzeste Weg eine Gerade sein
+<em>kann</em>. Nur das Mittel ist ein anderes — dort eine Spiegelung, hier eine
+Parallelverschiebung.</aside>
+<p><strong>Gegeben:</strong> die Orte $A$ und $B$ auf gegenüberliegenden Uferseiten und
+die Brücke $\overline{TU} = 3$, senkrecht zum Ufer.</p>
+<h4>Schritt 1: die Lage ansehen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-3e1faf57287c.svg" alt=""></figure>
+<p>Der Weg besteht aus drei Teilen: $|AT|$, die Brücke $|TU| = 3$ und $|UB|$.
+Die Brücke ist immer gleich lang, egal wo sie steht — zu minimieren bleibt
+also nur $|AT| + |UB|$.</p>
+<h4>Schritt 2: $A$ um den Brückenvektor verschieben</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-c12488f637b4.svg" alt=""></figure>
+<p><em>Warum das hilft:</em> Die Brücke zeigt immer in dieselbe Richtung und ist
+immer gleich lang. Verschiebt man $A$ um genau diesen Vektor nach $A^\star$, so
+ist $ATUA^\star$ für <em>jede</em> Brückenlage ein Parallelogramm, und damit
+$|AT| = |A^\star U|$. Der obere Teilweg lässt sich also durch einen gleich
+langen unteren ersetzen. Übrig bleibt $|A^\star U| + |UB|$ — ein Weg von
+$A^\star$ nach $B$ über einen einzigen Uferpunkt.</p>
+<h4>Schritt 3: $A^\star$ mit $B$ verbinden</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-cb9a42b04237.svg" alt=""></figure>
+<p><em>Warum das die Antwort gibt:</em> $A^\star$ und $B$ liegen auf
+verschiedenen Seiten des unteren Ufers. Deshalb gibt es unter allen Wegen
+$A^\star \to U \to B$ einen geraden, und der gerade ist der kürzeste. Wo die
+Strecke $\overline{A^\star B}$ das Ufer schneidet, muss also $U$ liegen.</p>
+<h4>Schritt 4: die Brücke aufstellen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-57ee5809a942.svg" alt=""></figure>
+<p>In $U$ die Senkrechte zum Ufer errichten; ihr Fusspunkt auf dem anderen
+Ufer ist $T$. Der gesuchte Weg lautet $A \to T \to U \to B$.</p>
+<h4>Warum kein anderer Weg kürzer ist</h4>
+<p>\[|AT| + |UB| = |A^\star U| + |UB| \geq |A^\star B|,\]
+mit Gleichheit genau dann, wenn $A^\star$, $U$ und $B$ auf einer Geraden
+liegen. Genau das leistet die Konstruktion. Der Gesamtweg ist damit
+$|A^\star B| + 3$, und kürzer geht es nicht.</p>
+<aside class="merksatz"><h4>Bemerkung</h4>Dieselbe Aufgabe ohne Brücke ist Aufgabe 3.6. Dort half eine
+Spiegelung, hier eine Verschiebung — der Unterschied liegt allein darin, dass
+die Brücke eine feste Länge und Richtung hat. Wer das einmal gesehen hat,
+erkennt das Muster wieder: einen Teil des Weges durch einen gleich langen
+ersetzen, bis der Rest gerade werden kann.</aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="egbnbbvj" style="--gg-b:1308;--gg-h:611" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/egbnbbvj" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-3/winter-sche-grunderfahrungen/index.html">Etappe 7 · Winter‘sche Grunderfahrungen</a> <span class="zeit">bei 4:59</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=60d90b59"></script>
