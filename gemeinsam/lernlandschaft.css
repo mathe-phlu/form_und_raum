@@ -227,17 +227,35 @@ section.kapitel > h2 .nr{font-family:var(--druck);font-size:14px;
 .sf-zaehler{font-size:.78rem;color:var(--matt);font-weight:400;
      margin-left:auto;white-space:nowrap}
 .sf-buehne{padding:18px}
-/* **Feste Hoehe.** Lore: «sonst springt die Seite zwischen Etappen mit
-   und ohne Bild, und ein grosses Foto sprengt sie.» Erst wenn
-   gefaltet wird, ist die Hoehe noetig — ungefaltet stehen die Szenen
-   ohnehin untereinander. */
-.schrittfolge.gefaltet > .sf-buehne{min-height:330px;display:flex;
+/* **Alle Szenen liegen uebereinander, nicht nacheinander.**
+   Rike, 19.09.2026: «dass diese Kästen immer unterschiedlich gross
+   sind mit den Schritten … ich glaube, es wäre ruhiger, wenn die
+   Kästen eine feste Grösse hätten, die sich am [Grössten] ausrichtet,
+   sodass dann nachher auch die Bilder nicht immer hoch und runter
+   springen, sondern dass das so aussieht, als würde das Bild
+   zusätzlichen Strich bekommen.»
+
+   Eine feste Zahl (erst `min-height:330px`) loest das **nicht**: Eine
+   Szene mit mehr Text waechst darueber hinaus, und beim Weiterklicken
+   springt alles darunter. Deshalb liegen im gefalteten Zustand alle
+   Szenen in **derselben Rasterzelle** — dann ist die Buehne so hoch
+   wie die groesste von ihnen, und diese Hoehe aendert sich nie.
+
+   Verborgen wird mit `visibility`, nicht mit `display`: Was
+   `display:none` traegt, beansprucht keinen Platz und koennte die
+   Hoehe nicht mitbestimmen. Vorgelesen wird es trotzdem nicht. */
+.schrittfolge.gefaltet > .sf-buehne{display:grid;min-height:330px;
      align-items:center}
-.schrittfolge.gefaltet > .sf-buehne > .sf-szene{width:100%}
+.schrittfolge.gefaltet > .sf-buehne > .sf-szene{grid-area:1/1;
+     width:100%;visibility:hidden}
+.schrittfolge.gefaltet > .sf-buehne > .sf-szene.da{visibility:visible}
 .sf-szene + .sf-szene{margin-top:22px}
-.schrittfolge.gefaltet .sf-szene{display:none;margin-top:0}
-.schrittfolge.gefaltet .sf-szene.da{display:grid}
-.sf-szene{display:grid;gap:20px;align-items:center;
+.schrittfolge.gefaltet .sf-szene{margin-top:0}
+/* `stretch`, damit die Bildspalte die ganze Hoehe der Szene einnimmt
+   und das Bild darin mittig sitzt — sonst wandert es mit der Laenge
+   des Textes daneben auf und ab. Das Wort bleibt mittig (`.sf-wort`
+   weiter unten). */
+.sf-szene{display:grid;gap:20px;align-items:stretch;
      grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 /* Solange noch kein Bild aufgetreten ist, gehoert dem Wort die ganze
    Breite — eine leere Spalte daneben waere ein Versprechen, das die
