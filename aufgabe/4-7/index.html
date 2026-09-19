@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aufgabe 4.7 · Form und Raum</title>
-<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=9f944e33">
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=f9dfc563">
 <body data-farbe="beweis">
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">4.7</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
@@ -11,42 +11,15 @@
   innerer Verknüpfung $(\mathbb{Z}, +)$ eine Gruppe, nicht aber
   $(\mathbb{Z}, \cdot)$? Was kann im Vergleich dazu für die Menge der
   rationalen Zahlen sowohl bei der Addition $(\mathbb{Q}, +)$ als auch der
-  Multiplikation $(\mathbb{Q}, \cdot)$ ausgesagt werden?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Drei der vier Gruppenaxiome sind schnell abgehakt. Suchen Sie das vierte.</p>
-<ul><li>Welches Axiom könnte bei einer dieser Mengen überhaupt scheitern?</li><li>Was ist das Inverse von $2$ bezüglich der Addition, was bezüglich der Multiplikation?</li><li>Welche einzelne Zahl macht $(\mathbb{Q}, \cdot)$ zu keiner Gruppe?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Drei der vier Gruppenaxiome sind bei allen vier Fällen erfüllt und
-entscheiden deshalb nichts. Die ganze Frage hängt am <em>inversen
-Element</em> — und dort an einer einzigen Stelle: Was müsste man mit einer
-Zahl multiplizieren, um $1$ zu erhalten, und liegt dieses Gegenstück
-noch in der Menge?</aside>
+  Multiplikation $(\mathbb{Q}, \cdot)$ ausgesagt werden?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Prüfen Sie systematisch alle vier Gruppenaxiome</li><li>Besonders wichtig: Existiert zu jedem Element ein Inverses?</li><li>Was ist das Inverse von 2 bezüglich Addition? Bezüglich Multiplikation?</li><li>Beachten Sie bei $(\mathbb{Q}, \cdot)$ die Sonderrolle der Null</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Prüfung der Gruppeneigenschaften:</strong></p>
 <div class="tabelle"><table><tr><td class="l sl so"><strong>Struktur</strong></td><td class="c sl so"><strong>Abg.</strong></td><td class="c sl so"><strong>Ass.</strong></td><td class="c sl so"><strong>Neutr.</strong></td><td class="c sl so"><strong>Inverse</strong></td><td class="c sl sr so"><strong>Gruppe</strong></td></tr><tr><td class="l sl so">$(\mathbb{Z}, +)$</td><td class="c sl so">✓</td><td class="c sl so">✓</td><td class="c sl so">$0$</td><td class="c sl so">$-a$</td><td class="c sl sr so">✓</td></tr><tr><td class="l sl so">$(\mathbb{Z}, \cdot)$</td><td class="c sl so">✓</td><td class="c sl so">✓</td><td class="c sl so">$1$</td><td class="c sl so">$\times$</td><td class="c sl sr so">$\times$</td></tr><tr><td class="l sl so">$(\mathbb{Q}, +)$</td><td class="c sl so">✓</td><td class="c sl so">✓</td><td class="c sl so">$0$</td><td class="c sl so">$-\frac{a}{b}$</td><td class="c sl sr so">✓</td></tr><tr><td class="l sl so">$(\mathbb{Q}, \cdot)$</td><td class="c sl so">✓</td><td class="c sl so">✓</td><td class="c sl so">$1$</td><td class="c sl so">$\times$ für $0$</td><td class="c sl sr so">$\times$</td></tr><tr><td class="su l sl so">$(\mathbb{Q} \setminus \{0\}, \cdot)$</td><td class="su c sl so">✓</td><td class="su c sl so">✓</td><td class="su c sl so">$1$</td><td class="su c sl so">$\frac{b}{a}$</td><td class="su c sl sr so">✓</td></tr></table></div>
-<h4>Abgeschlossenheit und Assoziativität</h4>
-<p>Beide gelten in allen vier Fällen: Summe und Produkt ganzer Zahlen sind
-wieder ganz, Summe und Produkt rationaler Zahlen wieder rational, und
-Klammern dürfen bei $+$ wie bei $\cdot$ beliebig gesetzt werden. Diese
-zwei Axiome trennen hier also nichts.</p>
-<h4>Das neutrale Element</h4>
-<p>Bei der Addition ist es die $0$, bei der Multiplikation die $1$ — beide
-liegen in $\mathbb{Z}$ und in $\mathbb{Q}$. Auch das trennt nicht.</p>
-<h4>Das inverse Element — hier entscheidet es sich</h4>
-<ul><li>$(\mathbb{Z}, +)$: Zu $a$ gehört $-a$, und das ist wieder ganz.
-  <strong>Gruppe.</strong></li><li>$(\mathbb{Z}, \cdot)$: Zu $2$ müsste es ein $a$ mit $2a = 1$
-  geben, also $a = \frac{1}{2}$ — und das ist keine ganze Zahl.
-  <strong>Keine Gruppe.</strong></li><li>$(\mathbb{Q}, +)$: Zu $\frac{a}{b}$ gehört $-\frac{a}{b}$, wieder
-  rational. <strong>Gruppe.</strong></li><li>$(\mathbb{Q}, \cdot)$: Für jedes $\frac{a}{b} \neq 0$ gibt es
-  $\frac{b}{a}$ — nur die $0$ hat kein Gegenstück, denn $0 \cdot a = 0$
-  wird nie $1$. Eine einzige Zahl verhindert die Gruppe.
-  <strong>Keine Gruppe.</strong></li></ul>
-<h4>Ergebnis</h4>
-<p>Die ganzen Zahlen bilden nur mit der Addition eine Gruppe. Die
-rationalen Zahlen bilden mit der Addition eine Gruppe — und mit der
-Multiplikation ebenfalls, sobald man die $0$ ausschliesst:
-$(\mathbb{Q} \setminus \{0\}, \cdot)$ ist eine Gruppe.</p>
-<aside class="merksatz"><h4>Bemerkung</h4>Dass man die $0$ herausnehmen <em>darf</em>, ohne die Abgeschlossenheit zu
-verlieren, ist kein Zufall: Ein Produkt zweier von null verschiedener
-rationaler Zahlen ist nie null. In einer Menge mit Nullteilern ginge
-derselbe Trick nicht auf.</aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/gruppentheorie/index.html">Etappe 7 · Gruppentheorie</a> <span class="zeit">bei 6:58</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+<p><strong>Erläuterungen:</strong>
+<ul><li><strong>Abgeschlossenheit (Abg.):</strong> $a \circ b$ liegt wieder in der Menge</li><li><strong>Assoziativität (Ass.):</strong> $(a \circ b) \circ c = a \circ (b \circ c)$ gilt für $+$ und $\cdot$</li><li><strong>Neutrales Element (Neutr.):</strong> Bei Addition die $0$, bei Multiplikation die $1$</li><li><strong>Inverse:</strong> Das kritische Kriterium!
+  <ul><li></li><li>$(\mathbb{Z}, \cdot)$: Zu $2$ existiert kein $a \in \mathbb{Z}$ mit $2a = 1$ (wäre $\frac{1}{2} \notin \mathbb{Z}$)</li><li>$(\mathbb{Q}, \cdot)$: Die $0$ hat kein multiplikatives Inverses</li><li>$(\mathbb{Q} \setminus \{0\}, \cdot)$: Nach Ausschluss der $0$ existieren alle Inversen</li></ul></li></ul></p>
+<p><strong>Fazit:</strong> Die ganzen Zahlen bilden nur mit der Addition eine Gruppe, da multiplikative Inverse wie $\frac{1}{2}$ nicht in $\mathbb{Z}$ liegen. Die rationalen Zahlen bilden mit der Addition eine Gruppe, und nach Ausschluss der Null auch mit der Multiplikation.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/gruppentheorie/index.html">Etappe 7 · Gruppentheorie</a> <span class="zeit">bei 6:58</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
-<script src="../../gemeinsam/seite.js?f=9f944e33"></script>
+<script src="../../gemeinsam/seite.js?f=f9dfc563"></script>
 
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
   displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
