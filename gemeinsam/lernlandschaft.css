@@ -165,8 +165,35 @@ section.kapitel > h2 .nr{font-family:var(--druck);font-size:14px;
    sonst stuende «Aufgabe 5.2» zweimal untereinander. */
 .aufgabe.ohne-kopf > .kopf{display:none}
 .aufgabe.ohne-kopf > .rumpf{padding-top:14px}
-.aufgabe .merksatz{border-left:2px solid var(--linie);background:var(--creme);
+/* **Der Kasten muss ueberall ein Kasten sein** (19.09.2026). Diese
+   Regel verlangte einen Vorfahren `.aufgabe` — den gibt es auf der
+   Aufgabenseite und im Lernweg nicht: Dort lautet die Kette
+   `aside.merksatz -> .faltung -> .stufen -> .aufgabenblatt`. Die Regel
+   griff also nie, und der Kasten fiel auf Fliesstext zurueck.
+   Im PDF sind es echte `tcolorbox`, deshalb fiel es bei der Abnahme
+   nicht auf, sondern erst an der veroeffentlichten Seite: Rike hielt
+   die neuen Loesungen fuer «die Vorversion», weil die Etappen ohne
+   Absetzung wie Fliesstext aussahen.
+   Der Selektor steht darum jetzt fuer sich. Er trifft alle drei
+   Module — was beabsichtigt ist: Ein Merksatz ohne Absetzung ist
+   ueberall ein Fehler, nicht nur hier. */
+.merksatz{border-left:2px solid var(--linie);background:var(--creme);
      padding:7px 12px;margin:12px 0;font-size:15px}
+/* **Betont gegen beilaeufig.** `betont` traegt jeder Kasten, dessen
+   Quelltext ein optionales Argument hat (`\begin{Anm}[…]{Die Idee}`)
+   — die Idee, die den Loesungsweg traegt. Ohne Argument bleibt es die
+   Bemerkung: Sie gehoert nicht zur Loesung und soll auch nicht so
+   aussehen. Die Farbe kommt aus `--akzent`, das `data-farbe` auf der
+   Seite bereits auf die Kapitelfarbe gestellt hat — nie aus dem
+   Argument, sonst zeigte ein Vertipper still die falsche Farbe. */
+/* Gemischt wird in die Creme, nicht ins Weiss: Sonst steht der
+   wichtigere Kasten blasser da als die Bemerkung daneben — am
+   Bildschirm nachgesehen, nicht gerechnet. */
+.merksatz.betont{border-left:3px solid var(--akzent);
+     background:color-mix(in srgb, var(--akzent) 9%, var(--creme))}
+.merksatz.betont > h4{color:var(--akzent)}
+.merksatz > h4{margin:0 0 4px;font-size:14px;letter-spacing:.02em}
+.merksatz:not(.betont){color:var(--matt);font-size:14.5px}
 
 /* ---------- Aufklappen: Starthilfe, dann Loesung ----------
    Die Reihenfolge ist der Entscheid vom 21.08.2026: erst die Hilfe,

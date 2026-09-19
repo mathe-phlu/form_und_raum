@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aufgabe 4.1 · Form und Raum</title>
-<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=60d90b59">
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=9f944e33">
 <body data-farbe="beweis">
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">4.1</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
@@ -12,22 +12,62 @@
     abzubilden?
 <p>\[A\mapsto D,\;\;B\mapsto E,\;\;C\mapsto F\]</p>
 <p>Führen Sie die Spiegelungen in GeoGebra aus.</li><li>Finden Sie eine Strategie die für alle Dreiecke funktioniert?
-  Wieviele Spiegelungen sind dann maximal notwendig?</li></ol></p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Beginnen Sie mit einem Punkt und überlegen Sie, wie viele Spiegelungen nötig sind</li><li>Nutzen Sie, dass jede Kongruenzabbildung durch maximal drei Spiegelungen darstellbar ist</li><li>Probieren Sie verschiedene Achsenlagen aus</li><li>Entwickeln Sie eine systematische Vorgehensweise</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Allgemeine Strategie: Maximal 3 Spiegelungen genügen immer!</strong></p>
-<div class="neben">
-<strong>Schritt 1: Punkt $A$ auf $D$ abbilden</strong>
-<ul><li>Achse $a_1$: Mittelsenkrechte von $\overline{AD}$</li><li>Nach $\sigma_{a_1}$: $A \mapsto D$, $B \mapsto B'$, $C \mapsto C'$</li></ul>
-<p><strong>Schritt 2: Punkt $B'$ auf $E$ abbilden</strong>
-<ul><li>Achse $a_2$: Mittelsenkrechte von $\overline{B'E}$ durch $D$</li><li>Nach $\sigma_{a_2}$: $D$ bleibt fix, $B' \mapsto E$, $C' \mapsto C''$</li></ul>
-</p></div>
-<div class="neben">
-<strong>Schritt 3: Punkt $C''$ auf $F$ abbilden</strong>
-<ul><li>Achse $a_3$: Gerade durch $D$ und $E$</li><li>Nach $\sigma_{a_3}$: $D, E$ bleiben fix, $C'' \mapsto F$</li></ul>
-</div>
-<p><strong>Spezialfälle:</strong> Falls $C'' = F$: nur 2 Spiegelungen, falls $B' = E$ und $C' = F$: nur 1 Spiegelung</p>
-<p><strong>Fazit:</strong> Jede Kongruenzabbildung lässt sich durch maximal 3 Achsenspiegelungen realisieren.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="xre3hj8t" style="--gg-b:1399;--gg-h:692" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/xre3hj8t" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/dreispiegelungssatz/index.html">Etappe 2 · Dreispiegelungssatz</a> <span class="zeit">bei 1:42</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  Wieviele Spiegelungen sind dann maximal notwendig?</li></ol></p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Vergleichen Sie die beiden Dreiecke, bevor Sie eine Achse zeichnen.</p>
+<ul><li>In welchem Sinn läuft $A \to B \to C$, in welchem $D \to E \to F$?</li><li>Was macht eine einzelne Spiegelung mit dem Umlaufsinn?</li><li>Welche Achse bringt einen bestimmten Punkt genau auf einen anderen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Nicht zählen, sondern den <em>Umlaufsinn</em> ansehen. Jede Spiegelung
+dreht ihn um. Läuft man $A \to B \to C$ und $D \to E \to F$ im selben
+Sinn, braucht es eine <em>gerade</em> Anzahl von Spiegelungen, sonst eine
+<em>ungerade</em>. Damit ist die Anzahl schon fast bestimmt, bevor man
+eine einzige Achse gezeichnet hat.</aside>
+<p><strong>Gegeben:</strong> $A(1|1)$, $B(5|2)$, $C(3|4)$ und das kongruente Dreieck
+$D(10|{-}0.76)$, $E(13.68|1.09)$, $F(13.47|{-}1.73)$.</p>
+<h4>Schritt 1: den Umlaufsinn ansehen</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-d73fe8be05c0.svg" alt=""></figure>
+<p>$A \to B \to C$ läuft im Gegenuhrzeigersinn, $D \to E \to F$ im
+Uhrzeigersinn — die Pfeile zeigen es. Der Umlaufsinn ist also
+<em>umgekehrt</em>, und damit ist die Zahl der Spiegelungen ungerade:
+eine oder drei. Eine einzige käme nur in Frage, wenn alle drei
+Mittelsenkrechten von $\overline{AD}$, $\overline{BE}$ und
+$\overline{CF}$ dieselbe Gerade wären; das sind sie nicht.
+<strong>Also drei.</strong> Die folgenden Schritte führen sie vor.</p>
+<h4>Schritt 2: $A$ auf $D$ spiegeln</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-8987b224d2e5.svg" alt=""></figure>
+<p><em>Welche Achse:</em> die Mittelsenkrechte $a_1$ von $\overline{AD}$ —
+sie ist die einzige Gerade, an der $A$ nach $D$ fällt. Danach liegt schon
+ein Punkt richtig; $B$ und $C$ wandern mit nach $B'$ und $C'$.</p>
+<h4>Schritt 3: $B'$ auf $E$ spiegeln</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-284d1d24859f.svg" alt=""></figure>
+<p><em>Welche Achse:</em> die Mittelsenkrechte $a_2$ von
+$\overline{B'E}$. Das Entscheidende ist, dass sie <em>durch $D$ geht</em>:
+Weil $|DB'| = |AB| = |DE|$ ist, liegt $D$ von beiden Punkten gleich weit
+entfernt — und die Mittelsenkrechte ist genau der Ort dieser Punkte.
+Der zweite Schritt zerstört den ersten also nicht.</p>
+<h4>Schritt 4: $C''$ auf $F$ spiegeln</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-bd87636853e8.svg" alt=""></figure>
+<p><em>Welche Achse:</em> die Gerade $a_3$ durch $D$ und $E$. Wieder
+bleiben die schon gesetzten Punkte liegen, denn beide liegen auf der
+Achse. Und $C''$ muss auf $F$ fallen: Beide haben von $D$ und von $E$
+dieselben Abstände, also gibt es nur zwei mögliche Lagen — eine auf
+jeder Seite von $a_3$ — und die Spiegelung tauscht sie.</p>
+<h4>Ergebnis</h4>
+<p>Drei Spiegelungen, und sie sind hier auch nötig. Allgemein gilt: Eine
+Kongruenzabbildung der Ebene lässt sich <em>immer</em> durch höchstens
+drei Achsenspiegelungen darstellen — das ist der Dreispiegelungssatz,
+und die obige Kette ist zugleich sein Beweis.</p>
+<h4>Die Strategie für jedes Dreieck</h4>
+<ol><li>Mittelsenkrechte von $\overline{AD}$: bringt $A$ auf $D$.</li><li>Mittelsenkrechte von $\overline{B'E}$: bringt $B'$ auf $E$ und lässt $D$ liegen.</li><li>Gerade durch $D$ und $E$: bringt $C''$ auf $F$ und lässt $D$ und $E$ liegen.</li></ol>
+Jeder Schritt setzt einen Punkt fest, ohne die vorigen zu verlieren —
+deshalb reichen drei. Fällt ein Punkt schon vorher richtig, entfällt der
+zugehörige Schritt: Bei gleichem Umlaufsinn sind es zwei oder null, bei
+umgekehrtem drei oder eine.
+<aside class="merksatz"><h4>Bemerkung</h4>Der Umlaufsinn ist kein Kniff für diese eine Aufgabe, sondern das
+Ordnungsmerkmal der Kongruenzabbildungen. Die <em>gleichsinnigen</em> —
+Identität, Drehung, Verschiebung — brauchen null oder zwei
+Spiegelungen. Die <em>gegensinnigen</em> — Achsenspiegelung und
+Schubspiegelung — brauchen eine oder drei. Mehr Fälle gibt es in der
+Ebene nicht.</aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="xre3hj8t" style="--gg-b:1399;--gg-h:692" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/xre3hj8t" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/dreispiegelungssatz/index.html">Etappe 2 · Dreispiegelungssatz</a> <span class="zeit">bei 1:42</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
-<script src="../../gemeinsam/seite.js?f=60d90b59"></script>
+<script src="../../gemeinsam/seite.js?f=9f944e33"></script>
 
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
   displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,

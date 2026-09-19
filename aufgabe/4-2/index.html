@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aufgabe 4.2 · Form und Raum</title>
-<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=60d90b59">
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=9f944e33">
 <body data-farbe="beweis">
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">4.2</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
@@ -11,23 +11,34 @@
   Achsen $a$ und $b$, d. h. mit dem Originaldreieck
   $DEF$ zwischen $a$ und $b$ bzw. rechts von
   $b$. Aus welchen Teilstrecken setzt sich die
-  Verschiebungsstrecke zusammen?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Zeichnen Sie die Bilder schrittweise: erst bei $\sigma_a$, dann bei $\sigma_b$</li><li>Messen Sie den Abstand zwischen den Achsen</li><li>Vergleichen Sie mit der Verschiebungsstrecke</li><li>Untersuchen Sie die Richtung der Verschiebung</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Analyse der drei Fälle bei $\sigma_b \circ \sigma_a$ mit parallelen Achsen:</strong></p>
-<p>Sei $d$ der Abstand zwischen den parallelen Achsen $a$ und $b$.</p>
-<p><strong>Fall 1: Original links von $a$</strong></p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-62a92e374e3a.svg" alt=""></figure>
+  Verschiebungsstrecke zusammen?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Verfolgen Sie einen einzigen Punkt durch beide Spiegelungen, nicht das ganze Dreieck.</p>
+<ul><li>Um wie viel verschiebt eine Spiegelung einen Punkt, der den Abstand $m$ zur Achse hat?</li><li>Wie hängen die beiden Abstände mit dem Achsenabstand $d$ zusammen?</li><li>Ändert sich daran etwas, wenn der Punkt woanders liegt?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Jede der beiden Spiegelungen verschiebt einen Punkt um das Doppelte
+seines Abstands zur jeweiligen Achse. Diese beiden Abstände ändern sich
+mit der Lage des Punktes — ihre <em>Summe beziehungsweise Differenz</em>
+aber nicht, denn sie ist immer der Achsenabstand $d$. Deshalb kommt in
+allen drei Fällen dasselbe heraus: eine Verschiebung um $2d$.</aside>
+<p><strong>Gegeben:</strong> zwei parallele Achsen $a$ und $b$ im Abstand $d$.</p>
+<h4>Fall 1: Original links von $a$</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-e45b85c279f5.svg" alt=""></figure>
 <p>Da $m + n = d$ (Punkt liegt links von $a$), ergibt sich für die Verschiebung $2m+ 2n= 2(m + n) = 2d$</p>
-<p><strong>Fall 2: Original zwischen $a$ und $b$</strong></p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-9b79cc1ebf9a.svg" alt=""></figure>
+<h4>Fall 2: Original zwischen $a$ und $b$</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-d730302aabc5.svg" alt=""></figure>
 <p>Da $d=n-m$ (Punkt liegt zwischen $a$ und $b$), ergibt sich für die Verschiebung: $2n-2m=2(n -m) = 2d$</p>
-<p><strong>Fall 3: Original rechts von $b$</strong></p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-fd1408249fb2.svg" alt=""></figure>
+<h4>Fall 3: Original rechts von $b$</h4>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-314f67459135.svg" alt=""></figure>
 <p>Da $d=n-m$ (Punkt liegt rechts von $b$), ergibt sich für die Verschiebung: $2n-2m=2(n -m) = 2d$</p>
-<p><strong>Allgemeine Regel:</strong></p>
+<h4>Die Regel</h4>
 <p>Die Verkettung $\sigma_b \circ \sigma_a$ zweier Spiegelungen an parallelen Achsen ergibt immer eine Verschiebung:
-<ul><li><strong>Richtung:</strong> Senkrecht zu den Achsen, von $a$ nach $b$</li><li><strong>Betrag:</strong> $2d$ (doppelter Achsenabstand)</li><li><strong>Unabhängig</strong> von der Lage des Originalobjekts!</li></ul></p></div><div class="faltung applet" data-stufe="geogebra" data-applet="rsuu2pey" style="--gg-b:999;--gg-h:616" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/rsuu2pey" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div><aside class="merksatz"><p>Der Punkt \(F\) wird durch die aus der Verknüpfung der beiden Achsenspiegelungen \(\sigma_b\circ\sigma_a\) resultierenden Abbildung um \(2n-2m\) verschoben. </p><p>Der Achsenabstand zwischen \(a\) und \(b\) beträgt \(n-m\), also wird der Punkt um den doppelten Achsenabstand verschoben. Die Argumentation für alle anderen Punkte verläuft analog.</p></aside></div><p class="fundort">Im Video: <a href="../../lernweg-4/fallunterscheidungen/index.html">Etappe 4 · Fallunterscheidungen</a> <span class="zeit">bei 4:41</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+<ul><li><strong>Richtung:</strong> Senkrecht zu den Achsen, von $a$ nach $b$</li><li><strong>Betrag:</strong> $2d$ (doppelter Achsenabstand)</li><li><strong>Unabhängig</strong> von der Lage des Originalobjekts — das ist
+  der eigentliche Gehalt der drei Fälle</li></ul></p>
+<aside class="merksatz"><h4>Bemerkung</h4>Umgekehrt gelesen heisst das: Jede Verschiebung lässt sich als
+Doppelspiegelung schreiben, und zwar auf unendlich viele Weisen — man
+darf das Achsenpaar beliebig verschieben, solange Richtung und Abstand
+$d$ erhalten bleiben. Diese Freiheit ist das Werkzeug, mit dem in den
+folgenden Aufgaben die Dreifachspiegelungen umgeformt werden.</aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="rsuu2pey" style="--gg-b:999;--gg-h:616" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/rsuu2pey" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div><aside class="merksatz"><p>Der Punkt \(F\) wird durch die aus der Verknüpfung der beiden Achsenspiegelungen \(\sigma_b\circ\sigma_a\) resultierenden Abbildung um \(2n-2m\) verschoben. </p><p>Der Achsenabstand zwischen \(a\) und \(b\) beträgt \(n-m\), also wird der Punkt um den doppelten Achsenabstand verschoben. Die Argumentation für alle anderen Punkte verläuft analog.</p></aside></div><p class="fundort">Im Video: <a href="../../lernweg-4/fallunterscheidungen/index.html">Etappe 4 · Fallunterscheidungen</a> <span class="zeit">bei 4:41</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c" target="_blank" rel="noopener">Feedback</a></span></div></footer>
-<script src="../../gemeinsam/seite.js?f=60d90b59"></script>
+<script src="../../gemeinsam/seite.js?f=9f944e33"></script>
 
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
   displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,
