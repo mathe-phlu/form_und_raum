@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Aufgabe 4.1 · Form und Raum</title>
-<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=d26f6119">
+<link rel="stylesheet" href="../../gemeinsam/lernlandschaft.css?f=93e79a82">
 <body data-farbe="beweis">
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">4.1</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
@@ -11,23 +11,80 @@
     der nachfolgenden Zeichnung auf seinen kongruenten Partner $DEF$
     abzubilden?
 <p>\[A\mapsto D,\;\;B\mapsto E,\;\;C\mapsto F\]</p>
-<p>Führen Sie die Spiegelungen in GeoGebra aus.</li><li>Finden Sie eine Strategie die für alle Dreiecke funktioniert?
-  Wieviele Spiegelungen sind dann maximal notwendig?</li></ol></p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Beginnen Sie mit einem Punkt und überlegen Sie, wie viele Spiegelungen nötig sind</li><li>Nutzen Sie, dass jede Kongruenzabbildung durch maximal drei Spiegelungen darstellbar ist</li><li>Probieren Sie verschiedene Achsenlagen aus</li><li>Entwickeln Sie eine systematische Vorgehensweise</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Allgemeine Strategie: Maximal 3 Spiegelungen genügen immer!</strong></p>
-<div class="neben">
-<strong>Schritt 1: Punkt $A$ auf $D$ abbilden</strong>
-<ul><li>Achse $a_1$: Mittelsenkrechte von $\overline{AD}$</li><li>Nach $\sigma_{a_1}$: $A \mapsto D$, $B \mapsto B'$, $C \mapsto C'$</li></ul>
-<p><strong>Schritt 2: Punkt $B'$ auf $E$ abbilden</strong>
-<ul><li>Achse $a_2$: Mittelsenkrechte von $\overline{B'E}$ durch $D$</li><li>Nach $\sigma_{a_2}$: $D$ bleibt fix, $B' \mapsto E$, $C' \mapsto C''$</li></ul>
-</p></div>
-<div class="neben">
-<strong>Schritt 3: Punkt $C''$ auf $F$ abbilden</strong>
-<ul><li>Achse $a_3$: Gerade durch $D$ und $E$</li><li>Nach $\sigma_{a_3}$: $D, E$ bleiben fix, $C'' \mapsto F$</li></ul>
-</div>
-<p><strong>Spezialfälle:</strong> Falls $C'' = F$: nur 2 Spiegelungen, falls $B' = E$ und $C' = F$: nur 1 Spiegelung</p>
-<p><strong>Fazit:</strong> Jede Kongruenzabbildung lässt sich durch maximal 3 Achsenspiegelungen realisieren.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="xre3hj8t" style="--gg-b:1399;--gg-h:692" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/xre3hj8t" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/dreispiegelungssatz/index.html">Etappe 2 · Dreispiegelungssatz</a> <span class="zeit">bei 1:42</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+<p>Führen Sie die Spiegelungen in GeoGebra aus.</p>
+<figure style="--bildbreite:0.70"><img src="../../bilder/fad9a22c5054532c.png" alt=""></figure></li><li>Finden Sie eine Strategie die für alle Dreiecke funktioniert?
+  Wieviele Spiegelungen sind dann maximal notwendig?</li></ol><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><p><strong>Womit anfangen?</strong> Vergleichen Sie die beiden Dreiecke, bevor Sie eine Achse zeichnen.</p>
+<ul><li>In welchem Sinn läuft $A \to B \to C$, in welchem $D \to E \to F$?</li><li>Was macht eine einzelne Spiegelung mit dem Umlaufsinn?</li><li>Welche Achse bringt einen bestimmten Punkt genau auf einen anderen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Nicht zählen, sondern den <em>Umlaufsinn</em> ansehen. Jede Spiegelung
+dreht ihn um. Läuft man $A \to B \to C$ und $D \to E \to F$ im selben
+Sinn, braucht es eine <em>gerade</em> Anzahl von Spiegelungen, sonst eine
+<em>ungerade</em>. Damit ist die Anzahl schon fast bestimmt, bevor man
+eine einzige Achse gezeichnet hat.</aside><p><strong>Gegeben:</strong> $A(1|1)$, $B(5|2)$, $C(3|4)$ und das kongruente Dreieck
+$D(10|{-}0.76)$, $E(13.68|1.09)$, $F(13.47|{-}1.73)$.</p><div class="schrittfolge" data-szenen="4"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schritt 1: den Umlaufsinn ansehen</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-d73fe8be05c0.svg" alt=""></figure><div class="sf-wort"><p>$A \to B \to C$ läuft im Gegenuhrzeigersinn, $D \to E \to F$ im
+Uhrzeigersinn — die Pfeile zeigen es. Der Umlaufsinn ist also
+<em>umgekehrt</em>, und weil jede Spiegelung ihn umdreht, muss die Anzahl
+<strong>ungerade</strong> sein.</p>
+<p>Mehr sagt der Umlaufsinn nicht. Er schliesst zwei Spiegelungen aus, aber
+zwischen einer und dreien entscheidet er nicht — das muss die
+Konstruktion zeigen.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schritt 2: $A$ auf $D$ spiegeln</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-8987b224d2e5.svg" alt=""></figure><div class="sf-wort"><p><em>Welche Achse:</em> die Mittelsenkrechte $a_1$ von $\overline{AD}$ —
+sie ist die einzige Gerade, an der $A$ nach $D$ fällt. Danach liegt schon
+ein Punkt richtig; $B$ und $C$ wandern mit nach $B'$ und $C'$.</p></div></div><div class="sf-szene" data-szene="2"><h4 class="sf-titel">Schritt 3: $B'$ auf $E$ spiegeln</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-284d1d24859f.svg" alt=""></figure><div class="sf-wort"><p><em>Welche Achse:</em> die Mittelsenkrechte $a_2$ von
+$\overline{B'E}$. Das Entscheidende ist, dass sie <em>durch $D$ geht</em>:
+Weil $|DB'| = |AB| = |DE|$ ist, liegt $D$ von beiden Punkten gleich weit
+entfernt — und die Mittelsenkrechte ist genau der Ort dieser Punkte.
+Der zweite Schritt zerstört den ersten also nicht.</p></div></div><div class="sf-szene" data-szene="3"><h4 class="sf-titel">Schritt 4: $C''$ auf $F$ spiegeln</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-bd87636853e8.svg" alt=""></figure><div class="sf-wort"><p><em>Welche Achse:</em> die Gerade $a_3$ durch $D$ und $E$. Wieder
+bleiben die schon gesetzten Punkte liegen, denn beide liegen auf der
+Achse. Und $C''$ muss auf $F$ fallen: Beide haben von $D$ und von $E$
+dieselben Abstände, also gibt es nur zwei mögliche Lagen — eine auf
+jeder Seite von $a_3$ — und die Spiegelung tauscht sie.</p>
+
+
+<p><strong>Die Strategie für jedes Dreieck</strong>
+<ol><li>Mittelsenkrechte von $\overline{AD}$: bringt $A$ auf $D$.</li><li>Mittelsenkrechte von $\overline{B'E}$: bringt $B'$ auf $E$, und $D$ bleibt liegen.</li><li>Gerade durch $D$ und $E$: bringt $C''$ auf $F$, und $D$, $E$ bleiben liegen.</li></ol>
+Fällt ein Punkt schon vorher richtig, entfällt der zugehörige Schritt.
+So ergeben sich die anderen Fälle: bei gleichem Umlaufsinn null oder
+zwei Spiegelungen, bei umgekehrtem eine oder drei.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz betont"><h4>Warum die Konstruktion funktioniert</h4>Das eigentliche Kunststück ist nicht, <em>dass</em> man einen Punkt auf
+seinen Partner spiegeln kann — dafür gibt es immer eine Achse. Das
+Kunststück ist, dass der zweite Schritt den ersten nicht zunichtemacht
+und der dritte die ersten beiden nicht. Der Grund ist jedes Mal
+derselbe: <strong>Eine Spiegelung lässt jeden Punkt ihrer Achse liegen</strong>,
+und die Achse ist so gewählt, dass die schon gesetzten Punkte auf ihr
+liegen.
+<p><strong>Nach Schritt 2 liegt $D$ noch richtig</strong>, weil die
+Mittelsenkrechte von $\overline{B'E}$ durch $D$ geht — und das ist kein
+Glück: Spiegelungen erhalten Längen, also ist $|DB'| = |AB|$, und weil
+die Dreiecke kongruent sind, ist $|AB| = |DE|$. Der Punkt $D$ hat von
+$B'$ und von $E$ denselben Abstand, und genau das heisst, auf der
+Mittelsenkrechten zu liegen.</p>
+<p><strong>Nach Schritt 3 liegen $D$ und $E$ noch richtig</strong>, weil die Achse
+die Gerade durch beide ist. Und $C''$ muss auf $F$ fallen: Beide haben
+von $D$ dieselbe Entfernung und von $E$ ebenfalls, also kommen nur zwei
+Punkte in Frage — einer auf jeder Seite von $DE$ —, und die
+Spiegelung vertauscht sie.</p>
+<p>So sitzt nach Schritt 1 <em>ein</em> Punkt, nach Schritt 2 <em>zwei</em>,
+nach Schritt 3 <em>drei</em>. Und drei Punkte legen eine
+Kongruenzabbildung der Ebene fest.</p></aside><aside class="merksatz betont"><h4>Wie viele Spiegelungen es hier wirklich braucht</h4>Der Dreispiegelungssatz sagt nur, dass <em>höchstens</em> drei nötig sind.
+Wie viele es im Einzelfall sind, hängt von der Abbildung ab — oft ist
+man schon nach einer oder zwei fertig. Für diese beiden Dreiecke sind es
+genau drei, und beide kleineren Möglichkeiten lassen sich ausschliessen:
+<p><strong>Zwei kommen nicht in Frage.</strong> Zwei Spiegelungen ergeben immer eine
+Drehung oder eine Verschiebung, und beide <em>erhalten</em> den
+Umlaufsinn. Hier ist er umgekehrt — das war die Beobachtung aus
+Schritt 1.</p>
+<p><strong>Eine kommt auch nicht in Frage.</strong> Eine einzige Achse müsste $A$
+auf $D$, $B$ auf $E$ und $C$ auf $F$ zugleich bringen, also gleichzeitig
+die Mittelsenkrechte aller drei Strecken sein. Nachgemessen sind das drei
+verschiedene Geraden: Ihre Richtungen unterscheiden sich um bis zu
+$23^\circ$, und ihre Mittelpunkte liegen mehr als eine Einheit
+auseinander.</p>
+<p>Bleibt die Drei — und die Konstruktion führt sie vor.</p></aside><aside class="merksatz"><h4>Bemerkung</h4>Der Umlaufsinn ist kein Kniff für diese eine Aufgabe, sondern das
+Ordnungsmerkmal der Kongruenzabbildungen. Die <em>gleichsinnigen</em> —
+Identität, Drehung, Verschiebung — brauchen null oder zwei
+Spiegelungen. Die <em>gegensinnigen</em> — Achsenspiegelung und
+Schubspiegelung — brauchen eine oder drei. Mehr Fälle gibt es in der
+Ebene nicht.</aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="xre3hj8t" style="--gg-b:1399;--gg-h:692" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/xre3hj8t" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-4/dreispiegelungssatz/index.html">Etappe 2 · Dreispiegelungssatz</a> <span class="zeit">bei 1:42</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
-<script src="../../gemeinsam/seite.js?f=d26f6119"></script>
+<script src="../../gemeinsam/seite.js?f=93e79a82"></script>
 
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],
   displayMath:[['\\[','\\]'],['$$','$$']],processEscapes:true,

@@ -199,7 +199,22 @@ section.kapitel > h2 .nr{font-family:var(--druck);font-size:14px;
 .merksatz.betont > h4{color:var(--akzent)}
 .merksatz > h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;
      letter-spacing:.07em}
+/* **Die Bemerkung bleibt ungefuellt.** Rike, 20.09.2026: «Wir haben
+   jetzt da unten drei braune Kaesten. Mir ist gar nicht klar, welche
+   ist jetzt eine Bemerkung und welche ist eine Information.»
+   Die Auszeichnung war schon richtig — es fehlte der Abstand zwischen
+   den beiden Darstellungen. Beide lagen auf derselben Creme, und der
+   betonte Kasten mischt nur neun Prozent der Kapitelfarbe darunter:
+   Bei `aktion` (violett) sieht man das, bei `beweis` (Ocker) ist Ocker
+   auf Creme wieder Creme. Gemessen an der gebauten Seite 4-1:
+   #F4E5D3 gegen #F6ECDF — zwoelf Stufen im Blaukanal, sonst nichts.
+   Die Bemerkung nimmt darum den Ton des Blattes an, auf dem sie
+   liegt. Sie bleibt abgesetzt (Linie links, Rundung rechts), aber sie
+   traegt keine Flaeche mehr: Was nicht zur Loesung gehoert, soll auch
+   nicht so aussehen. Angefasst wird nur der schlichte Kasten — die
+   betonte Fassung stammt aus Lores Modell, das Rike abgenommen hat. */
 .merksatz:not(.betont){border-radius:0 8px 8px 0;padding:12px 16px;
+     background:var(--karte);border-left:2px dashed var(--matt);
      color:var(--matt);font-size:14.5px}
 .merksatz:not(.betont) > h4{color:var(--matt)}
 
@@ -2313,6 +2328,42 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;
    F6). Neben dem Video sind knapp 290 Pixel Platz; eine Tabelle mit
    zwoelf Spalten passt dort nicht und darf trotzdem nicht die ganze
    Seite waagrecht verschiebbar machen. */
+/* ---------- Die Gruppentabelle zum Anklicken ----------
+   Rike, 20.09.2026: «Ich dachte daran, dass wir nur die Tabelle haben,
+   und wenn man in eine Zelle klickt, dann erscheint rechts daneben die
+   Erklaerung dazu. Keine Schritte drunter.»
+
+   Neben der Tabelle, nicht darunter — solange der Platz reicht. Unter
+   700 Pixeln rutscht die Tafel unter die Tabelle; nebeneinander bliebe
+   fuer beides zu wenig, und eine Erklaerung in vier Zeichen Breite ist
+   keine. Die Tafel haelt eine Mindesthoehe, damit die Seite beim
+   Weiterklicken nicht springt — dieselbe Ueberlegung wie bei der
+   Buehne. */
+.zellentabelle{display:grid;gap:14px;align-items:start;margin:12px 0;
+     grid-template-columns:minmax(0,1fr) minmax(15rem,20rem)}
+@media (max-width:700px){.zellentabelle{grid-template-columns:minmax(0,1fr)}}
+.zellentabelle .tabelle{margin:0}
+.zt-tafel{border-left:4px solid var(--akzent);border-radius:0 8px 8px 0;
+     background:color-mix(in srgb, var(--akzent) 9%, var(--creme));
+     padding:12px 16px;font-size:14.5px;min-height:9rem}
+.zt-tafel > .zt-ruf{margin:0;color:var(--matt);font-style:italic}
+.zt-inhalt > h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;
+     letter-spacing:.07em;color:var(--akzent)}
+.zt-inhalt > h4 .zt-mal{opacity:.55}
+.zt-inhalt > :last-child{margin-bottom:0}
+/* **Anfassbar aussehen muss es auch ohne Mauszeiger.** Der Zeiger
+   verraet sich nur der Maus; auf dem Tablett bleibt die gepunktete
+   Unterstreichung der einzige Hinweis, dass hier etwas zu holen ist. */
+.bedienbar td[data-zelle]{cursor:pointer;
+     text-decoration:underline dotted var(--linie) 1px;
+     text-underline-offset:3px}
+.bedienbar td[data-zelle]:hover{
+     background:color-mix(in srgb, var(--akzent) 12%, transparent)}
+.bedienbar td[data-zelle]:focus-visible{outline:2px solid var(--akzent);
+     outline-offset:-2px}
+.bedienbar td[data-zelle].da{text-decoration:none;
+     background:color-mix(in srgb, var(--akzent) 22%, transparent)}
+
 .tabelle{overflow-x:auto;margin:12px 0;-webkit-overflow-scrolling:touch}
 .tabelle table{border-collapse:collapse;font-size:14.5px;
      background:var(--karte);margin:0}
