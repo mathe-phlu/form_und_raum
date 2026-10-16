@@ -13,20 +13,35 @@
   Figur $F$ mit dieser Qualität gelten müsste
 $\vartheta(F)=F$
 mit $\vartheta=\vartheta(Z,k)$, $k&gt;1$ als zentrischer Streckung. Skizzieren Sie ein Beispiel für eine
-«zentrisch-streckungssymmetrische» Figur.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Eine Figur ist streckungssymmetrisch, wenn sie sich selbst enthält</li><li>Der Streckfaktor muss $k &gt; 1$ sein (oder $0 &lt; k &lt; 1$)</li><li>Denken Sie an sich wiederholende Muster</li><li>Spiralen und fraktale Strukturen sind gute Kandidaten</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Definition:</strong> Eine Figur $F$ heisst streckungssymmetrisch, wenn es eine zentrische Streckung $\vartheta(Z,k)$ mit $k \neq 1$ gibt, sodass $\vartheta(F) = F$.</p>
-<p><strong>Beispiel 1: Strahlen büschel (Grundfall)</strong></p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-853d0f8f18cc.svg" alt=""></figure>
-<p>Ein Strahlenbüschel aus (unendlich langen) Strahlen durch einen Punkt $Z$ ist streckungssymmetrisch genau im Sinne der Definition:
-<ul><li>Zentrum: der gemeinsame Punkt $Z$</li><li><em>Jede</em> zentrische Streckung $\vartheta(Z,k)$ mit $k&gt;0$ bildet jeden Strahl – und damit die ganze Figur – auf sich ab.</li></ul>
-Dasselbe gilt für ein Geradenbüschel durch $Z$.</p>
-<p><strong>Beispiel 2: Logarithmische Spirale (Drehstreckung)</strong></p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-8164a375aad9.svg" alt=""></figure>
-<p>Die logarithmische Spirale $r = e^{a\varphi}$ ist unter einer <em>reinen</em> zentrischen Streckung <strong>nicht</strong> invariant: Eine Streckung um $k$ verschiebt jeden Punkt nur radial (ohne den Winkel zu ändern) und führt die Spirale in eine andere, grössere Spirale über. Invariant wird sie erst unter einer <strong>Drehstreckung</strong> – einer Streckung mit $k = e^{a\Delta\varphi}$ <em>kombiniert</em> mit einer Drehung um $\Delta\varphi$. Sie ist also selbstähnlich, erfüllt aber die obige Definition (reine Streckung) nicht; sie ist das klassische Beispiel für <em>Drehstreckungssymmetrie</em>.</p>
-<p><strong>Beispiel 3: Geschachteltes Muster (Grenzfall)</strong></p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-e63cb4718aaa.svg" alt=""></figure>
-<p>Exakt streckungssymmetrisch ist erst die <em>unendliche</em> Grenzfigur aus lauter ineinander geschachtelten, jeweils um denselben Faktor $k$ (bezüglich $Z$) verkleinerten Kopien: Die Streckung $\vartheta(Z,k)$ bildet dann jede Kopie auf die nächste ab, das Gesamtmuster also auf sich. Das gezeichnete endliche Muster ist nur ein Ausschnitt davon.</p>
-<p><strong>Eigenschaften streckungssymmetrischer Figuren:</strong>
-<ul><li>Enthalten unendlich viele ähnliche Kopien ihrer selbst</li><li>Haben oft fraktale Eigenschaften</li><li>Kommen in der Natur vor (Schneckenhäuser, Blumenkohl)</li><li>Wichtig in der modernen Geometrie und Chaostheorie</li></ul></p></div><div class="faltung applet" data-stufe="geogebra" data-applet="hh77wfd9" style="--gg-b:1269;--gg-h:640" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/hh77wfd9" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen vorschau" data-video="h1lcfcYak2c"><img class="standbild" alt="" src="../../gemeinsam/standbilder/h1lcfcYak2c.jpg"><button type="button" class="starten" aria-label="Video abspielen"><span class="dreieck"></span></button></div><p class="ausweichen"><a href="https://www.youtube.com/watch?v=h1lcfcYak2c" target="_blank" rel="noopener">Auf YouTube öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-5/aehnlichkeitssaetze/index.html">Etappe 9 · Ähnlichkeitssätze</a> <span class="zeit">bei 6:49</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+«zentrisch-streckungssymmetrische» Figur.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Eine Figur ist streckungssymmetrisch, wenn sie sich selbst enthält</li><li>Der Streckfaktor muss $k &gt; 1$ sein (oder $0 &lt; k &lt; 1$)</li><li>Denken Sie an sich wiederholende Muster</li><li>Spiralen und fraktale Strukturen sind gute Kandidaten</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Eine Figur, die eine Streckung mit $k&gt;1$ auf sich selbst abbildet,
+kann nicht endlich sein: Ihr äusserster Punkt würde noch weiter nach
+aussen geschoben, und dort ist nichts mehr von ihr. Sie muss nach
+aussen ohne Ende weitergehen — und weil auch die Umkehrung
+$\vartheta(Z,\frac{1}{k})$ sie festhält, nach innen ebenso ohne Ende
+feiner werden. Jede Skizze zeigt davon nur einen Ausschnitt.</aside><div class="schrittfolge" data-szenen="3"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Der einfachste Fall: ein Strahlenbüschel</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-129e6a5eef00.svg" alt=""></figure><div class="sf-wort"><p>Man nimmt Strahlen, die alle in $Z$ beginnen. Eine Streckung an $Z$ mit $k&gt;0$
+schiebt jeden Punkt auf seinem eigenen Strahl nach aussen; jeder Strahl
+geht in sich über, die ganze Figur also auch. Das gilt sogar für
+<em>jeden</em> Faktor $k&gt;0$ — fast zu einfach. Ebenso geht es mit einem
+einzelnen Strahl, einer Geraden durch $Z$ oder einem Winkelfeld.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Ein Beispiel für einen bestimmten Faktor: Quadrate</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-b6576fe2651d.svg" alt=""></figure><div class="sf-wort"><p>Quadrate um $Z$, deren halbe Seitenlängen
+$\ldots,\frac14,\frac12,1,2,4,\ldots$ sind, nach innen und aussen ohne
+Ende. Die Streckung $\vartheta(Z,2)$ bildet jedes Quadrat auf das
+nächstgrössere ab, und jedes Quadrat ist das Bild des nächstkleineren.
+Die Figur geht also in sich über.</p>
+<p>Hier kommt es auf den Faktor an: $k=2$, $4$, $8$, …\ funktionieren,
+$k=3$ nicht. Das Quadrat mit halber Seitenlänge $1$ ginge in eines mit
+halber Seitenlänge $3$ über, und das gehört nicht zur Figur.</p></div></div><div class="sf-szene" data-szene="2"><h4 class="sf-titel">Eine gebogene Figur: die logarithmische Spirale</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-50d9958f11d1.svg" alt=""></figure><div class="sf-wort"><p>Die Spirale um $Z$, deren Abstand von $Z$ sich bei jeder vollen
+Umdrehung verdoppelt, in Polarkoordinaten $r=2^{\varphi/2\pi}$. Sie
+windet sich nach innen und nach aussen unendlich oft um $Z$. Die
+Streckung $\vartheta(Z,2)$ schiebt jeden Punkt $P$ auf seinem Strahl
+auf den doppelten Abstand. Genau dort, eine Umdrehung weiter, liegt die
+Spirale wieder. Sie geht also unter $\vartheta(Z,2)$ in sich über.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Bemerkung</h4>Die logarithmische Spirale kann noch mehr: Sie geht auch unter jeder
+<em>Drehstreckung</em> in sich über, die um einen beliebigen Winkel
+$\Delta\varphi$ dreht und dabei mit $2^{\Delta\varphi/2\pi}$ streckt.
+Die reinen Streckungen sind darunter die Fälle mit ganzen Umdrehungen.
+<p>Schneckenhäuser haben annähernd diese Form, sind aber endlich.
+Streckungssymmetrie im strengen Sinn gibt es nur in der Idealisierung,
+und die einzige endliche Figur mit dieser Eigenschaft ist der Punkt $Z$
+allein.</p></aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="hh77wfd9" style="--gg-b:1269;--gg-h:640" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/hh77wfd9" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen vorschau" data-video="h1lcfcYak2c"><img class="standbild" alt="" src="../../gemeinsam/standbilder/h1lcfcYak2c.jpg"><button type="button" class="starten" aria-label="Video abspielen"><span class="dreieck"></span></button></div><p class="ausweichen"><a href="https://www.youtube.com/watch?v=h1lcfcYak2c" target="_blank" rel="noopener">Auf YouTube öffnen</a></p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-5/aehnlichkeitssaetze/index.html">Etappe 9 · Ähnlichkeitssätze</a> <span class="zeit">bei 6:49</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

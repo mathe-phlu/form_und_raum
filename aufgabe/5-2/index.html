@@ -8,28 +8,55 @@
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">5.2</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
 <h2 class="etappentitel"><span class="stand">Aufgabe 5.2</span></h2><div class="aufgabenblatt"><p>Begründen Sie dass</p>
-<ol class="klammer-a"><li>sich der 1. Strahlensatz umkehren lässt;</li><li>die Umkehrung des 2. Strahlensatzes falsch ist.</li></ol><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Formulieren Sie zunächst präzise die Umkehrungen beider Sätze</li><li>Für den Beweis der Umkehrung: Nutzen Sie einen Widerspruchsbeweis</li><li>Für das Gegenbeispiel: Konstruieren Sie eine Figur mit gleichen Verhältnissen aber ohne Parallelität</li><li>Skizzieren Sie die Situationen sorgfältig</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>(a) Umkehrung des 1. Strahlensatzes ist wahr:</strong></p>
-<p><strong>1. Strahlensatz:</strong> Wenn $g \parallel h$, dann gilt $\frac{\overline{ZA}}{\overline{ZB}} = \frac{\overline{ZA'}}{\overline{ZB'}}$</p>
-<p><strong>Umkehrung:</strong> Wenn $\frac{\overline{ZA}}{\overline{ZB}} = \frac{\overline{ZA'}}{\overline{ZB'}}$, dann gilt $g \parallel h$</p>
-<p><strong>Beweis durch Widerspruch:</strong></p>
-<figure style="--bildbreite:0.30"><img src="../../bilder/19d53e28d48de502.png" alt=""></figure>
-<p>Annahme: Die Verhältnisse sind gleich, aber $g \not\parallel h$.</p>
-<p>Dann existiert eine Gerade $h'$ durch $A'$ mit $h' \parallel g$, die $s_2$ in einem Punkt $B'' \neq B'$ schneidet.</p>
-<p>Nach dem 1. Strahlensatz gilt für diese Konfiguration:
-$$\frac{\overline{ZA}}{\overline{ZB}} = \frac{\overline{ZA'}}{\overline{ZB''}}$$</p>
-<p>Da nach Voraussetzung aber auch gilt:
-$$\frac{\overline{ZA}}{\overline{ZB}} = \frac{\overline{ZA'}}{\overline{ZB'}}$$</p>
-<p>folgt: $\overline{ZB'} = \overline{ZB''}$</p>
-<p>Da $B'$ und $B''$ auf demselben Strahl liegen und denselben Abstand zu $Z$ haben, müssen sie identisch sein: $B' = B''$.</p>
-<p>Damit ist $h = h'$ und somit $g \parallel h$.</p>
-<p><strong>(b) Umkehrung des 2. Strahlensatzes ist falsch:</strong></p>
-<p><strong>2. Strahlensatz:</strong> Wenn $g \parallel h$, dann gilt $\frac{\overline{SA}}{\overline{SB}} = \frac{\overline{AA'}}{\overline{BB'}}$</p>
-<p><strong>Umkehrung:</strong> Wenn $\frac{\overline{SA}}{\overline{SB}} = \frac{\overline{AA'}}{\overline{BB'}}$, dann gilt $g \parallel h$ (FALSCH!)</p>
-<p><strong>Gegenbeispiel:</strong></p>
-<figure style="--bildbreite:0.30"><img src="../../bilder/c9a40825fa9f4757.png" alt=""></figure>
-<p>Die Konstruktion zeigt zwei verschiedene Konfigurationen mit gleichen Verhältnissen:
-<ul><li>$\frac{\overline{SA}}{\overline{SB}} = \frac{\overline{AA'}}{\overline{BB'}} = \frac{\overline{AA''}}{\overline{BB''}}$</li><li>Aber: $A'$ und $A''$ liegen auf verschiedenen Geraden durch $A$</li></ul></p>
-<p>Die Verhältnisse bestimmen die Konfiguration nicht eindeutig, daher kann aus gleichen Verhältnissen nicht auf Parallelität geschlossen werden.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-5/strahlensaetze/index.html">Etappe 7 · Strahlensätze</a> <span class="zeit">bei 4:01</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+<ol class="klammer-a"><li>sich der 1. Strahlensatz umkehren lässt;</li><li>die Umkehrung des 2. Strahlensatzes falsch ist.</li></ol><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Formulieren Sie zunächst präzise die Umkehrungen beider Sätze</li><li>Für den Beweis der Umkehrung: Nutzen Sie einen Widerspruchsbeweis</li><li>Für das Gegenbeispiel: Konstruieren Sie eine Figur mit gleichen Verhältnissen aber ohne Parallelität</li><li>Skizzieren Sie die Situationen sorgfältig</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Ob sich ein Strahlensatz umkehren lässt, hängt daran, ob die
+Verhältnisse den Punkt $B^\star$ <em>festlegen</em>. Beim 1. Strahlensatz
+tun sie das: Sie legen den Abstand $\overline{ZB^\star}$ fest, und auf
+einer Halbgeraden gibt es nur einen Punkt mit diesem Abstand. Beim
+2. Strahlensatz legen sie die Länge $\overline{A^\star B^\star}$ fest
+— und eine Länge, von $A^\star$ aus abgetragen, trifft die Gerade $h$
+im Allgemeinen an <em>zwei</em> Stellen.</aside><p>Bezeichnungen wie im Satz: $g$ und $h$ schneiden sich in $Z$; $A$,
+$A^\star$ liegen auf $g$, $B$, $B^\star$ auf $h$, jeweils auf derselben
+Halbgeraden ab $Z$.</p><div class="schrittfolge" data-szenen="4"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">(a) Was zu zeigen ist</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-c48d61957609.svg" alt=""></figure><div class="sf-wort"><p>Die Umkehrung des 1. Strahlensatzes lautet: Aus
+$\frac{\overline{ZA}}{\overline{ZA^\star}}=\frac{\overline{ZB}}{\overline{ZB^\star}}$
+folgt $AB\parallel A^\star B^\star$. Bekannt sind nur die Verhältnisse;
+ob die beiden Querstrecken parallel sind, ist die Frage.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">(a) Die Parallele, von der man es weiss</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-bd6a2b7db21f.svg" alt=""></figure><div class="sf-wort"><p>Man zeichnet durch $A^\star$ die Parallele zu $AB$. Sie trifft $h$ in
+einem Punkt $B^\circ$ auf derselben Halbgeraden wie $B$, und für diese Figur gilt der 1. Strahlensatz:
+\[\frac{\overline{ZA}}{\overline{ZA^\star}}=\frac{\overline{ZB}}{\overline{ZB^\circ}}.\]
+Nach Voraussetzung ist dasselbe Verhältnis gleich
+$\frac{\overline{ZB}}{\overline{ZB^\star}}$. Also ist
+$\overline{ZB^\circ}=\overline{ZB^\star}$: zwei Punkte auf derselben
+Halbgeraden, gleich weit von $Z$ entfernt — es ist derselbe Punkt. Die
+Parallele durch $A^\star$ geht also durch $B^\star$, das heisst
+$AB\parallel A^\star B^\star$.</p></div></div><div class="sf-szene" data-szene="2"><h4 class="sf-titel">(b) Wo die Umkehrung scheitert</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-cc0961489e87.svg" alt=""></figure><div class="sf-wort"><p>Die Umkehrung des 2. Strahlensatzes würde lauten: Aus
+$\frac{\overline{ZA}}{\overline{ZA^\star}}=\frac{\overline{AB}}{\overline{A^\star B^\star}}$
+folgt $AB\parallel A^\star B^\star$. Um sie zu widerlegen, genügt ein
+Gegenbeispiel.</p>
+<p>Man beginnt mit einer parallelen Lage, in der der Satz gilt, und
+schlägt um $A^\star$ einen Kreis mit dem Radius
+$\overline{A^\star B^\star}$. Er trifft $h$ nicht nur in $B^\star$,
+sondern ein zweites Mal, im Punkt $B^\circ$.</p></div></div><div class="sf-szene" data-szene="3"><h4 class="sf-titel">(b) Das Gegenbeispiel</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-a97faf5aaf73.svg" alt=""></figure><div class="sf-wort"><p>Weil $\overline{A^\star B^\circ}=\overline{A^\star B^\star}$ ist, gilt
+auch
+\[\frac{\overline{ZA}}{\overline{ZA^\star}}=\frac{\overline{AB}}{\overline{A^\star B^\circ}}.\]
+Die Voraussetzung der Umkehrung ist erfüllt, aber $A^\star B^\circ$ ist
+nicht parallel zu $AB$. Die Umkehrung des 2. Strahlensatzes ist falsch.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Zu (a): wo die Halbgerade gebraucht wird</h4>Als Widerspruchsbeweis, wie in der Starthilfe, liest sich dasselbe so:
+Angenommen, $A^\star B^\star$ wäre nicht parallel zu $AB$. Dann träfe
+die Parallele durch $A^\star$ die Gerade $h$ in einem Punkt
+$B^\circ\neq B^\star$, der trotzdem gleich weit von $Z$ entfernt ist
+wie $B^\star$. Auf einer Halbgeraden ist das unmöglich.
+<p>Genau an dieser Stelle braucht es die Voraussetzung, dass $B$ und
+$B^\star$ auf <em>derselben</em> Halbgeraden liegen. Auf der ganzen
+Geraden $h$ gibt es einen zweiten Punkt im selben Abstand, auf der
+anderen Seite von $Z$. Für ihn stimmt das Verhältnis, parallel ist die
+Querstrecke aber nicht. So gesehen scheitern beide Umkehrungen an
+derselben Stelle: Ein Abstand allein legt einen Punkt nicht fest.</p></aside><aside class="merksatz"><h4>Zum Nachrechnen</h4>In den Zeichnungen schliessen $g$ und $h$ einen Winkel von $55^\circ$
+ein, und es ist $\overline{ZA}=2.5$, $\overline{ZA^\star}=4$,
+$\overline{ZB}=2.25$, $\overline{ZB^\star}=3.6$, also $k=1.6$. Der
+Kreis um $A^\star$ hat den Radius
+$\overline{A^\star B^\star}\approx 3.53$ und trifft $h$ ein zweites Mal
+bei $\overline{ZB^\circ}\approx 0.99$.
+<p>Ob es diesen zweiten Schnittpunkt auf derselben Halbgeraden gibt, hängt
+von der Lage ab. Für ein Gegenbeispiel genügt eine Lage, in der es ihn
+gibt.</p></aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-5/strahlensaetze/index.html">Etappe 7 · Strahlensätze</a> <span class="zeit">bei 4:01</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>
