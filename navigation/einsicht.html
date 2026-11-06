@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfungseinsicht — Form &amp; Raum</title>
+<link rel="stylesheet" href="gemeinsam/schriften.css">
+<link rel="stylesheet" href="gemeinsam/navigation.css">
+</head>
+<body class="m-form_und_raum">
+
+<header class="kopf kopf--balken">
+  <h1>Prüfungseinsicht</h1>
+  <img class="marke" src="gemeinsam/bilder/marke-form_und_raum.png" alt="">
+</header>
+
+<div class="blatt">
+
+  <!-- Rike, 02.11.2026: Einsicht an zwei Abenden ueber Zoom, Kamera an,
+       Fragen nur im Chat. Zoom ist Pflicht, kein Angebot -- so sitzt
+       jede Person einzeln vor ihrem Rechner und nicht in Gruppen, die
+       vergleichen. Angemeldet wird in Moodle, weil nur gewuenschte
+       Einsichten vorbereitet werden. Diese Seite ist die einzige Stelle
+       mit dem Ablauf; Zettel, Leistungsnachweis und Sveas Rueckmeldung
+       verweisen hierher. Einzelheiten: LARS/EINSICHT-MA01.03.md. -->
+
+  <!-- Rike, 06.11.2026: «Im Moment steht da sehr, sehr viel Text und
+       ich glaube, den lesen die alle gar nicht.» Klar werden muss:
+       Kollektiveinsicht, Fragen nur im Chat, dadurch koennen viele
+       gleichzeitig schauen und sich einen Ueberblick verschaffen. Wer
+       Detailfragen hat, bucht im Anschluss eine Einzeleinsicht. Deshalb
+       je Option eine Zeile «wofuer», drei kurze Angaben, Knoepfe statt
+       Satzlinks. Inhalt unveraendert gegenueber dem 05.11.: Termine
+       Mo/Di/Mi 9.-11.11. 18:00-18:30, Frist So 8.11. 18:00 nur fuer die
+       Kollektiveinsicht, Einzeleinsicht bis 18:00 am Vortag (Rike,
+       05.11.: «alles gut so»). -->
+  <style>
+    .wege { max-width: 56rem; display: grid; gap: 1.125rem;
+            grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+            align-items: stretch; }
+    .wege .notiz { margin: 0; display: flex; flex-direction: column; }
+    .wege .notiz > b { font-size: 1.35rem; margin-bottom: .2rem; }
+    .wege .wofuer { font-size: 1.1rem; font-weight: 600; margin: 0 0 .75rem; }
+    .wege dl { display: grid; grid-template-columns: auto 1fr;
+               gap: .35rem .9rem; margin: 0 0 1rem; }
+    .wege dt { font-weight: 600; color: var(--grau); }
+    .wege dd { margin: 0; }
+    .wege .knoepfe { margin-top: auto; display: flex; flex-wrap: wrap; gap: .6rem; }
+    .wege .knoepfe a { display: inline-block; padding: .5rem .95rem;
+            border-radius: .5rem; font-weight: 600; text-decoration: none;
+            background: #fff; border: .108rem solid currentColor; }
+    .wege .notiz--blau .knoepfe a { color: var(--material-tief); }
+    .wege .notiz--braun .knoepfe a { color: var(--braun); }
+    .danach { max-width: 56rem; margin: 1rem 0 0; font-size: 1.05rem; }
+  </style>
+
+  <h2 style="font-family:'Patrick Hand',cursive;font-weight:400;font-size:2rem;color:var(--braun);margin:0 0 1rem">
+    Teil A · zwei Wege zur Einsicht</h2>
+
+  <div class="wege">
+
+    <div class="notiz notiz--blau">
+      <b>1 · Kollektiveinsicht über Zoom</b>
+      <p class="wofuer">Überblick verschaffen: Viele sehen gleichzeitig
+        ihre eigene Prüfung ein.</p>
+      <dl>
+        <dt>Wann</dt>
+        <dd><strong>Mo 9. · Di 10. · Mi 11. Nov.</strong>, je 18:00–18:30</dd>
+        <dt>Fragen</dt>
+        <dd>nur im Chat</dd>
+        <dt>Anmeldung</dt>
+        <dd><strong>bis So 8. Nov., 18:00</strong>, bis dahin änderbar</dd>
+      </dl>
+      <div class="knoepfe">
+        <a href="https://moodle.phlu.ch/mod/choice/view.php?id=63637770"
+           target="_blank" rel="noopener">Anmelden ↗</a>
+        <a href="https://zoom.us/my/henrike.allmendinger"
+           target="_blank" rel="noopener">Zoom öffnen ↗</a>
+      </div>
+    </div>
+
+    <div class="notiz notiz--braun">
+      <b>2 · Einzeleinsicht</b>
+      <p class="wofuer">Für Detailfragen: allein mit mir, gern auch im
+        Anschluss an die Kollektiveinsicht.</p>
+      <dl>
+        <dt>Wann</dt>
+        <dd>Termin in der Fragestunde, am besten in den nächsten zwei Wochen</dd>
+        <dt>Buchung</dt>
+        <dd><strong>bis 18:00 am Vortag</strong>, Vermerk
+          «Prüfungseinsicht»</dd>
+      </dl>
+      <div class="knoepfe">
+        <a href="https://outlook.office.com/bookwithme/user/b7934e4d0ebe4bd3acb621350461c40f@phlu.ch/meetingtype/jcmhosOnnUWe7EqV6VfSUw2?anonymous&amp;ismsaljsauthenabled&amp;ep=mlink"
+           target="_blank" rel="noopener">Termin buchen ↗</a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="leise danach"><strong>Was gilt:</strong> Notizen sind erlaubt,
+    Kopien, Fotos und Screenshots nicht.</p>
+
+  <div class="fuss"><a class="zurueck" href="leistungsnachweis.html"><span class="pfeil" aria-hidden="true">←</span>Leistungsnachweis</a></div>
+</div>
+
+</body>
+</html>

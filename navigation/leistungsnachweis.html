@@ -108,12 +108,21 @@
         </div>
       </details>
   </div>
-<!-- NEU: Sobald die Moodle-Aufgabe ohne Abgabe steht, wird aus dem
-           <div> ein <a href="…">. -->
-      <div class="karte-fest" style="margin-top:1.125rem;text-align:center">
-        <b>Prüfungsergebnisse</b>
-        <p class="leise">werden nach jedem Prüfungsteil hier verlinkt</p>
-      </div>
+  <!-- Rike, 05.11.2026, analog MA01.07 (02.11.): neben den Ergebnissen
+       eine Kachel zur Einsicht, der Ablauf auf einer eigenen Seite
+       (einsicht.html). Ersetzt den Platzhalter «werden nach jedem
+       Pruefungsteil hier verlinkt». -->
+  <div id="ergebnisse" style="margin-top:1.75rem;max-width:49.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.125rem">
+    <a class="karte-fest" style="margin:0;text-align:center"
+       href="https://moodle.phlu.ch/mod/assign/view.php?id=63606680" target="_blank" rel="noopener">
+      <b>Prüfungsergebnisse Teil A</b>
+      <p>in Moodle ansehen ↗</p>
+    </a>
+    <a class="karte-fest" style="margin:0;text-align:center" href="einsicht.html">
+      <b>Prüfungseinsicht</b>
+      <p>Mo/Di/Mi 9./10./11.11., je 18:00–18:30 über Zoom · Anmeldung bis So 8.11., 18:00</p>
+    </a>
+  </div>
 
   <div class="fuss"><a class="zurueck" href="index.html"><span class="pfeil" aria-hidden="true">⌂</span>Navigation</a></div>
 </div>
