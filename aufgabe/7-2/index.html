@@ -9,20 +9,32 @@
 <main>
 <h2 class="etappentitel"><span class="stand">Aufgabe 7.2</span></h2><div class="aufgabenblatt"><p>Die Schnur wird um den ganzen Erdäquator gespannt und anschliessend
   wieder um 1 m verlängert. Was ist Ihre <em>Erwartung</em>, wie weit
-  steht die Schnur jetzt ab?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Stellen Sie die Umfangsformel für beide Kreise auf</li><li>Berechnen Sie die Differenz der Radien</li><li>Beachten Sie, dass der ursprüngliche Radius herausfällt</li><li>Das Ergebnis ist unabhängig von der Grösse des Ausgangsobjekts</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Das überraschende Ergebnis:</strong></p>
-<p>Intuitiv würden wir erwarten, dass der Abstand bei der riesigen Erdkugel verschwindend klein ist. Tatsächlich ist er aber genauso gross wie bei einem kleinen Globus!</p>
-<p><strong>Mathematische Analyse:</strong></p>
-<p>Sei $r$ der Radius eines beliebigen Kreises (Globus, Erde, etc.).
-<ul><li>Ursprünglicher Umfang: $U = 2\pi r$</li><li>Verlängerter Umfang: $U' = U + 1$ m</li></ul></p>
-<p>Für den neuen Radius $r'$ gilt:
-$$r' = \frac{U'}{2\pi} = \frac{U + 1}{2\pi} = \frac{2\pi r + 1}{2\pi} = r + \frac{1}{2\pi}$$</p>
-<p>Der Abstand zwischen alter und neuer Schnur beträgt:
-$$r' - r = \frac{1}{2\pi} \approx 0.159$$ m $\approx$ 15.9 cm</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-f4f5916b140c.svg" alt=""></figure>
-<p><strong>Erstaunliche Konsequenz:</strong>
-<ul><li>Der Abstand ist IMMER $\frac{1}{2\pi} \approx 15.9$ cm</li><li>Völlig unabhängig vom Radius des ursprünglichen Kreises!</li><li>Ob Murmel, Fussball, Globus oder Erdkugel - der Effekt ist identisch</li></ul></p>
-<p><strong>Intuition vs. Mathematik:</strong>
-Unsere Intuition versagt hier, weil wir den winzigen relativen Zuwachs (bei der Erde: $\frac{1}{40.000.000}$) mit dem absoluten Abstand verwechseln.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/die-kreiszahl/index.html">Etappe 1 · Die Kreiszahl π</a> <span class="zeit">bei 9:11</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  steht die Schnur jetzt ab?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Stellen Sie die Umfangsformel für beide Kreise auf</li><li>Berechnen Sie die Differenz der Radien</li><li>Beachten Sie, dass der ursprüngliche Radius herausfällt</li><li>Das Ergebnis ist unabhängig von der Grösse des Ausgangsobjekts</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Der Umfang wächst um $1$ m, also wächst der Radius um
+$\frac{1}{2\pi}$ m, rund $16$ cm. Darin kommt der Radius der Erde gar
+nicht vor: Bei einem Fussball steht die Schnur genau gleich weit ab wie
+am Äquator. Die meisten erwarten fast nichts, und das ist der Witz der
+Aufgabe.</aside>
+<p><strong>Zuerst die Erwartung.</strong> Die Aufgabe fragt ausdrücklich danach.
+Die meisten schätzen den Abstand auf einen Bruchteil eines Millimeters,
+weil $1$ m gegenüber $40\,000$ km verschwindend klein ist. Diese
+Erwartung festzuhalten, bevor gerechnet wird, ist der eigentliche
+didaktische Kern.</p>
+<p><strong>Dann die Rechnung.</strong> Mit dem alten Radius $r$ und dem neuen
+$r + \Delta r$:</p>
+<figure class="zeichnung"><img src="../../bilder/zeichnung-95be3c91aed2.svg" alt=""></figure>
+<p>\[2\pi(r + \Delta r) = 2\pi r + 1
+\quad\Longrightarrow\quad
+2\pi\,\Delta r = 1
+\quad\Longrightarrow\quad
+\Delta r = \frac{1}{2\pi}\,\text{m} \approx 15.9\,\text{cm}.\]</p>
+<p>Eine Katze passt darunter durch, und zwar um den ganzen Äquator herum.</p>
+<aside class="merksatz"><h4>Bemerkung</h4>Warum täuscht die Intuition? Sie vergleicht $1$ m mit dem Umfang, also
+einen <em>relativen</em> Zuwachs von etwa $\frac{1}{40\,000\,000}$. Gefragt
+ist aber ein <em>absoluter</em> Abstand, und Umfang und Radius wachsen
+im festen Verhältnis $2\pi$, gleich wie gross der Kreis ist.
+<p>Im Unterricht lohnt es sich, die Rechnung zuerst mit einem Fussball
+durchzuführen und erst dann mit der Erde. Das Ergebnis ist dasselbe,
+und gerade das überzeugt.</p></aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/die-kreiszahl/index.html">Etappe 1 · Die Kreiszahl π</a> <span class="zeit">bei 9:11</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

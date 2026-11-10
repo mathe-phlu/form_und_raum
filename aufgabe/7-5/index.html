@@ -8,28 +8,29 @@
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">7.5</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
 <h2 class="etappentitel"><span class="stand">Aufgabe 7.5</span></h2><div class="aufgabenblatt"><p>Beweisen Sie, dass sich ein regelmässiges $n$-Eck
-  aus $n$ kongruenten Dreiecken zusammensetzen lässt.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Verbinden Sie alle Ecken mit dem Mittelpunkt</li><li>Nutzen Sie die Rotationssymmetrie des n-Ecks</li><li>Zeigen Sie die Kongruenz der entstehenden Dreiecke</li><li>Verwenden Sie den Kongruenzsatz SWS</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Satz:</strong> Ein regelmässiges n-Eck lässt sich in n kongruente gleichschenklige Dreiecke zerlegen.</p>
-<p><strong>Beweis:</strong></p>
-<p><strong>Konstruktion:</strong>
-Sei $P_1P_2...P_n$ ein regelmässiges n-Eck mit Mittelpunkt $M$.
-Verbinde $M$ mit allen Ecken $P_i$.</p>
-<p>Dies erzeugt n Dreiecke: $\triangle MP_iP_{i+1}$ für $i = 1, ..., n$ (mit $P_{n+1} = P_1$).</p>
-<p><strong>Zu zeigen:</strong> Alle diese Dreiecke sind kongruent.</p>
-<p><strong>Schritt 1: Gleiche Abstände</strong>
-Da das n-Eck regelmässig ist, liegen alle Ecken auf einem Kreis um $M$.
-Daher: $|MP_1| = |MP_2| = ... = |MP_n| = r$ (Umkreisradius)</p>
-<p><strong>Schritt 2: Gleiche Seitenlängen</strong>
-Da das n-Eck regelmässig ist, sind alle Seiten gleich lang:
-$|P_1P_2| = |P_2P_3| = ... = |P_nP_1| = s$</p>
-<p><strong>Schritt 3: Gleiche Winkel</strong>
-Der Vollwinkel um $M$ wird gleichmässig aufgeteilt:
-$\angle P_iMP_{i+1} = \frac{360^\circ}{n}$ für alle $i$</p>
-<p><strong>Schritt 4: Kongruenz</strong>
-Nach dem Kongruenzsatz SWS sind alle Dreiecke $\triangle MP_iP_{i+1}$ kongruent:
-<ul><li>Seite: $|MP_i| = r$</li><li>Winkel: $\angle P_iMP_{i+1} = \frac{360^\circ}{n}$</li><li>Seite: $|MP_{i+1}| = r$</li></ul></p>
-<p><strong>Folgerungen:</strong>
-<ul><li>Die Fläche des n-Ecks ist $A = n \cdot A_{\text{Dreieck}}$</li><li>Alle Dreiecke sind gleichschenklig</li><li>Die Basiswinkel in jedem Dreieck sind gleich</li></ul></p>
-<p>Damit ist der Beweis vollständig. $\square$</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="wruzy2py" style="--gg-b:551;--gg-h:385" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/wruzy2py" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_ckbggmdt/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/archimedische-methode/index.html">Etappe 3 · Archimedische Methode</a> <span class="zeit">bei 7:05</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  aus $n$ kongruenten Dreiecken zusammensetzen lässt.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Verbinden Sie alle Ecken mit dem Mittelpunkt</li><li>Nutzen Sie die Rotationssymmetrie des n-Ecks</li><li>Zeigen Sie die Kongruenz der entstehenden Dreiecke</li><li>Verwenden Sie den Kongruenzsatz SWS</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Man darf nicht schon annehmen, dass das Vieleck einen Mittelpunkt hat,
+von dem alle Ecken gleich weit entfernt sind. Das ist gerade zu zeigen.
+Man konstruiert einen Kandidaten aus zwei Winkelhalbierenden und
+zeigt dann Dreieck für Dreieck mit dem Kongruenzsatz SWS, dass es
+weitergeht: Jedes Dreieck erzwingt das nächste.</aside><p>Das reguläre $n$-Eck $P_1P_2\ldots P_n$ hat gleich lange Seiten $s$ und
+gleich grosse Innenwinkel $\varepsilon$.</p><div class="schrittfolge" data-szenen="3"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schritt 1: der Punkt $M$</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-e7570311b579.svg" alt=""></figure><div class="sf-wort"><p>Die Winkelhalbierenden bei $P_1$ und $P_2$ schneiden sich in einem
+Punkt $M$. Im Dreieck $MP_1P_2$ sind beide Winkel an der Seite
+$P_1P_2$ gleich $\frac{\varepsilon}{2}$. Es ist also gleichschenklig:
+$\overline{MP_1} = \overline{MP_2}$.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schritt 2: das nächste Dreieck</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-1597b703af92.svg" alt=""></figure><div class="sf-wort"><p>Die Dreiecke $MP_1P_2$ und $MP_2P_3$ haben die Seite $MP_2$ gemeinsam,
+und es ist $\overline{P_2P_3} = \overline{P_1P_2} = s$. Der Winkel bei
+$P_2$ ist in beiden $\frac{\varepsilon}{2}$, weil $MP_2$ den Winkel bei
+$P_2$ halbiert. Nach SWS sind die Dreiecke kongruent. Daraus folgt
+zweierlei: $\overline{MP_3} = \overline{MP_1}$, und der Winkel
+$MP_3P_2$ ist $\frac{\varepsilon}{2}$, also halbiert $MP_3$ den Winkel
+bei $P_3$.</p></div></div><div class="sf-szene" data-szene="2"><h4 class="sf-titel">Schritt 3: und so weiter</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-d32ef03f6724.svg" alt=""></figure><div class="sf-wort"><p>Damit liegt bei $P_3$ genau dieselbe Lage vor wie zuvor bei $P_2$. Der
+Schluss aus Schritt 2 lässt sich wiederholen, bis man rundherum wieder
+bei $P_1$ ankommt. Alle $n$ Dreiecke $MP_iP_{i+1}$ sind kongruent.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Bemerkung</h4>Als Nebenprodukt hat man den Umkreis: Alle Ecken sind gleich weit von
+$M$ entfernt. Die Winkel bei $M$ sind alle gleich und füllen den
+Vollwinkel, sind also $\frac{360^\circ}{n}$. Daraus folgt für den
+Flächeninhalt $A = n\cdot A_{\text{Dreieck}}$, was in diesem Kapitel
+für die Kreisfläche gebraucht wird.
+<p>Die verbreitete Kurzfassung «alle Ecken liegen auf einem Kreis um $M$,
+also …» setzt voraus, was zu beweisen ist.</p></aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="wruzy2py" style="--gg-b:551;--gg-h:385" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/wruzy2py" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_ckbggmdt/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/archimedische-methode/index.html">Etappe 3 · Archimedische Methode</a> <span class="zeit">bei 7:05</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

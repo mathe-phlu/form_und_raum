@@ -8,19 +8,33 @@
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">6.11</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
 <h2 class="etappentitel"><span class="stand">Aufgabe 6.11</span></h2><div class="aufgabenblatt"><p>Unter allen Dreiecken gleichen Umfangs, welches hat den grössten
-  Inhalt?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Vermuten Sie zunächst, welches Dreieck optimal ist</li><li>Die Heronsche Formel kann hilfreich sein</li><li>Nutzen Sie Symmetrieargumente</li><li>Betrachten Sie, was bei Variation einer Seite passiert</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong><u>Geometrischer Beweis mit Ellipsen:</u></strong></p>
-<p>Fixiere zwei Ecken $A$ und $B$. Die dritte Ecke $C$ bewegt sich auf einer Ellipse mit Brennpunkten $A$ und $B$ (konstante Summe $AC + BC$).</p>
-<p>Die Höhe über $AB$ ist maximal, wenn $C$ auf der Symmetrieachse liegt → gleichschenkliges Dreieck.</p>
-<p>Durch Iteration für alle Seitenpaare → gleichseitiges Dreieck.</p>
-<p><strong><u>Beweis über «Heronsche» Formel:</u></strong></p>
-<p>Für ein Dreieck mit Seiten $a, b, c$ und Umfang $U = a + b + c$ gilt:
-$$A = \sqrt{s(s-a)(s-b)(s-c)}$$
-wobei $s = \frac{U}{2}$ der halbe Umfang ist.</p>
-<p>Für festes $s$ wird das Produkt $(s-a)(s-b)(s-c)$ maximal, wenn die Faktoren gleich sind (AM-GM-Ungleichung):
-$$s-a = s-b = s-c$$
-Dies führt zu $a = b = c$ → gleichseitiges Dreieck.</p>
-<p><strong><u>Variationsrechnung:</u></strong></p>
-<p>Betrachte kleine Variationen der Eckpunkte bei konstantem Umfang. Die Flächenänderung verschwindet im Optimum nur beim gleichseitigen Dreieck.</p></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  Inhalt?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Vermuten Sie zunächst, welches Dreieck optimal ist</li><li>Die Heronsche Formel kann hilfreich sein</li><li>Nutzen Sie Symmetrieargumente</li><li>Betrachten Sie, was bei Variation einer Seite passiert</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Das gleichseitige Dreieck. Bei festem Umfang kann man ein Dreieck, das
+über einer Seite nicht gleichschenklig ist, immer noch vergrössern.
+Den eigentlichen Beweis liefert die Formel von Heron: Sie macht aus dem
+Inhalt ein Produkt aus drei Zahlen mit fester Summe, und ein solches
+Produkt ist am grössten, wenn die drei Zahlen gleich sind.</aside><div class="schrittfolge" data-szenen="2"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schritt 1: eine Seite festhalten</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-296a4bc69960.svg" alt=""></figure><div class="sf-wort"><p>Man hält $A$ und $B$ fest. Bei festem Umfang ist auch
+$\overline{AC} + \overline{CB}$ fest, $C$ liegt also auf einer Ellipse
+mit den Brennpunkten $A$ und $B$. Der Inhalt ist
+$\frac{1}{2}\cdot\overline{AB}\cdot h$, und die Höhe $h$ ist am
+grössten im höchsten Punkt der Ellipse, genau über der Mitte von $AB$.
+Dort ist das Dreieck gleichschenklig.</p>
+<p>Folgerung: Ein Dreieck, das nicht gleichseitig ist, hat eine Seite,
+über der es nicht gleichschenklig ist, und lässt sich damit noch
+vergrössern. Das grösste Dreieck muss also gleichseitig sein.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schritt 2: die Formel von Heron</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-071ff73c0624.svg" alt=""></figure><div class="sf-wort"><p>Mit dem halben Umfang $s = \frac{a+b+c}{2}$ gilt
+\[A = \sqrt{s\,(s-a)(s-b)(s-c)} .\]
+Der Faktor $s$ ist fest. Die drei anderen Faktoren sind positiv und
+haben die feste Summe $(s-a)+(s-b)+(s-c) = 3s - 2s = s$. Ein Produkt
+aus drei positiven Zahlen mit fester Summe ist am grössten, wenn alle
+drei gleich sind:
+\[(s-a)(s-b)(s-c) \le \left(\frac{s}{3}\right)^3,\]
+mit Gleichheit genau für $s-a = s-b = s-c$, also $a = b = c$.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz betont"><h4>Warum Schritt 1 allein noch kein Beweis ist</h4>Schritt 1 zeigt nur: <em>Wenn</em> es ein grösstes Dreieck gibt, dann ist
+es gleichseitig. Dass es eins gibt, folgt daraus nicht. Genau diese
+Lücke hatte schon Steiners berühmter Beweis für den Kreis. Schritt 2
+schliesst sie, weil die Ungleichung die obere Schranke direkt angibt
+und zeigt, dass das gleichseitige Dreieck sie erreicht.</aside><aside class="merksatz"><h4>Bemerkung</h4>Die Ungleichung für drei Faktoren ist die Mittelungleichung
+$\sqrt[3]{xyz} \le \frac{x+y+z}{3}$, das Gegenstück zu der für zwei
+Faktoren aus Aufgabe 6.9. Das grösste Dreieck mit Umfang $U$ hat damit
+den Inhalt $\frac{\sqrt{3}}{36}\,U^2$.</aside></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

@@ -16,22 +16,25 @@
   </div>
 <div class="neben">
 <figure style="--bildbreite:0.80"><img src="../../bilder/d126c6a2b3480e1c.png" alt=""></figure>
-</div><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Betrachten Sie Kreise durch Höhenfusspunkte</li><li>Nutzen Sie rechte Winkel und Thaleskreise</li><li>Wenden Sie den Sehnensatz an geeigneten Kreisen an</li><li>Die Höhenfusspunkte bilden ein spezielles Dreieck</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Satz:</strong> Im Dreieck gilt für den Höhenschnittpunkt $H$:
-$$\overline{AH} \cdot \overline{HF} = \overline{BH} \cdot \overline{HE} = \overline{CH} \cdot \overline{HG}$$</p>
-<p><strong>Eleganter Beweis über Thaleskreise und den Sehnensatz:</strong></p>
-<p><strong>Erster Kreis (Thaleskreis über $\overline{AB}$):</strong>
-Für die Höhenfusspunkte $E$ (auf $\overline{CA}$) und $F$ (auf $\overline{BC}$) gilt
-$$\angle AEB = 90^\circ \qquad\text{und}\qquad \angle AFB = 90^\circ,$$
-denn $\overline{BE}\perp\overline{CA}$ und $\overline{AF}\perp\overline{BC}$. Nach dem Umkehrsatz des Thales liegen daher $A$, $B$, $E$, $F$ auf einem Kreis über dem Durchmesser $\overline{AB}$.</p>
-<p>In diesem Kreis schneiden sich die beiden Sehnen $\overline{AF}$ und $\overline{BE}$ – das sind gerade die Höhen aus $A$ und $B$ – im Höhenschnittpunkt $H$. Nach dem <strong>Sehnensatz</strong> folgt:
-$$\overline{AH} \cdot \overline{HF} = \overline{BH} \cdot \overline{HE}.$$</p>
-<p><strong>Zweiter Kreis (Thaleskreis über $\overline{BC}$):</strong>
-Analog ist $\angle BEC = 90^\circ$ und $\angle BGC = 90^\circ$, also liegen $B$, $C$, $E$, $G$ auf dem Kreis über dem Durchmesser $\overline{BC}$. Die Sehnen $\overline{BE}$ und $\overline{CG}$ (die Höhen aus $B$ und $C$) schneiden sich ebenfalls in $H$, und der Sehnensatz liefert:
-$$\overline{BH} \cdot \overline{HE} = \overline{CH} \cdot \overline{HG}.$$</p>
-<p><strong>Ergebnis:</strong>
-Verkettet man beide Gleichungen, folgt die Behauptung:
-$$\overline{AH} \cdot \overline{HF} = \overline{BH} \cdot \overline{HE} = \overline{CH} \cdot \overline{HG}.$$</p>
-<p><strong>Bemerkung:</strong> Ist das Dreieck spitzwinklig, so ist der Höhenschnittpunkt $H$ zugleich der Inkreismittelpunkt des Höhenfusspunktdreiecks $EFG$.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="grmc89vu" style="--gg-b:835;--gg-h:744" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/grmc89vu" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_z2mn8skl/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/streckenverhaeltnisse/index.html">Bonus · Streckenverhältnisse</a> <span class="zeit">bei 5:05</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+</div><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button><button type="button" data-stufe="video" aria-expanded="false">Video</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Betrachten Sie Kreise durch Höhenfusspunkte</li><li>Nutzen Sie rechte Winkel und Thaleskreise</li><li>Wenden Sie den Sehnensatz an geeigneten Kreisen an</li><li>Die Höhenfusspunkte bilden ein spezielles Dreieck</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Je zwei Höhen sind Sehnen in einem gemeinsamen Kreis, nämlich im
+Thaleskreis über der Seite, die sie verbindet. Sie schneiden sich in
+$H$, und nach dem Sehnensatz sind die Produkte ihrer Abschnitte gleich.
+Zweimal angewendet ergibt das die ganze Kette.</aside><p>$F$, $E$, $G$ sind die Fusspunkte der Höhen aus $A$, $B$, $C$ (wie im
+Bild der Aufgabe), $H$ ist der Höhenschnittpunkt.</p><div class="schrittfolge" data-szenen="2"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schritt 1: der Thaleskreis über $AB$</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-05ecebf9ea91.svg" alt=""></figure><div class="sf-wort"><p>Die Winkel $AFB$ und $AEB$ sind rechte Winkel, denn $AF$ und $BE$ sind
+Höhen. Nach der Umkehrung des Satzes von Thales liegen $E$ und $F$ auf
+dem Kreis über dem Durchmesser $AB$. In diesem Kreis sind $AF$ und $BE$
+Sehnen, die sich in $H$ schneiden. Der Sehnensatz liefert
+\[\overline{AH}\cdot\overline{HF} = \overline{BH}\cdot\overline{HE}.\]</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schritt 2: der Thaleskreis über $BC$</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-7dfb06e3e47f.svg" alt=""></figure><div class="sf-wort"><p>Ebenso sind $BEC$ und $BGC$ rechte Winkel, also liegen $E$ und $G$ auf
+dem Kreis über $BC$. Die Sehnen $BE$ und $CG$ schneiden sich in $H$:
+\[\overline{BH}\cdot\overline{HE} = \overline{CH}\cdot\overline{HG}.\]
+Zusammen mit Schritt 1 ist das die Behauptung.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Bemerkung</h4>Das Bild und der Beweis setzen ein spitzwinkliges Dreieck voraus, dann
+liegt $H$ innen. Bei einem stumpfwinkligen Dreieck liegt $H$ aussen,
+die Höhen sind dann keine Sehnen mehr durch einen inneren Punkt,
+sondern Sekanten durch einen äusseren. An die Stelle des Sehnensatzes
+tritt der Sekantensatz aus Aufgabe 7.10, und die Gleichung gilt weiter.
+<p>Der Weg «zu Fuss», den der Tipp ebenfalls nennt, geht über ähnliche
+Dreiecke: $AHE$ und $BHF$ haben bei $E$ und $F$ rechte Winkel und bei
+$H$ Scheitelwinkel.</p></aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="grmc89vu" style="--gg-b:835;--gg-h:744" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/grmc89vu" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p></div><div class="faltung" data-stufe="video" hidden><div class="rahmen"><video class="spieler" controls preload="metadata" src="https://api.cast.switch.ch/p/110/sp/11000/playManifest/entryId/0_z2mn8skl/format/url/protocol/https/video.mp4"></video></div></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-7/streckenverhaeltnisse/index.html">Bonus · Streckenverhältnisse</a> <span class="zeit">bei 5:05</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

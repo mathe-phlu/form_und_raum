@@ -12,27 +12,39 @@ einbeschreiben, so dass es minimalen Umfang hätte?</p>
 <p>Experimentieren Sie mit <em>GeoGebra</em>, indem Sie verschiedene
 Einstellungen für das Viereck vornehmen und seinen Umfang
 dynamisch messen. Versuchen Sie auch, Ihre Vermutung(en) zu
-begründen.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Experimentieren Sie systematisch mit verschiedenen Positionen</li><li>Achten Sie auf Symmetrien</li><li>Denken Sie an das Spiegelungsprinzip</li><li>Was passiert in Extremfällen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong>Problem:</strong></p>
-<p>Ein Viereck mit Ecken auf den Quadratseiten soll minimalen Umfang haben.</p>
-<p><strong>Vermutung durch Experimentieren:</strong></p>
-<p>Das Viereck sollte symmetrisch sein, mit Ecken in den Seitenmittelpunkten.</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-2824d858b09b.svg" alt=""></figure>
-<p><strong>Beweis durch Spiegelungsprinzip:</strong></p>
-<h4>Idee der Lösung</h4>
-<p>Wir transformieren das Problem durch dreifache Spiegelung des Quadrats an seinen Seiten. Dadurch erzeugen wir eine «aufgeklappte Strecke», die genauso lang ist wie der Umfang des einbeschriebenen Vierecks.</p>
-<p><strong>Schritt 1: Auffaltung durch Spiegelung (beliebige Position)</strong></p>
-<p>Wir spiegeln das Quadrat ABCD sukzessive an seinen Seiten auf:</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-4877780ee1c6.svg" alt=""></figure>
-<p>Der Streckenzug von einem Punkt zu seinem mehrfach gespiegelten Bild ist NICHT optimal (keine gerade Linie).</p>
-<p><strong>Schritt 2: Optimale Position (Seitenmittelpunkte)</strong></p>
-<p>Wenn die Ecken des Vierecks die Seitenmittelpunkte sind:</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-26a5563f633e.svg" alt=""></figure>
-<p>Der Streckenzug bildet jetzt eine perfekte gerade Linie - dies ist der kürzeste Weg!</p>
-<p><strong>Ergebnis:</strong> Das Viereck minimalen Umfangs hat seine Ecken in den Seitenmittelpunkten.</p>
-<p><strong>Umfang:</strong></p>
-<p>Ist die Quadratseite $a$, so hat das optimale Viereck den Umfang $U = 2\sqrt{2} \cdot a$.</p>
-<p><strong>Verallgemeinerung:</strong></p>
-<p>Das Prinzip lässt sich auf andere regelmässige Polygone übertragen.</p></div><div class="faltung applet" data-stufe="geogebra" data-applet="d6vtgq3q" style="--gg-b:944;--gg-h:631" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/d6vtgq3q" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p><aside class="merksatz vomblatt"><h4>Zum Arbeitsblatt</h4><p>Experimentieren Sie mit den Punkten P, Q, R und S</p></aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/minimierungsprobleme/index.html">Bonus · Minimierungsprobleme</a> <span class="zeit">bei 1:15</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+begründen.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button><button type="button" data-stufe="geogebra" aria-expanded="false">GeoGebra</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Experimentieren Sie systematisch mit verschiedenen Positionen</li><li>Achten Sie auf Symmetrien</li><li>Denken Sie an das Spiegelungsprinzip</li><li>Was passiert in Extremfällen?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Spiegelt man das Quadrat dreimal an seinen Seiten, legt sich der
+Umfang des Vierecks als ein einziger Streckenzug aus, von einem Punkt
+$Q$ zu seinem Bild $Q'$. Dieses Bild liegt immer um $2a$ nach rechts
+und $2a$ nach oben verschoben, gleich wo $Q$ sitzt. Kürzer als die
+gerade Verbindung $2\sqrt{2}\,a$ kann der Umfang also nie sein. Und
+gerade wird der Streckenzug genau dann, wenn alle Seiten des Vierecks
+unter $45^\circ$ laufen.</aside><div class="schrittfolge" data-szenen="3"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schritt 1: experimentieren</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-0ebd9abab93a.svg" alt=""></figure><div class="sf-wort"><p>Mit GeoGebra misst man den Umfang für verschiedene Lagen der vier
+Ecken. Ein schiefes Viereck ist deutlich länger. Das Viereck aus den
+Seitenmitten ist kurz, und auffällig: Das Rechteck rechts, dessen
+Seiten ebenfalls parallel zu den Diagonalen laufen, ist genau gleich
+kurz. Die Vermutung «nur die Seitenmitten» ist zu eng.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schritt 2: auffalten</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-2d6a3b7bc804.svg" alt=""></figure><div class="sf-wort"><p>Der Umfang besteht aus den Seiten $QR$, $RS$, $SP$, $PQ$. Man spiegelt
+das Quadrat an der Seite durch $R$. Das Bild von $RS$ setzt die Seite
+$QR$ fort. Dann spiegelt man an der Seite durch das Bild von $S$, dann
+an der durch das Bild von $P$. So liegt der ganze Umfang als
+Streckenzug von $Q$ bis $Q'$ da, genauso lang wie zuvor.</p>
+<p>Rechnet man die drei Spiegelungen nach, liegt $Q'$ immer um $2a$ nach
+rechts und $2a$ nach oben verschoben, gleich wo $Q$ auf der unteren
+Seite sitzt. Der Abstand ist also immer
+$\overline{QQ'} = 2\sqrt{2}\,a$, und kein Streckenzug von $Q$ nach $Q'$
+ist kürzer.</p></div></div><div class="sf-szene" data-szene="2"><h4 class="sf-titel">Schritt 3: wann der Streckenzug gerade ist</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-d95a1a31f30c.svg" alt=""></figure><div class="sf-wort"><p>Gleichheit gilt genau dann, wenn der Streckenzug eine gerade Linie
+ist. Die Gerade von $Q$ nach $Q'$ läuft unter $45^\circ$. Also müssen
+alle vier Seiten des Vierecks unter $45^\circ$ laufen, parallel zu den
+Diagonalen des Quadrats.</p>
+<p>Das geht für jede Lage von $Q$: Man startet auf der unteren Seite und
+läuft unter $45^\circ$ zur rechten Seite, dann weiter wie eine
+Billardkugel. Es entsteht ein Rechteck, und alle diese Rechtecke haben
+denselben kleinsten Umfang $2\sqrt{2}\,a$. Das Viereck aus den
+Seitenmitten ist ein Sonderfall davon, nämlich das Quadrat.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Bemerkung</h4>Dass alle diese Rechtecke gleich lang sind, sieht man auch direkt:
+Startet man bei $t$ auf der unteren Seite, sind zwei Seiten
+$\sqrt{2}\,t$ und zwei $\sqrt{2}\,(a-t)$ lang, zusammen $2\sqrt{2}\,a$.
+<p>Wer beim Experimentieren nur symmetrische Lagen ausprobiert, findet
+nur die Seitenmitten. Die ganze Familie zeigt sich erst, wenn man eine
+Ecke frei wandern lässt und die anderen unter $45^\circ$ nachzieht.</p></aside></div><div class="faltung applet" data-stufe="geogebra" data-applet="d6vtgq3q" style="--gg-b:944;--gg-h:631" hidden><p class="ruhig"><a href="https://www.geogebra.org/calculator/d6vtgq3q" target="_blank" rel="noopener">Bei GeoGebra öffnen</a></p><aside class="merksatz vomblatt"><h4>Zum Arbeitsblatt</h4><p>Experimentieren Sie mit den Punkten P, Q, R und S</p></aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/minimierungsprobleme/index.html">Bonus · Minimierungsprobleme</a> <span class="zeit">bei 1:15</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

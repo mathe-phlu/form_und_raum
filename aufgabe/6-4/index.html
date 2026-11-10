@@ -8,58 +8,46 @@
 <div class="stationskopf"><span class="wort">AUFGABE</span><span class="roemisch">6.4</span><h1>Form und Raum</h1><span class="wechsel wortweise"><a href="../../index.html">Startseite</a><a href="../index.html">Alle Aufgaben</a></span></div>
 <main>
 <h2 class="etappentitel"><span class="stand">Aufgabe 6.4</span></h2><div class="aufgabenblatt"><p>In der Aufgabe aus dem <span class="kapitaelchen">Mathbuch</span> soll mit Hilfe der Teilflächen eine Flächenformel für das Trapez entwickelt werden; die markierten Punkte sind Seitenmittelpunkte.</p>
-<p>Lösen Sie die oben gestellte Aufgabe selbst. Welche didaktischen Prinzipien werden hier insbesondere angesprochen?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Wie kann man ein Trapez in bekannte Figuren zerlegen?</li><li>Welche Hilfskonstruktionen sind sinnvoll?</li><li>Wie nutzt man die Symmetrie des Trapezes?</li><li>Können Sie die algebraischen Umformungen geometrisch deuten?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p><strong><u>Vier verschiedene Herleitungen der Trapezformel:</u></strong></p>
-<p><strong>Variante 1: Zerlegungsprinzip</strong></p>
-<p>Das Trapez wird auf halber Höhe in zwei Trapeze zerlegt. Das obere wird so umgelegt, dass ein Parallelogramm mit der Grundseite $g_1+g_2$ und der Höhe $h$ entsteht.</p>
-<p>\[(g_1+g_2) \cdot \frac{h}{2}\]</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-b78f8bd50d83.svg" alt=""></figure>
-<p><strong>Variante 2: Additionsprinzip</strong></p>
-<p>Das Trapez wird in drei Dreiecke zerlegt, indem man den Mittelpunkt der Strecke $g_1$ mit den oberen beiden Ecken verbindet. Dadurch entstehen zwei Dreiecke mit Grundseite $\frac{g_1}{2}$ und eines mit Grundseite $g_2$. Alle haben die gleiche Höhe wie das Trapez.</p>
-<p>\[2 \cdot \frac{1}{2} \cdot \frac{g_1}{2} \cdot h + \frac{1}{2} \cdot g_2 \cdot h\]</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-a666a619b773.svg" alt=""></figure>
-<p><strong>Variante 3: Additionsprinzip</strong></p>
-<p>Das Trapez wird in ein Parallelogramm und ein Dreieck zerlegt in dem man durch die obere rechte Ecke eine Strecke parallel zur linken Seite zieht. Das so entstandene Parallelogramm hat die Grundseite $g_2$ und das Dreieck hat die Grundseite $g_1-g_2$. Beide Figuren haben die Höhe $h$.</p>
-<p>\[ \frac{(g_1-g_2)}{2} \cdot h + g_2 \cdot h \]</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-100c755f5c1c.svg" alt=""></figure>
-<p><strong>Variante 4: Seitenmittelpunkte</strong></p>
-<p>Das Trapez wird in ein Fünfeck und zwei Dreiecke zerlegt, indem man jeweils Schneidekanten zwischen den Mittelpunkten der Seiten links, rechts und oben zeichnet. Die entstandenen Dreiecke werden so umgelegt, dass ein grosses Dreieck entsteht mit Höhe $h$ und Grundseite $g_1+g_2$.</p>
-<p>\[\frac{(g_1+g_2)\cdot h}{2} \]</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-98c86562dcca.svg" alt=""></figure>
-<p><strong><u>Gleichwertigkeit der Formeln:</u></strong></p>
-<p>Wir zeigen algebraisch, dass alle vier Varianten zur gleichen Trapezformel führen:</p>
-<div class="neben">
-<strong>Variante 1:</strong>
+<p>Lösen Sie die oben gestellte Aufgabe selbst. Welche didaktischen Prinzipien werden hier insbesondere angesprochen?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Wie kann man ein Trapez in bekannte Figuren zerlegen?</li><li>Welche Hilfskonstruktionen sind sinnvoll?</li><li>Wie nutzt man die Symmetrie des Trapezes?</li><li>Können Sie die algebraischen Umformungen geometrisch deuten?</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Jeder der vier Schnitte macht aus dem Trapez Figuren, deren
+Flächenformel man schon kennt: Parallelogramm, Dreieck. Man schneidet,
+legt um oder rechnet die Teile zusammen, und jedes Mal kommt dieselbe
+Formel heraus, nur anders aufgeschrieben. So lösen es Schülerinnen und
+Schüler; die Gleichwertigkeit der Formeln ist der zweite Schritt.</aside><p>Das Trapez hat die Grundseiten $g_1$ (unten) und $g_2$ (oben) und die
+Höhe $h$. Die vier Schnitte sind dieselben wie im
+<span class="kapitaelchen">Mathbuch</span>-Auszug, in derselben Reihenfolge.</p><div class="schrittfolge" data-szenen="4"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schnitt 1: auf halber Höhe</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-4ddd4415bcd3.svg" alt=""></figure><div class="sf-wort"><p>Ich schneide das Trapez auf halber Höhe durch. Das obere Stück drehe
+ich um die Mitte der rechten Seite und lege es rechts an. Es entsteht ein
+Parallelogramm: unten $g_1 + g_2$ lang und halb so hoch wie das Trapez.
+\[A = (g_1 + g_2)\cdot \frac{h}{2}\]</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schnitt 2: von der Mitte unten zu den oberen Ecken</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-91159d0a63f6.svg" alt=""></figure><div class="sf-wort"><p>Ich verbinde die Mitte der unteren Seite mit den beiden oberen Ecken.
+Es entstehen drei Dreiecke, alle so hoch wie das Trapez: zwei mit der
+Grundseite $\frac{g_1}{2}$ und eines mit der Grundseite $g_2$.
+\[A = \frac{1}{2}\cdot\frac{g_1}{2}\cdot h + \frac{1}{2}\cdot g_2 \cdot h + \frac{1}{2}\cdot\frac{g_1}{2}\cdot h\]</p></div></div><div class="sf-szene" data-szene="2"><h4 class="sf-titel">Schnitt 3: parallel zur rechten Seite</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-fb04f4f3d328.svg" alt=""></figure><div class="sf-wort"><p>Ich schneide von der linken oberen Ecke aus parallel zur rechten Seite
+nach unten. Links bleibt ein Dreieck mit der Grundseite $g_1 - g_2$,
+rechts ein Parallelogramm mit der Grundseite $g_2$, beide so hoch wie
+das Trapez.
+\[A = \frac{(g_1 - g_2)\cdot h}{2} + g_2 \cdot h\]</p></div></div><div class="sf-szene" data-szene="3"><h4 class="sf-titel">Schnitt 4: durch die drei Seitenmitten</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-2c945f041189.svg" alt=""></figure><div class="sf-wort"><p>Ich schneide von den Mitten der beiden schrägen Seiten zur Mitte der
+oberen Seite. Die beiden kleinen Dreiecke drehe ich um die Seitenmitten
+nach unten. Es entsteht ein grosses Dreieck mit der Grundseite
+$g_1 + g_2$ und der Höhe $h$.
+\[A = \frac{(g_1 + g_2)\cdot h}{2}\]</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz betont"><h4>Sind die Formeln gleichwertig?</h4>Ja, alle vier lassen sich zu derselben Formel umformen:
 \begin{align*}
-A &amp;= (g_1+g_2) \cdot \frac{h}{2} \\
-&amp;= \frac{(g_1+g_2) \cdot h}{2}
+(g_1 + g_2)\cdot\tfrac{h}{2} &amp;= \tfrac{(g_1+g_2)\cdot h}{2}\\
+\tfrac{1}{2}\cdot\tfrac{g_1}{2}\cdot h + \tfrac{1}{2}\cdot g_2\cdot h + \tfrac{1}{2}\cdot\tfrac{g_1}{2}\cdot h &amp;= \tfrac{g_1 h}{2} + \tfrac{g_2 h}{2} = \tfrac{(g_1+g_2)\cdot h}{2}\\
+\tfrac{(g_1-g_2)\cdot h}{2} + g_2\cdot h &amp;= \tfrac{g_1 h - g_2 h + 2 g_2 h}{2} = \tfrac{(g_1+g_2)\cdot h}{2}
 \end{align*}
-</div>
-<div class="neben">
-<strong>Variante 4:</strong>
-\begin{align*}
-A &amp;= \frac{(g_1+g_2) \cdot h}{2}
-\end{align*}
-</div>
-<div class="neben">
-<strong>Variante 2:</strong>
-\begin{align*}
-A &amp;= 2 \cdot \frac{1}{2} \cdot \frac{g_1}{2} \cdot h + \frac{1}{2} \cdot g_2 \cdot h \\
-&amp;= \frac{g_1}{2} \cdot h + \frac{g_2}{2} \cdot h \\
-&amp;= \left(\frac{g_1}{2} + \frac{g_2}{2} \right) \cdot h \\
-&amp;= \frac{(g_1+g_2) \cdot h}{2}
-\end{align*}
-</div>
-<div class="neben">
-<strong>Variante 3:</strong>
-\begin{align*}
-A &amp;= \frac{(g_1-g_2)}{2} \cdot h + g_2 \cdot h \\
-&amp;= \frac{(g_1-g_2) \cdot h}{2} + \frac{2\cdot g_2 \cdot h}{2} \\
-&amp;= \frac{g_1 \cdot h - g_2 \cdot h + 2\cdot g_2 \cdot h}{2} \\
-&amp;= \frac{g_1 \cdot h + g_2 \cdot h}{2}= \frac{(g_1+g_2) \cdot h}{2}
-\end{align*}
-</div>
-<p>Alle vier Herleitungen führen zur klassischen Trapezformel:
-\[A = \frac{(g_1+g_2) \cdot h}{2} = (g_1+g_2)\cdot \frac{h}{2} =\frac{g_1+g_2}{2} \cdot h\]</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/das-ergaenzungsprinzip/index.html">Etappe 6 · Das Ergänzungsprinzip</a> <span class="zeit">bei 3:46</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+Die vierte steht schon so da. Jede Form erzählt aber ihren eigenen
+Weg: «Summe der Grundseiten mal halbe Höhe» (Schnitt 1), «Summe der
+Teile» (Schnitt 2 und 3), «ein Dreieck» (Schnitt 4).</aside><aside class="merksatz betont"><h4>Welche didaktischen Prinzipien angesprochen werden</h4><ul><li><strong>Zerlegungs- und Additionsprinzip:</strong> Schnitt 1 und 4
+  zerlegen und setzen neu zusammen, Schnitt 2 und 3 zerlegen und
+  zählen zusammen. Beides sind die Prinzipien zur Gewinnung von
+  Flächenformeln aus dem Kapitel.</li><li><strong>Rückführung auf Bekanntes:</strong> Neues (das Trapez) wird auf
+  Bekanntes (Parallelogramm, Dreieck) zurückgeführt. Das ist die
+  Strategie des problemlösenden Denkens, die das Kapitel für das
+  Messen hervorhebt.</li><li><strong>Handlungsorientierung:</strong> Die Lernenden schneiden
+  tatsächlich aus. Die Formel entsteht aus einer Handlung, nicht aus
+  einer Vorgabe.</li><li><strong>Vielfalt der Lösungswege:</strong> Vier Wege führen zu vier
+  verschieden aussehenden Formeln. Die Frage «Sind sie gleichwertig?»
+  macht aus dem Vergleich eine Begründungsaufgabe und verbindet
+  Geometrie und Algebra.</li></ul></aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/das-ergaenzungsprinzip/index.html">Etappe 6 · Das Ergänzungsprinzip</a> <span class="zeit">bei 3:46</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

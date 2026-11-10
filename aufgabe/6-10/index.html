@@ -10,26 +10,29 @@
 <h2 class="etappentitel"><span class="stand">Aufgabe 6.10</span></h2><div class="aufgabenblatt"><p>In Analogie zum isoperimetrischen Problem lässt sich das
   <em>isoplanare Problem</em> formulieren:</p>
 <p>Unter allen Rechtecken gleichen Inhalts, welches hat den kleinsten
-  Umfang?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Dies ist das «umgekehrte» Problem zu Aufgabe 6.9</li><li>Nutzen Sie ähnliche Methoden wie beim isoperimetrischen Problem</li><li>Bei festem Flächeninhalt variiert der Umfang</li><li>Das Quadrat spielt wieder eine besondere Rolle</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p>Unter allen inhaltsgleichen Rechtecken hat das <strong>Quadrat</strong> den kleinsten Umfang. Diese Tatsache
-lässt sich auf vielfältige Weise begründen. Allerdings nicht ganz so elementar wir das isoperimetrische Problem.</p>
-<h4>Algebraisch, Geometrisch, Funktional</h4>
-<p>Das Minimum lässt sich nur heuristisch/experimentell aus dem algebraischen Term oder bei Funktionalen Betrachtungen:</p>
-<p>Die Umfangsfunktion $U(x) = 2x + \frac{2A}{x}$ hat ihr Minimum bei $x = \sqrt{A}$.</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-27984629b760.svg" alt=""></figure>
-<h4>Analytische Lösung</h4>
-<p>Sei $A = 64$ cm² der feste Flächeninhalt.</p>
-<p>Für ein Rechteck mit Seiten $x$ und $y = \frac{64}{x}$:
-$$U(x) = 2\left(x + \frac{64}{x}\right)$$</p>
-<p><strong>Minimierung durch Ableitung:</strong>
-$$U'(x) = 2\left(1 - \frac{64}{x^2}\right) = 0$$
-$$x^2 = 64 \Rightarrow x = 8$$</p>
-<p>Also $y = 8$ → Quadrat mit $U = 32$ cm.</p>
-<h4>Lösung über Mittelungleichung</h4>
-<p>Für Seiten $a, b$ mit $ab = A$:
-$$\frac{a+b}{2} \geq \sqrt{ab} = \sqrt{A}$$</p>
-<p>Der Umfang $U = 2(a+b) \geq 4\sqrt{A}$ ist minimal bei $a = b = \sqrt{A}$.</p>
-<p><strong>Dualität:</strong></p>
-<p>Das isoperimetrische und das isoplanare Problem sind dual zueinander. In beiden Fällen ist das Quadrat die optimale Lösung.</p></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+  Umfang?</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Dies ist das «umgekehrte» Problem zu Aufgabe 6.9</li><li>Nutzen Sie ähnliche Methoden wie beim isoperimetrischen Problem</li><li>Bei festem Flächeninhalt variiert der Umfang</li><li>Das Quadrat spielt wieder eine besondere Rolle</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Auch hier gewinnt das Quadrat, und der Grund ist derselbe wie in
+Aufgabe 6.9, nur rückwärts gelesen. Legt man vier gleiche Rechtecke
+$a\times b$ wie ein Windrad um ein Quadrat, entsteht ein grosses
+Quadrat mit der Seite $a+b$. In der Mitte bleibt ein Loch
+$(a-b)^2$. Das Loch verschwindet nur, wenn $a = b$ ist, und nur dann
+ist $a + b$, also der halbe Umfang, so klein wie möglich.</aside><div class="schrittfolge" data-szenen="2"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Schritt 1: ausprobieren</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-185a0c214bff.svg" alt=""></figure><div class="sf-wort"><p>Drei Rechtecke mit je $64$ cm$^2$: Je länger und schmaler, desto
+grösser der Umfang. Das Quadrat mit $8$ cm Seite hat mit $32$ cm den
+kleinsten. Das ist eine Vermutung, noch keine Begründung.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Schritt 2: das Windrad</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-415c96a09da0.svg" alt=""></figure><div class="sf-wort"><p>Vier Rechtecke $a\times b$ und das Quadrat in der Mitte ergeben
+zusammen das grosse Quadrat mit der Seite $a+b$:
+\[(a+b)^2 = 4ab + (a-b)^2 \;\ge\; 4ab = 4A .\]
+Also ist $a+b \ge 2\sqrt{A}$ und der Umfang
+$U = 2(a+b) \ge 4\sqrt{A}$. Genau $4\sqrt{A}$ ist der Umfang des
+Quadrats mit dem Inhalt $A$, und Gleichheit gibt es nur, wenn das Loch
+verschwindet, also für $a = b$.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Bemerkung</h4>Das ist eine elementare Begründung, die ohne Ableitung auskommt. Die
+Ungleichung $a+b\ge 2\sqrt{ab}$ ist die Mittelungleichung aus 6.9; das
+Windrad ist ihr Bild.
+<p>Mit der Ableitung (Sekundarstufe II): Bei $A = 64$ ist
+$U(x) = 2\left(x + \frac{64}{x}\right)$ und
+$U'(x) = 2\left(1 - \frac{64}{x^2}\right) = 0$ für $x = 8$.</p>
+<p>Die beiden Probleme hängen direkt zusammen: Hätte ein Rechteck mit
+Inhalt $A$ einen kleineren Umfang als das Quadrat mit Inhalt $A$, dann
+hätte das Quadrat mit <em>diesem</em> kleineren Umfang einen noch
+kleineren Inhalt als das Rechteck, im Widerspruch zu 6.9.</p></aside></div></div></div><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>

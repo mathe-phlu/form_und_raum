@@ -10,87 +10,35 @@
 <h2 class="etappentitel"><span class="stand">Aufgabe 6.9</span></h2><div class="aufgabenblatt"><p>Unter allen Rechtecken gleichen Umfangs, welches hat den grössten
 Inhalt?</p>
 <p>Stellen Sie eine Hypothese auf und begründen Sie diese auf
-mindestens zwei verschiedene Arten.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Beginnen Sie mit konkreten Beispielen</li><li>Nutzen Sie algebraische, geometrische oder analytische Methoden</li><li>Die dritte binomische Formel kann hilfreich sein</li><li>Denken Sie an Mittelungleichungen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><p>Das Quadrat hat unter allen umfangsgleichen Rechtecken den grössten
-Flächeninhalt. Diese Tatsache lässt sich auf vielfältige Weise begründen.</p>
-<h4>Algebraische Lösung</h4>
-<p>Wir gehen von einem Quadrat mit Seitenlänge $a=10$ cm aus und Umfang
-$U=40$ cm. Für den Flächeninhalt gilt dann $A=a^2=100$ cm$^2$. Wenn wir nun an einer
-Seite des Rechtecks «wackeln», bspw. die Seite verkürzen um eine
-Strecke $d=0.5$ cm, muss die
-andere Seite um die gleiche Strecke verlängert werden, damit der
-Umfang erhalten bleibt. Wir erhalten ein Rechteck mit Seitenlänge
-$10-0.5=9.5$ cm und $10+0.5=10.5$ cm. Für den Flächeninhalt gilt 
-\begin{equation*}
-  9.5\cdot 10.5= 99.75 &lt; 100 \text{ cm}^2
-\end{equation*}</p>
-<p>Das Rechteck hat einen kleineren Flächeninhalt als das umfangsgleiche
-Quadrat. Andere Werte von $d$ führen (stets aufgrund der dritten
-binomischen Formel) zur gleichen Schlussfolgerung:</p>
-<p>\begin{equation*}
-  (10-d)\cdot (10+d)= 100 - d^2&lt; 100 \text{ cm}^2
-\end{equation*}</p>
-<p>Auch ist die Argumentation nicht von der Wahl des Umfangs abhängig.
-Wir haben damit mit Hilfe eines präformalen Beweises die Hypothese
-bestätigt.<span class="fussnote">Formal: Wir betrachten ein Quadrat mit
-  Seitenlänge $a$ und Umfang $4a$ und ein beliebiges dazu
-  umfangsgleiches Rechteck mit den Seitenlängen $a-d$ und
-  $a+d$. Diese hat notwendig einen kleineren Flächeninhalt da  $(a-d)\cdot (a+d)= a^2- d^2&lt; a^2$.</span></p>
-<h4>Geometrische Lösung.</h4>
-<p>Die algebraische Variante lässt sich auch gut geometrisch interpretieren:</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-4995b1fc43dc.svg" alt=""></figure>
-<p><strong>Interpretation:</strong></p>
-<p>Das rot gefüllte Rechteck mit den Seitenlängen $(a+d)$ und $(a-d)$ hat die Fläche:
-$(a+d)(a-d) = a^2 - d^2$</p>
-<p>Das Quadrat (in fach-Farbe umrandet) mit Seitenlänge $a$ hat die Fläche $a^2$.</p>
-<p>Die rot schraffierten Bereiche zeigen, was vom Rechteck ausserhalb des Quadrats liegt, bzw. was vom Quadrat nicht vom Rechteck abgedeckt wird.</p>
-<p>Das weisse Quadrat oben rechts mit Fläche $d^2$ zeigt genau die Differenz:
-$a^2 - (a+d)(a-d) = a^2 - (a^2 - d^2) = d^2$</p>
-<p>Das Quadrat hat also stets eine um $d^2$ grössere Fläche als das umfangsgleiche Rechteck.</p>
-<p>Diese beiden Lösungen sind mit den Mitteln der Sekundarstufe I gut
-lösbar. Es gibt allerdings noch weitere Lösungen die mit
-schulmathematischen Hilfsmitteln zu bewerkstelligen sind:</p>
-<h4>Funktionale Lösung</h4>
-<p>Wir betrachten ein beliebiges Rechteck mit Umfang $40$ cm. Die eine
-Seite des Rechtecks sei $x$, die andere Seite des Rechtecks muss
-dementsprechend $20-x$ sein. Der Flächeninhalt ist damit
-\begin{equation*}
- A(x)=x(20-x)=-x^2+20x
-\end{equation*}</p>
-<p>Bei dieser Funktion handelt es sich um eine nach unten geöffnete
-Parabel mit den Nullstellen $x=0$ und $x=20$. Diese Parabel besitzt
-einen Hochpunkt, der aufgrund der Symmetrieeigenschaften der Parabel
-genau zwischen den beiden Nullstellen liegen muss. Damit erhalten wir
-$x=10$. Die andere Seitenlänge ist dementsprechend
-$20-x=20-10=10$. Den maximalen Wert erhalten wir damit genau dann,
-wenn das Rechteck ein Quadrat ist.</p>
-<p>Auch diese Argumentation liesse sich formal für beliebige Umfänge
-zeigen. In diesem Fall ist die Funktion
-$A(x)=x(\frac{U}{2}-x)=-x^2+\frac{U}{2}x$ zu betrachten und führt zu
-der gleichen Schlussfolgerung.</p>
-<figure class="zeichnung"><img src="../../bilder/zeichnung-54322ec29240.svg" alt=""></figure>
-<h4>Analytische Lösung</h4>
-<p>In der Sekundarstufe II werden solcherlei Probleme häufig mit
-analytischen Mitteln zur Extremwertbestimmung gelöst. Hierzu wird der
-Hochpunkt bestimmt, indem die Nullstelle der ersten Ableitung
-ermittelt wird. (Mehr dazu im Modul zu Funktionen und Funktionales
-Denken)</p>
-<h4>Beweis über die Mittelungleichung</h4>
-<p>Eine weitere etwas unbekanntere Lösungsvariante nutzt die
-Mittelungleichung: Das arithmetische Mittel ist stets grösser oder
-gleich dem geometrischen Mittel:
-\begin{equation*}
-  \sqrt{ab}\leq\frac{a+b}{2}
-\end{equation*}</p>
-<p>Gleichheit gilt genau dann, wenn $a=b$. (Der Beweis dieser Aussage
-lässt sich algebraisch oder geometrisch leicht nachweisen)</p>
-<p>Wir gehen von einem Rechteck mit Seitenlänge $a$ und $b$ aus und einem
-konstanten Umfang $U=2(a+b)$. Damit gilt
-\begin{equation*}
-  A=ab\leq\left(\frac{a+b}{2}\right)^2=\frac{(a+b)^2}{4}=\frac{U^2}{16}
-\end{equation*}</p>
-<p>Der Flächeninhalt kann damit maximal einen Flächeninhalt von
-$\frac{U^2}{16}$ einnehmen und nimmt diesen genau dann ein, wenn $a=b$,
-also im Falle des Quadrates.</p></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/optimierungsprobleme/index.html">Etappe 8 · Optimierungsprobleme</a> <span class="zeit">bei 3:23</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
+mindestens zwei verschiedene Arten.</p><div class="stufen"><div class="reiter"><button type="button" data-stufe="starthilfe" aria-expanded="false">Starthilfe</button><button type="button" data-stufe="loesung" aria-expanded="false">Lösung</button></div><div class="faltung" data-stufe="starthilfe" hidden><ul><li>Beginnen Sie mit konkreten Beispielen</li><li>Nutzen Sie algebraische, geometrische oder analytische Methoden</li><li>Die dritte binomische Formel kann hilfreich sein</li><li>Denken Sie an Mittelungleichungen</li></ul></div><div class="faltung" data-stufe="loesung" hidden><aside class="merksatz betont"><h4>Die Idee</h4>Vermutung: Das Quadrat hat den grössten Inhalt. Begründung: Verlängert
+man beim Quadrat eine Seite um ein Stück $d$, muss die andere um
+dasselbe Stück kürzer werden, sonst ändert sich der Umfang. Aus
+$a\cdot a$ wird $(a+d)(a-d) = a^2 - d^2$, also immer weniger. Jedes
+Abweichen vom Quadrat kostet Fläche, und zwar genau $d^2$.</aside><div class="schrittfolge" data-szenen="2"><div class="sf-kopf" hidden><span class="sf-kopftitel"></span><span class="sf-zaehler"></span></div><div class="sf-buehne"><div class="sf-szene" data-szene="0"><h4 class="sf-titel">Weg 1: am Quadrat wackeln</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-fc40c341bea3.svg" alt=""></figure><div class="sf-wort"><p>Mit Zahlen, wie es in der Sekundarstufe I geht: Ein Quadrat mit
+$10$ cm Seitenlänge hat $40$ cm Umfang und $100$ cm$^2$ Inhalt.
+Macht man eine Seite $0.5$ cm kürzer, muss die andere $0.5$ cm länger
+werden: $9.5\cdot 10.5 = 99.75 &lt; 100$. Für jedes andere $d$ ebenso,
+denn $(10-d)(10+d) = 100 - d^2$.</p>
+<p>Das Bild zeigt, warum: Das Rechteck verliert oben einen Streifen
+$(a-d)\times d$ und gewinnt rechts einen gleich grossen Streifen
+$d\times(a-d)$ dazu (beide schraffiert). Was übrig bleibt, ist das
+kleine Quadrat $d^2$ oben rechts: Um genau so viel ist das Rechteck
+kleiner.</p></div></div><div class="sf-szene" data-szene="1"><h4 class="sf-titel">Weg 2: die Fläche als Funktion</h4><figure class="zeichnung"><img src="../../bilder/zeichnung-6ba0c382462e.svg" alt=""></figure><div class="sf-wort"><p>Bei $40$ cm Umfang ist die eine Seite $x$, die andere $20 - x$. Der
+Inhalt ist
+\[A(x) = x\,(20 - x) = -x^2 + 20x.\]
+Das ist eine nach unten geöffnete Parabel mit den Nullstellen $0$ und
+$20$. Ihr Scheitel liegt aus Symmetriegründen genau in der Mitte, bei
+$x = 10$. Dann ist auch die andere Seite $10$: Das Rechteck ist ein
+Quadrat. Für einen beliebigen Umfang $U$ geht es genauso mit
+$A(x) = x\left(\frac{U}{2} - x\right)$.</p></div></div></div><div class="sf-fuss" hidden><button type="button" class="sf-zurueck">← zurück</button><span class="sf-punkte"></span><button type="button" class="sf-weiter">weiter →</button></div></div><aside class="merksatz"><h4>Zwei weitere Wege</h4><em>Mit der Ableitung</em> (Sekundarstufe II): $A'(x) = 20 - 2x = 0$
+ergibt $x = 10$. Mehr dazu im Modul zu Funktionen.
+<p><em>Mit der Mittelungleichung</em> $\sqrt{ab}\le\frac{a+b}{2}$, Gleichheit
+genau für $a = b$: Für ein Rechteck mit den Seiten $a$, $b$ und dem
+Umfang $U = 2(a+b)$ ist
+\[A = ab \le \left(\frac{a+b}{2}\right)^2 = \frac{U^2}{16},\]
+und der grösste Wert wird genau beim Quadrat erreicht. Das ist
+derselbe Gedanke wie in Weg 1, nur ohne den Umweg über ein festes
+Quadrat.</p></aside></div></div></div><p class="fundort">Im Video: <a href="../../lernweg-6/optimierungsprobleme/index.html">Etappe 8 · Optimierungsprobleme</a> <span class="zeit">bei 3:23</span></p><p class="heimknopf"><a href="../../index.html"><span class="haus" aria-hidden="true">⌂</span>Material</a></p>
 </main>
 <footer><div class="seitenfuss"><span class="wo"><b>MA01.03 · MA01.04</b> Form und Raum</span><span class="wer">Henrike Allmendinger · Herbstsemester 2026<a class="pinnwand" href="https://www.taskcards.de/#/board/c1b7fe7b-28eb-41b2-bf38-60c4264a9f8c?token=f0e203a1-210e-433c-b544-aa6498378d53" target="_blank" rel="noopener">Feedback</a></span></div></footer>
 <script src="../../gemeinsam/seite.js?f=93e79a82"></script>
